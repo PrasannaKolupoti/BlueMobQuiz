@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Oct 30 16:04:14 ADT 2017
+#Mon Oct 30 17:23:21 ADT 2017
 210.set=ANDROID_RESOURCE
 282.file=C\:\\Users\\Owner\\Desktop\\Fall17\\mc\\Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-v21\\abc_ratingbar_small_material.xml
 14.set=ANDROID_RESOURCE
@@ -79,7 +79,7 @@
 179.file=C\:\\Users\\Owner\\Desktop\\Fall17\\mc\\Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml
 102.file=C\:\\Users\\Owner\\Desktop\\Fall17\\mc\\Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\layout\\sf__custom_server_url.xml
 231.file=C\:\\Users\\Owner\\Desktop\\Fall17\\mc\\Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable\\abc_ic_ab_back_material.xml
-154.file=C\:\\Users\\Owner\\Desktop\\Fall17\\mc\\Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable\\prasanna_won.png
+154.file=C\:\\Users\\Owner\\Desktop\\Fall17\\mc\\Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png
 167.set=ANDROID_RESOURCE
 220.set=ANDROID_RESOURCE
 283.file=C\:\\Users\\Owner\\Desktop\\Fall17\\mc\\Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15\\classes.dex
@@ -869,5 +869,5 @@ count=290
 178.file=C\:\\Users\\Owner\\Desktop\\Fall17\\mc\\Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\layout\\abc_alert_dialog_material.xml
 101.file=C\:\\Users\\Owner\\Desktop\\Fall17\\mc\\Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\layout\\notification_template_part_time.xml
 230.file=C\:\\Users\\Owner\\Desktop\\Fall17\\mc\\Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\color\\abc_primary_text_disable_only_material_dark.xml
-153.file=C\:\\Users\\Owner\\Desktop\\Fall17\\mc\\Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png
+153.file=C\:\\Users\\Owner\\Desktop\\Fall17\\mc\\Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable\\logo.png
 157.set=ANDROID_RESOURCE

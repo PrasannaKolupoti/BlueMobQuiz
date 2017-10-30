@@ -8,14 +8,17 @@ import com.salesforce.androidsdk.ui.SalesforceActivity;
 
 public class ProfessorHome extends SalesforceActivity {
 
+    private RestClient client;
+
     @Override
     public void onResume(RestClient client) {
-
+        this.client = client;
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_professor_home);
+
     }
 }

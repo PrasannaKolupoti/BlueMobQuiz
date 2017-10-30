@@ -39,5 +39,11 @@ public class Home extends SalesforceActivity {
                 startActivity(intent);
             }
         });
+
+    }
+
+    public void gotoCreateQ(View view) {
+        Intent intent = new Intent(Home.this, ProfessorCreatingQuiz.class);
+        startActivity(intent);
     }
 }
