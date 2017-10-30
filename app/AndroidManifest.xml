@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mc.grp6.bluemobquiz"
+    android:installLocation="internalOnly"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="26" />
+
+    <!--
+        GCM permission to ensure that only this application can
+        receive the messages and registration result. This must be of
+        the format <app-package-name>.C2D_MESSAGE for it to work.
+    -->
+    <permission
+        android:name="com.mc.grp6.bluemobquiz.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.mc.grp6.bluemobquiz.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission-sdk-23 android:name="android.permission.BLUETOOTH"/>
+    <application
+        android:name=".MainApplication"
+        android:icon="@drawable/sf__icon"
+        android:label="@string/app_name"
+        android:manageSpaceActivity="com.salesforce.androidsdk.ui.ManageSpaceActivity">
+
+        <!-- Launcher screen -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegistrationPage" />
+        <activity android:name=".LoginPage" />
+        <activity android:name=".ProfessorAttendance" />
+        <activity android:name=".ProfessorCreatingQuiz" />
+        <activity android:name=".ProfessorHome" />
+        <activity android:name=".ProfessorQuizAttendance" />
+        <activity android:name=".StudentHome" />
+        <activity android:name=".StudentAttemptingQuiz" />
+        <activity android:name=".StudentAvailableQuiz" />
+        <activity android:name=".Home"></activity>
+    </application>
+
+</manifest>

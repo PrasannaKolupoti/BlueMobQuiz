@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    tools:context="com.mc.grp6.bluemobquiz.StudentHome">
+    <include layout="@layout/header" />
+    <TextView
+        android:id="@+id/attemptedQuizHeading"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="ATTEMPTED QUIZZES"
+        android:textSize="40dp"
+        android:textAlignment="center"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2"
+        android:id="@+id/headings">
+        <TableRow>
+
+            <TextView
+                android:id="@+id/quizHeading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:text="Quiz"
+                android:textSize="20dp"
+                android:layout_gravity="start"/>
+            <TextView
+                android:id="@+id/marksHeading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:text="Marks"
+                android:textSize="20dp"
+                android:layout_gravity="start"/>
+            <TextView
+                android:id="@+id/rankHeading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:text="Rank"
+                android:textSize="20dp"
+                android:layout_gravity="start"/>
+        </TableRow>
+    </TableLayout>
+    <ListView
+        android:id="@+id/attemptedQuizListView"
+        android:layout_width="fill_parent"
+        android:layout_height="304dp"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="false"
+        android:layout_weight="0.82" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/attemptedQuizListView"
+        android:stretchColumns="0">
+        <TableRow>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/searchQuizButton"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:text="Search Quiz"
+                android:textSize="20dp"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

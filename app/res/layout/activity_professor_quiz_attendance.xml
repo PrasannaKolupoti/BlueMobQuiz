@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mc.grp6.bluemobquiz.ProfessorQuizAttendance">
+    <include layout="@layout/header" />
+    <TextView
+        android:id="@+id/quizAttendanceHeading"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="ATTENDANCE"
+        android:textSize="40dp"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/attendanceQuizName"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Quiz 1"
+        android:textSize="30dp"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/studentList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:text="Student name"
+        android:textAlignment="textStart"
+        android:textSize="20dp" />
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\prasa\.android\build-cache\7a31e0b0153277d85fec1bfd117f945b1cae8bcd\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\prasa\Desktop\Fall_2017\MC\BlueMobQuiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_012dfad550a4667320c2235d8d6e2441579fbcb1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\prasa\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\prasa\Desktop\Fall_2017\MC\BlueMobQuiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_7c353cf25f07066acbf927c98c9a84f4896b2beb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\prasa\.android\build-cache\541817cd20b538a4f70e2034a880dafa6534de3c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="C:\Users\prasa\Desktop\Fall_2017\MC\BlueMobQuiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bde64005d0d802ddecd6ac2dc39eea40395d8c85\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\prasa\.android\build-cache\6c8799d84f4e0a80b4b471df4502f0d9860cb514\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="C:\Users\prasa\Desktop\Fall_2017\MC\BlueMobQuiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8dc31e001be5689e5ac80e5a4a60b6816884dad0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\prasa\.android\build-cache\1c7a0d6557cb5b3368f5491322fde0c4e1abf93d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="C:\Users\prasa\Desktop\Fall_2017\MC\BlueMobQuiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ac18ba07af592b1d524865f1f6cffdccdb670869\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\prasa\.android\build-cache\9e5980f3726effdd84716de35fdbf522f780f486\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="C:\Users\prasa\Desktop\Fall_2017\MC\BlueMobQuiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_23b98a2ffa7859bb1769efe9103ceb2dd5580d25\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\prasa\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="C:\Users\prasa\Desktop\Fall_2017\MC\BlueMobQuiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-26.0.0-alpha1_99ed82dc3b5c382ae28e5ddeeed23ce876e84668\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\prasa\.android\build-cache\e4d5a769aa3bff2000907d5e30cc6609137815eb\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="C:\Users\prasa\Desktop\Fall_2017\MC\BlueMobQuiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4eeafd3772e25aac1ee2204d1f6bc17a4587c68e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\prasa\.android\build-cache\b48a6b59e891638f4d3d46636edbdfe24bb343e8\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="C:\Users\prasa\Desktop\Fall_2017\MC\BlueMobQuiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9503b62b9f81c13f29a583ed8a4020fee4696a51\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\prasa\.android\build-cache\f56f5bc112b8aae2b0c8f1a9dd107c2848efea1d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\prasa\Desktop\Fall_2017\MC\BlueMobQuiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b435621275ea5ac85a79f91cd386aa3715066e1e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\prasa\.android\build-cache\135b79985c918b43304e238e80dc39ad47c7e714\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="C:\Users\prasa\Desktop\Fall_2017\MC\BlueMobQuiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7ed5edf0c13797c0f98ea485d2ec0b832a05ae1a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\prasa\Desktop\Fall_2017\MC\BlueMobQuiz\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="70e2cb18e457e9448ff37d4e6b32e419ba54ea0c">
+        <dex dex="C:\Users\prasa\Desktop\Fall_2017\MC\BlueMobQuiz\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_c92c5ff436f321630bd21f8237e446970092b48f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\prasa\.android\build-cache\a62da1e43bc2cd7213ea4127801cab9ef9514134\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="C:\Users\prasa\Desktop\Fall_2017\MC\BlueMobQuiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d5ee1a319be5d5a1f565b00c9e4c97b50f584459\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\prasa\Desktop\Fall_2017\MC\BlueMobQuiz\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\prasa\Desktop\Fall_2017\MC\BlueMobQuiz\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_65342875ae0888a9fafce9f71b8d822066e5c316\classes.dex" />
+    </item>
+
+</items>

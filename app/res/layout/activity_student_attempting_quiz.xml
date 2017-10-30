@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mc.grp6.bluemobquiz.StudentAttemptingQuiz">
+    <include layout="@layout/header" />
+    <TextView
+        android:id="@+id/studentQuizName"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Quiz 1"
+        android:textSize="40dp"
+        android:textAlignment="center"/>
+    <TableLayout
+        android:id="@+id/studentQuestions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/studentQuizName"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView />
+        </TableRow>
+        <TableRow>
+            <TextView />
+        </TableRow>
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <TextView
+                android:id="@+id/studentQuestionNumber"
+                android:layout_column="0"
+                android:layout_height="wrap_content"
+                android:layout_width="20dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/studentQuestion"
+                android:layout_column="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Question"
+                android:textSize="20dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/studentQuestionBody">
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:text="A"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/studentOption1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="Option 1"
+                android:textSize="20dp"/>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="B"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/studentOption2"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="Option 2"
+                android:textSize="20dp"/>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="C"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/studentOption3"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="Option 3"
+                android:textSize="20dp"/>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="D"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/studentOption4"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="Option 4"
+                android:textSize="20dp"/>
+        </TableRow>
+        <TableRow></TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/studentAnswer"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Answer"
+                android:textSize="20dp"
+                android:layout_column="0"/>
+
+            <Spinner
+                android:id="@+id/studentAnswerSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/studentAnswerChoice"
+                android:prompt="@string/studentAnswerPrompt" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1"
+        android:layout_below="@id/studentQuestionBody">
+        <TableRow>
+            <TextView />
+        </TableRow>
+        <TableRow>
+            <TextView />
+        </TableRow>
+        <TableRow>
+            <TextView />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/studentNext"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:text="Next"
+                android:textSize="20dp"/>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/studentSubmit"
+                android:layout_column="1"
+                android:layout_below="@id/registrationForm"
+                android:layout_gravity="center"
+                android:text="Submit"
+                android:textSize="20dp"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

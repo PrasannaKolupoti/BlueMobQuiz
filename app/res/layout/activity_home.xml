@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mc.grp6.bluemobquiz.Home">
+    <include layout="@layout/header"
+        />
+    <TextView
+        android:id="@+id/homeHeading"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="WELCOME"
+        android:textSize="40dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"/>
+    <TableLayout
+        android:id="@+id/homeBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/homeHeading"
+        android:stretchColumns="0">
+
+        <TableRow>
+            <TextView />
+        </TableRow>
+        <TableRow>
+            <TextView />
+        </TableRow>
+        <TableRow>
+            <TextView />
+        </TableRow>
+        <TableRow>
+            <TextView />
+        </TableRow>
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_column="0"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/prasanna_won"/>
+
+        </TableRow>
+        <TableRow>
+            <TextView />
+        </TableRow>
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+        </TableRow>
+        <TableRow>
+            <TextView />
+        </TableRow>
+        <TableRow>
+
+        </TableRow>
+        <TableRow>
+            <TextView />
+        </TableRow>
+        <TableRow>
+        </TableRow>
+        <TableRow>
+            <TextView />
+        </TableRow>
+        <TableRow>
+            <TextView />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1"
+        android:layout_below="@id/homeBody">
+        <TableRow>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/homeLoginButton"
+                android:layout_column="0"
+
+                android:layout_gravity="center"
+                android:text="Login"
+                android:textSize="20dp"/>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/homeRegisterButton"
+                android:layout_column="1"
+
+                android:layout_gravity="center"
+                android:text="Register"
+                android:textSize="20dp"/>
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>

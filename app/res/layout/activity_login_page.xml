@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mc.grp6.bluemobquiz.LoginPage">
+    <include layout="@layout/header" />
+    <TextView
+        android:id="@+id/loginHeading"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="LOGIN"
+        android:textSize="40dp"
+        android:textAlignment="center"/>
+    <TableLayout
+        android:id="@+id/loginDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginHeading"
+        android:stretchColumns="0,1">
+
+        <TableRow>
+            <TextView />
+        </TableRow>
+        <TableRow>
+            <TextView />
+        </TableRow>
+        <TableRow>
+            <TextView />
+        </TableRow>
+        <TableRow>
+            <TextView />
+        </TableRow>
+        <TableRow>
+            <TextView />
+        </TableRow>
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <TextView
+                android:id="@+id/userName"
+                android:layout_column="0"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="Username"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/userNameValue"
+                android:layout_column="1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="Enter your username"
+                android:textSize="20dp"/>
+
+        </TableRow>
+        <TableRow>
+            <TextView />
+        </TableRow>
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <TextView
+                android:id="@+id/password"
+                android:layout_column="0"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="Password"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/passwordValue"
+                android:layout_column="1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:textSize="20dp"
+                android:inputType="textPassword"/>
+        </TableRow>
+        <TableRow>
+            <TextView />
+        </TableRow>
+        <TableRow>
+            <TextView />
+        </TableRow>
+        <TableRow>
+            <TextView />
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/loginButton"
+        android:layout_column="1"
+        android:layout_below="@id/loginDetails"
+        android:layout_gravity="center"
+        android:text="Login"
+        android:textSize="20dp"/>
+</LinearLayout>
