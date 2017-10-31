@@ -2,6 +2,8 @@ package com.mc.grp6.bluemobquiz;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -59,7 +61,8 @@ public class RegistrationPage extends SalesforceActivity {
                     userRecord.put("Password__c", password);
                     registerUser(userRecord);
                     if (successRegistration) {
-                        deviceID = "hwhjwdsm";
+                        deviceID = getDeviceID();
+                        Log.d("device id",deviceID);
                         System.out.println("*************deviceid:" + deviceID + "*********userid:" + userID);
                         Map<String, Object> deviceRecord = new HashMap<String, Object>();
                         deviceRecord.put("Users__c", userID);
@@ -129,6 +132,9 @@ public class RegistrationPage extends SalesforceActivity {
                 Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
+    }
+    private String getDeviceID(){
+        return Settings.Secure.getString(getContentResolver(),Settings.Secure.ANDROID_ID);
     }
     private boolean validateData() {
         if (name.equals("") || name.equals("Enter your name")) {

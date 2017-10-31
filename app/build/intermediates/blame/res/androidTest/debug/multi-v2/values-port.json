@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Owner\\Desktop\\Fall17\\mc\\Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-port\\values-port.xml",
+            "outputFile": "D:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-port\\values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Owner\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\77250a617f7ab910d6278b7ee06337d3\\res\\values-port\\values-port.xml",
+                    "source": "C:\\Users\\KarthikVermaJampani\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\fd32921c8ad7a6d416c0a8e7e0060586\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

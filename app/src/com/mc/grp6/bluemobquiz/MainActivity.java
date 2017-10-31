@@ -58,7 +58,7 @@ public class MainActivity extends SalesforceActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Setup view
+        // Setup viewx
         setContentView(R.layout.main);
     }
 
