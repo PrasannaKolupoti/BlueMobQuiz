@@ -2677,183 +2677,182 @@ public final class R {
     public static final int fetch_accounts=0x7f08003e;
     public static final int fetch_contacts=0x7f08003f;
     public static final int fingerprint_container=0x7f080040;
-    public static final int goHomeButton=0x7f080041;
-    public static final int headings=0x7f080042;
-    public static final int home=0x7f080043;
-    public static final int homeAsUp=0x7f080044;
-    public static final int homeBody=0x7f080045;
-    public static final int homeHeading=0x7f080046;
-    public static final int homeLoginButton=0x7f080047;
-    public static final int homeRegisterButton=0x7f080048;
-    public static final int icon=0x7f080049;
-    public static final int icon_group=0x7f08004a;
-    public static final int icon_only=0x7f08004b;
-    public static final int ifRoom=0x7f08004c;
-    public static final int image=0x7f08004d;
-    public static final int info=0x7f08004e;
-    public static final int light=0x7f08004f;
-    public static final int line1=0x7f080050;
-    public static final int line3=0x7f080051;
-    public static final int listMode=0x7f080052;
-    public static final int list_item=0x7f080053;
-    public static final int loginButton=0x7f080054;
-    public static final int loginDetails=0x7f080055;
-    public static final int loginHeading=0x7f080056;
-    public static final int logo=0x7f080057;
-    public static final int logout_button=0x7f080058;
-    public static final int manage_space_layout=0x7f080059;
-    public static final int marks=0x7f08005a;
-    public static final int marksHeading=0x7f08005b;
-    public static final int media_actions=0x7f08005c;
-    public static final int middle=0x7f08005d;
-    public static final int multiply=0x7f08005e;
-    public static final int name=0x7f08005f;
-    public static final int nameValue=0x7f080060;
-    public static final int never=0x7f080061;
-    public static final int none=0x7f080062;
-    public static final int normal=0x7f080063;
-    public static final int notification_background=0x7f080064;
-    public static final int notification_main_column=0x7f080065;
-    public static final int notification_main_column_container=0x7f080066;
-    public static final int option1=0x7f080067;
-    public static final int option2=0x7f080068;
-    public static final int option3=0x7f080069;
-    public static final int option4=0x7f08006a;
-    public static final int packed=0x7f08006b;
-    public static final int parent=0x7f08006c;
-    public static final int parentPanel=0x7f08006d;
-    public static final int password=0x7f08006e;
-    public static final int passwordValue=0x7f08006f;
-    public static final int profAnswer=0x7f080070;
-    public static final int profAttendanceHeading=0x7f080071;
-    public static final int profDifficulty=0x7f080072;
-    public static final int profHomeHeading=0x7f080073;
-    public static final int profNext=0x7f080074;
-    public static final int profSubmit=0x7f080075;
-    public static final int progress_circular=0x7f080076;
-    public static final int progress_horizontal=0x7f080077;
-    public static final int question=0x7f080078;
-    public static final int questionBody=0x7f080079;
-    public static final int questionNumber=0x7f08007a;
-    public static final int questions=0x7f08007b;
-    public static final int quiz=0x7f08007c;
-    public static final int quizAttendance=0x7f08007d;
-    public static final int quizAttendanceHeading=0x7f08007e;
-    public static final int quizAttendanceList=0x7f08007f;
-    public static final int quizHeading=0x7f080080;
-    public static final int quizList=0x7f080081;
-    public static final int quizListBody=0x7f080082;
-    public static final int quizListView=0x7f080083;
-    public static final int quizName=0x7f080084;
-    public static final int radio=0x7f080085;
-    public static final int rank=0x7f080086;
-    public static final int rankHeading=0x7f080087;
-    public static final int registerButton=0x7f080088;
-    public static final int registrationForm=0x7f080089;
-    public static final int registrationHeading=0x7f08008a;
-    public static final int right_icon=0x7f08008b;
-    public static final int right_side=0x7f08008c;
-    public static final int root=0x7f08008d;
-    public static final int screen=0x7f08008e;
-    public static final int scrollIndicatorDown=0x7f08008f;
-    public static final int scrollIndicatorUp=0x7f080090;
-    public static final int scrollView=0x7f080091;
-    public static final int searchQuizButton=0x7f080092;
-    public static final int search_badge=0x7f080093;
-    public static final int search_bar=0x7f080094;
-    public static final int search_button=0x7f080095;
-    public static final int search_close_btn=0x7f080096;
-    public static final int search_edit_frame=0x7f080097;
-    public static final int search_go_btn=0x7f080098;
-    public static final int search_mag_icon=0x7f080099;
-    public static final int search_plate=0x7f08009a;
-    public static final int search_src_text=0x7f08009b;
-    public static final int search_voice_btn=0x7f08009c;
-    public static final int selectQuiz=0x7f08009d;
-    public static final int select_dialog_listview=0x7f08009e;
-    public static final int sf__accounts_group=0x7f08009f;
-    public static final int sf__add_account_button=0x7f0800a0;
-    public static final int sf__apply_button=0x7f0800a1;
-    public static final int sf__auth_container_phone=0x7f0800a2;
-    public static final int sf__cancel_button=0x7f0800a3;
-    public static final int sf__fingerprint_description=0x7f0800a4;
-    public static final int sf__fingerprint_icon=0x7f0800a5;
-    public static final int sf__fingerprint_status=0x7f0800a6;
-    public static final int sf__inspector_clear_button=0x7f0800a7;
-    public static final int sf__inspector_indices_button=0x7f0800a8;
-    public static final int sf__inspector_pageindex_text=0x7f0800a9;
-    public static final int sf__inspector_pagesize_text=0x7f0800aa;
-    public static final int sf__inspector_query_text=0x7f0800ab;
-    public static final int sf__inspector_result_grid=0x7f0800ac;
-    public static final int sf__inspector_run_button=0x7f0800ad;
-    public static final int sf__inspector_soups_button=0x7f0800ae;
-    public static final int sf__layout_root=0x7f0800af;
-    public static final int sf__menu_clear_cookies=0x7f0800b0;
-    public static final int sf__menu_clear_custom_url=0x7f0800b1;
-    public static final int sf__menu_pick_server=0x7f0800b2;
-    public static final int sf__menu_reload=0x7f0800b3;
-    public static final int sf__oauth_webview=0x7f0800b4;
-    public static final int sf__passcode_error=0x7f0800b5;
-    public static final int sf__passcode_forgot=0x7f0800b6;
-    public static final int sf__passcode_instructions=0x7f0800b7;
-    public static final int sf__passcode_text=0x7f0800b8;
-    public static final int sf__passcode_title=0x7f0800b9;
-    public static final int sf__picker_custom_label=0x7f0800ba;
-    public static final int sf__picker_custom_url=0x7f0800bb;
-    public static final int sf__server_list_group=0x7f0800bc;
-    public static final int sf__show_custom_url_edit=0x7f0800bd;
-    public static final int sf__switcher_apply_button=0x7f0800be;
-    public static final int sf__use_password_button=0x7f0800bf;
-    public static final int shareQuizButton=0x7f0800c0;
-    public static final int shortcut=0x7f0800c1;
-    public static final int showCustom=0x7f0800c2;
-    public static final int showHome=0x7f0800c3;
-    public static final int showTitle=0x7f0800c4;
-    public static final int spacer=0x7f0800c5;
-    public static final int split_action_bar=0x7f0800c6;
-    public static final int spread=0x7f0800c7;
-    public static final int spread_inside=0x7f0800c8;
-    public static final int src_atop=0x7f0800c9;
-    public static final int src_in=0x7f0800ca;
-    public static final int src_over=0x7f0800cb;
-    public static final int standard=0x7f0800cc;
-    public static final int status_bar_latest_event_content=0x7f0800cd;
-    public static final int studAvailableQuizHeading=0x7f0800ce;
-    public static final int studentAnswer=0x7f0800cf;
-    public static final int studentAnswerSpinner=0x7f0800d0;
-    public static final int studentList=0x7f0800d1;
-    public static final int studentNext=0x7f0800d2;
-    public static final int studentOption1=0x7f0800d3;
-    public static final int studentOption2=0x7f0800d4;
-    public static final int studentOption3=0x7f0800d5;
-    public static final int studentOption4=0x7f0800d6;
-    public static final int studentQuestion=0x7f0800d7;
-    public static final int studentQuestionBody=0x7f0800d8;
-    public static final int studentQuestionNumber=0x7f0800d9;
-    public static final int studentQuestions=0x7f0800da;
-    public static final int studentQuizName=0x7f0800db;
-    public static final int studentSubmit=0x7f0800dc;
-    public static final int submenuarrow=0x7f0800dd;
-    public static final int submit_area=0x7f0800de;
-    public static final int tabMode=0x7f0800df;
-    public static final int text=0x7f0800e0;
-    public static final int text2=0x7f0800e1;
-    public static final int textSpacerNoButtons=0x7f0800e2;
-    public static final int textSpacerNoTitle=0x7f0800e3;
-    public static final int time=0x7f0800e4;
-    public static final int title=0x7f0800e5;
-    public static final int titleDividerNoCustom=0x7f0800e6;
-    public static final int title_template=0x7f0800e7;
-    public static final int top=0x7f0800e8;
-    public static final int topPanel=0x7f0800e9;
-    public static final int up=0x7f0800ea;
-    public static final int useLogo=0x7f0800eb;
-    public static final int userName=0x7f0800ec;
-    public static final int userNameValue=0x7f0800ed;
-    public static final int wide=0x7f0800ee;
-    public static final int withText=0x7f0800ef;
-    public static final int wrap=0x7f0800f0;
-    public static final int wrap_content=0x7f0800f1;
+    public static final int headings=0x7f080041;
+    public static final int home=0x7f080042;
+    public static final int homeAsUp=0x7f080043;
+    public static final int homeBody=0x7f080044;
+    public static final int homeHeading=0x7f080045;
+    public static final int homeLoginButton=0x7f080046;
+    public static final int homeRegisterButton=0x7f080047;
+    public static final int icon=0x7f080048;
+    public static final int icon_group=0x7f080049;
+    public static final int icon_only=0x7f08004a;
+    public static final int ifRoom=0x7f08004b;
+    public static final int image=0x7f08004c;
+    public static final int info=0x7f08004d;
+    public static final int light=0x7f08004e;
+    public static final int line1=0x7f08004f;
+    public static final int line3=0x7f080050;
+    public static final int listMode=0x7f080051;
+    public static final int list_item=0x7f080052;
+    public static final int loginButton=0x7f080053;
+    public static final int loginDetails=0x7f080054;
+    public static final int loginHeading=0x7f080055;
+    public static final int logo=0x7f080056;
+    public static final int logout_button=0x7f080057;
+    public static final int manage_space_layout=0x7f080058;
+    public static final int marks=0x7f080059;
+    public static final int marksHeading=0x7f08005a;
+    public static final int media_actions=0x7f08005b;
+    public static final int middle=0x7f08005c;
+    public static final int multiply=0x7f08005d;
+    public static final int name=0x7f08005e;
+    public static final int nameValue=0x7f08005f;
+    public static final int never=0x7f080060;
+    public static final int none=0x7f080061;
+    public static final int normal=0x7f080062;
+    public static final int notification_background=0x7f080063;
+    public static final int notification_main_column=0x7f080064;
+    public static final int notification_main_column_container=0x7f080065;
+    public static final int option1=0x7f080066;
+    public static final int option2=0x7f080067;
+    public static final int option3=0x7f080068;
+    public static final int option4=0x7f080069;
+    public static final int packed=0x7f08006a;
+    public static final int parent=0x7f08006b;
+    public static final int parentPanel=0x7f08006c;
+    public static final int password=0x7f08006d;
+    public static final int passwordValue=0x7f08006e;
+    public static final int profAnswer=0x7f08006f;
+    public static final int profAttendanceHeading=0x7f080070;
+    public static final int profDifficulty=0x7f080071;
+    public static final int profHomeHeading=0x7f080072;
+    public static final int profNext=0x7f080073;
+    public static final int profSubmit=0x7f080074;
+    public static final int progress_circular=0x7f080075;
+    public static final int progress_horizontal=0x7f080076;
+    public static final int question=0x7f080077;
+    public static final int questionBody=0x7f080078;
+    public static final int questionNumber=0x7f080079;
+    public static final int questions=0x7f08007a;
+    public static final int quiz=0x7f08007b;
+    public static final int quizAttendance=0x7f08007c;
+    public static final int quizAttendanceHeading=0x7f08007d;
+    public static final int quizAttendanceList=0x7f08007e;
+    public static final int quizHeading=0x7f08007f;
+    public static final int quizList=0x7f080080;
+    public static final int quizListBody=0x7f080081;
+    public static final int quizListView=0x7f080082;
+    public static final int quizName=0x7f080083;
+    public static final int radio=0x7f080084;
+    public static final int rank=0x7f080085;
+    public static final int rankHeading=0x7f080086;
+    public static final int registerButton=0x7f080087;
+    public static final int registrationForm=0x7f080088;
+    public static final int registrationHeading=0x7f080089;
+    public static final int right_icon=0x7f08008a;
+    public static final int right_side=0x7f08008b;
+    public static final int root=0x7f08008c;
+    public static final int screen=0x7f08008d;
+    public static final int scrollIndicatorDown=0x7f08008e;
+    public static final int scrollIndicatorUp=0x7f08008f;
+    public static final int scrollView=0x7f080090;
+    public static final int searchQuizButton=0x7f080091;
+    public static final int search_badge=0x7f080092;
+    public static final int search_bar=0x7f080093;
+    public static final int search_button=0x7f080094;
+    public static final int search_close_btn=0x7f080095;
+    public static final int search_edit_frame=0x7f080096;
+    public static final int search_go_btn=0x7f080097;
+    public static final int search_mag_icon=0x7f080098;
+    public static final int search_plate=0x7f080099;
+    public static final int search_src_text=0x7f08009a;
+    public static final int search_voice_btn=0x7f08009b;
+    public static final int selectQuiz=0x7f08009c;
+    public static final int select_dialog_listview=0x7f08009d;
+    public static final int sf__accounts_group=0x7f08009e;
+    public static final int sf__add_account_button=0x7f08009f;
+    public static final int sf__apply_button=0x7f0800a0;
+    public static final int sf__auth_container_phone=0x7f0800a1;
+    public static final int sf__cancel_button=0x7f0800a2;
+    public static final int sf__fingerprint_description=0x7f0800a3;
+    public static final int sf__fingerprint_icon=0x7f0800a4;
+    public static final int sf__fingerprint_status=0x7f0800a5;
+    public static final int sf__inspector_clear_button=0x7f0800a6;
+    public static final int sf__inspector_indices_button=0x7f0800a7;
+    public static final int sf__inspector_pageindex_text=0x7f0800a8;
+    public static final int sf__inspector_pagesize_text=0x7f0800a9;
+    public static final int sf__inspector_query_text=0x7f0800aa;
+    public static final int sf__inspector_result_grid=0x7f0800ab;
+    public static final int sf__inspector_run_button=0x7f0800ac;
+    public static final int sf__inspector_soups_button=0x7f0800ad;
+    public static final int sf__layout_root=0x7f0800ae;
+    public static final int sf__menu_clear_cookies=0x7f0800af;
+    public static final int sf__menu_clear_custom_url=0x7f0800b0;
+    public static final int sf__menu_pick_server=0x7f0800b1;
+    public static final int sf__menu_reload=0x7f0800b2;
+    public static final int sf__oauth_webview=0x7f0800b3;
+    public static final int sf__passcode_error=0x7f0800b4;
+    public static final int sf__passcode_forgot=0x7f0800b5;
+    public static final int sf__passcode_instructions=0x7f0800b6;
+    public static final int sf__passcode_text=0x7f0800b7;
+    public static final int sf__passcode_title=0x7f0800b8;
+    public static final int sf__picker_custom_label=0x7f0800b9;
+    public static final int sf__picker_custom_url=0x7f0800ba;
+    public static final int sf__server_list_group=0x7f0800bb;
+    public static final int sf__show_custom_url_edit=0x7f0800bc;
+    public static final int sf__switcher_apply_button=0x7f0800bd;
+    public static final int sf__use_password_button=0x7f0800be;
+    public static final int shareQuizButton=0x7f0800bf;
+    public static final int shortcut=0x7f0800c0;
+    public static final int showCustom=0x7f0800c1;
+    public static final int showHome=0x7f0800c2;
+    public static final int showTitle=0x7f0800c3;
+    public static final int spacer=0x7f0800c4;
+    public static final int split_action_bar=0x7f0800c5;
+    public static final int spread=0x7f0800c6;
+    public static final int spread_inside=0x7f0800c7;
+    public static final int src_atop=0x7f0800c8;
+    public static final int src_in=0x7f0800c9;
+    public static final int src_over=0x7f0800ca;
+    public static final int standard=0x7f0800cb;
+    public static final int status_bar_latest_event_content=0x7f0800cc;
+    public static final int studAvailableQuizHeading=0x7f0800cd;
+    public static final int studentAnswer=0x7f0800ce;
+    public static final int studentAnswerSpinner=0x7f0800cf;
+    public static final int studentList=0x7f0800d0;
+    public static final int studentNext=0x7f0800d1;
+    public static final int studentOption1=0x7f0800d2;
+    public static final int studentOption2=0x7f0800d3;
+    public static final int studentOption3=0x7f0800d4;
+    public static final int studentOption4=0x7f0800d5;
+    public static final int studentQuestion=0x7f0800d6;
+    public static final int studentQuestionBody=0x7f0800d7;
+    public static final int studentQuestionNumber=0x7f0800d8;
+    public static final int studentQuestions=0x7f0800d9;
+    public static final int studentQuizName=0x7f0800da;
+    public static final int studentSubmit=0x7f0800db;
+    public static final int submenuarrow=0x7f0800dc;
+    public static final int submit_area=0x7f0800dd;
+    public static final int tabMode=0x7f0800de;
+    public static final int text=0x7f0800df;
+    public static final int text2=0x7f0800e0;
+    public static final int textSpacerNoButtons=0x7f0800e1;
+    public static final int textSpacerNoTitle=0x7f0800e2;
+    public static final int time=0x7f0800e3;
+    public static final int title=0x7f0800e4;
+    public static final int titleDividerNoCustom=0x7f0800e5;
+    public static final int title_template=0x7f0800e6;
+    public static final int top=0x7f0800e7;
+    public static final int topPanel=0x7f0800e8;
+    public static final int up=0x7f0800e9;
+    public static final int useLogo=0x7f0800ea;
+    public static final int userName=0x7f0800eb;
+    public static final int userNameValue=0x7f0800ec;
+    public static final int wide=0x7f0800ed;
+    public static final int withText=0x7f0800ee;
+    public static final int wrap=0x7f0800ef;
+    public static final int wrap_content=0x7f0800f0;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f090000;
@@ -3568,19 +3567,19 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>end</td><td>800005</td><td></td></tr>
+     * <tr><td>start</td><td>800003</td><td></td></tr>
      * <tr><td>bottom</td><td>50</td><td></td></tr>
      * <tr><td>center</td><td>11</td><td></td></tr>
      * <tr><td>center_horizontal</td><td>1</td><td></td></tr>
      * <tr><td>center_vertical</td><td>10</td><td></td></tr>
      * <tr><td>clip_horizontal</td><td>8</td><td></td></tr>
      * <tr><td>clip_vertical</td><td>80</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
      * <tr><td>fill</td><td>77</td><td></td></tr>
      * <tr><td>fill_horizontal</td><td>7</td><td></td></tr>
      * <tr><td>fill_vertical</td><td>70</td><td></td></tr>
      * <tr><td>left</td><td>3</td><td></td></tr>
      * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
@@ -7386,9 +7385,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>wrap_content</td><td>fffffffe</td><td></td></tr>
      * <tr><td>fill_parent</td><td>ffffffff</td><td></td></tr>
      * <tr><td>match_parent</td><td>ffffffff</td><td></td></tr>
-     * <tr><td>wrap_content</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
      * @attr name android:layout_height
@@ -7487,9 +7486,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>wrap_content</td><td>fffffffe</td><td></td></tr>
      * <tr><td>fill_parent</td><td>ffffffff</td><td></td></tr>
      * <tr><td>match_parent</td><td>ffffffff</td><td></td></tr>
-     * <tr><td>wrap_content</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
      * @attr name android:layout_width
@@ -8464,19 +8463,19 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>end</td><td>800005</td><td></td></tr>
+     * <tr><td>start</td><td>800003</td><td></td></tr>
      * <tr><td>bottom</td><td>50</td><td></td></tr>
      * <tr><td>center</td><td>11</td><td></td></tr>
      * <tr><td>center_horizontal</td><td>1</td><td></td></tr>
      * <tr><td>center_vertical</td><td>10</td><td></td></tr>
      * <tr><td>clip_horizontal</td><td>8</td><td></td></tr>
      * <tr><td>clip_vertical</td><td>80</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
      * <tr><td>fill</td><td>77</td><td></td></tr>
      * <tr><td>fill_horizontal</td><td>7</td><td></td></tr>
      * <tr><td>fill_vertical</td><td>70</td><td></td></tr>
      * <tr><td>left</td><td>3</td><td></td></tr>
      * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
@@ -8498,9 +8497,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>wrap_content</td><td>fffffffe</td><td></td></tr>
      * <tr><td>fill_parent</td><td>ffffffff</td><td></td></tr>
      * <tr><td>match_parent</td><td>ffffffff</td><td></td></tr>
-     * <tr><td>wrap_content</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
      * @attr name android:layout_height
@@ -8530,9 +8529,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>wrap_content</td><td>fffffffe</td><td></td></tr>
      * <tr><td>fill_parent</td><td>ffffffff</td><td></td></tr>
      * <tr><td>match_parent</td><td>ffffffff</td><td></td></tr>
-     * <tr><td>wrap_content</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
      * @attr name android:layout_width
@@ -8567,19 +8566,19 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>end</td><td>800005</td><td></td></tr>
+     * <tr><td>start</td><td>800003</td><td></td></tr>
      * <tr><td>bottom</td><td>50</td><td></td></tr>
      * <tr><td>center</td><td>11</td><td></td></tr>
      * <tr><td>center_horizontal</td><td>1</td><td></td></tr>
      * <tr><td>center_vertical</td><td>10</td><td></td></tr>
      * <tr><td>clip_horizontal</td><td>8</td><td></td></tr>
      * <tr><td>clip_vertical</td><td>80</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
      * <tr><td>fill</td><td>77</td><td></td></tr>
      * <tr><td>fill_horizontal</td><td>7</td><td></td></tr>
      * <tr><td>fill_vertical</td><td>70</td><td></td></tr>
      * <tr><td>left</td><td>3</td><td></td></tr>
      * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
@@ -8798,8 +8797,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>all</td><td>1</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>all</td><td>1</td><td></td></tr>
      * <tr><td>single</td><td>2</td><td></td></tr>
      * </table>
      *
@@ -9452,14 +9451,6 @@ public final class R {
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
-     * <p>Must be one of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>auto</td><td>10</td><td></td></tr>
-     * </table>
      *
      * @attr name android:focusable
      */
@@ -9474,6 +9465,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>normal</td><td>0</td><td></td></tr>
      * <tr><td>actionDone</td><td>6</td><td></td></tr>
      * <tr><td>actionGo</td><td>2</td><td></td></tr>
      * <tr><td>actionNext</td><td>5</td><td></td></tr>
@@ -9489,8 +9481,6 @@ public final class R {
      * <tr><td>flagNoEnterAction</td><td>40000000</td><td></td></tr>
      * <tr><td>flagNoExtractUi</td><td>10000000</td><td></td></tr>
      * <tr><td>flagNoFullscreen</td><td>2000000</td><td></td></tr>
-     * <tr><td>flagNoPersonalizedLearning</td><td>1000000</td><td></td></tr>
-     * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      *
      * @attr name android:imeOptions
@@ -9506,9 +9496,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>date</td><td>14</td><td></td></tr>
      * <tr><td>datetime</td><td>4</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>number</td><td>2</td><td></td></tr>
      * <tr><td>numberDecimal</td><td>2002</td><td></td></tr>
      * <tr><td>numberPassword</td><td>12</td><td></td></tr>
@@ -9820,9 +9810,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>wrap_content</td><td>fffffffe</td><td></td></tr>
      * <tr><td>fill_parent</td><td>ffffffff</td><td></td></tr>
      * <tr><td>match_parent</td><td>ffffffff</td><td></td></tr>
-     * <tr><td>wrap_content</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
      * @attr name android:dropDownWidth
@@ -10226,9 +10216,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>normal</td><td>0</td><td></td></tr>
      * <tr><td>bold</td><td>1</td><td></td></tr>
      * <tr><td>italic</td><td>2</td><td></td></tr>
-     * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      *
      * @attr name android:textStyle
@@ -10354,19 +10344,19 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>end</td><td>800005</td><td></td></tr>
+     * <tr><td>start</td><td>800003</td><td></td></tr>
      * <tr><td>bottom</td><td>50</td><td></td></tr>
      * <tr><td>center</td><td>11</td><td></td></tr>
      * <tr><td>center_horizontal</td><td>1</td><td></td></tr>
      * <tr><td>center_vertical</td><td>10</td><td></td></tr>
      * <tr><td>clip_horizontal</td><td>8</td><td></td></tr>
      * <tr><td>clip_vertical</td><td>80</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
      * <tr><td>fill</td><td>77</td><td></td></tr>
      * <tr><td>fill_horizontal</td><td>7</td><td></td></tr>
      * <tr><td>fill_vertical</td><td>70</td><td></td></tr>
      * <tr><td>left</td><td>3</td><td></td></tr>
      * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
@@ -10863,14 +10853,6 @@ public final class R {
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
-     * <p>Must be one of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>auto</td><td>10</td><td></td></tr>
-     * </table>
      *
      * @attr name android:focusable
      */
