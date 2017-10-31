@@ -1,19 +1,4 @@
-#Tue Oct 31 01:38:37 ADT 2017
-renamed.5=classes6.dex
-renamed.4=classes5.dex
-renamed.3=classes4.dex
-renamed.2=classes3.dex
-renamed.1=classes2.dex
+#Tue Oct 31 02:10:23 ADT 2017
+base.0=D\:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 renamed.0=classes.dex
-base.5=D\:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
-base.4=D\:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16
-base.3=D\:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
-base.2=D\:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
-base.1=D\:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
-base.0=D\:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
-file.5=D\:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13\\classes.dex
-file.4=D\:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16\\classes.dex
-file.3=D\:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11\\classes.dex
-file.2=D\:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14\\classes.dex
-file.1=D\:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12\\classes.dex
-file.0=D\:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15\\classes.dex
+file.0=D\:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex

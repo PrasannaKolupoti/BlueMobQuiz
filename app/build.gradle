@@ -1,13 +1,14 @@
 apply plugin: 'com.android.application'
 
 dependencies {
-    compile project(':libs:SmartSync') // From node_modules
+    compile project(':libs:SmartSync')
+    // From node_modules
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
 }
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 25
     //buildToolsVersion '25.0.0'
 
     buildTypes {

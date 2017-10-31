@@ -39,12 +39,12 @@ public class RegistrationPage extends SalesforceActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration_page);
 
-        Button register = findViewById(R.id.registerButton);
+        Button register = (Button) findViewById(R.id.registerButton);
         final EditText nameValue, userNameValue, passwordValue, confirmPasswordValue;
-        nameValue = findViewById(R.id.nameValue);
-        userNameValue = findViewById(R.id.userNameValue);
-        passwordValue = findViewById(R.id.passwordValue);
-        confirmPasswordValue = findViewById(R.id.confirmPasswordValue);
+        nameValue = (EditText) findViewById(R.id.nameValue);
+        userNameValue = (EditText) findViewById(R.id.userNameValue);
+        passwordValue = (EditText) findViewById(R.id.passwordValue);
+        confirmPasswordValue = (EditText) findViewById(R.id.confirmPasswordValue);
 
         register.setOnClickListener(new View.OnClickListener() {
             @Override
