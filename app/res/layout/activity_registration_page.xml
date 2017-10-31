@@ -46,6 +46,7 @@ tools:context="com.mc.grp6.bluemobquiz.RegistrationPage">
             <EditText
                 android:id="@+id/nameValue"
                 android:layout_column="1"
+                android:hint="Enter your name"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:textSize="20dp"/>
@@ -70,7 +71,7 @@ tools:context="com.mc.grp6.bluemobquiz.RegistrationPage">
                 android:layout_column="1"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:text=""
+                android:hint="Enter your username"
                 android:textSize="20dp"/>
 
         </TableRow>
@@ -93,6 +94,7 @@ tools:context="com.mc.grp6.bluemobquiz.RegistrationPage">
                 android:layout_column="1"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
+                android:hint="Enter password"
                 android:textSize="20dp"
                 android:inputType="textPassword"/>
         </TableRow>
@@ -115,6 +117,7 @@ tools:context="com.mc.grp6.bluemobquiz.RegistrationPage">
                 android:layout_column="1"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
+                android:hint="Re-enter the password"
                 android:inputType="textPassword"
                 android:textSize="20dp"/>
 
