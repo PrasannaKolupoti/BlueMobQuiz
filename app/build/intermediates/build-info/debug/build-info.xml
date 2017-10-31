@@ -6,22 +6,22 @@
     density="xxhdpi"
     format="10"
     plugin-version="3.0.0"
-    timestamp="1509418158732"
+    timestamp="1509424607280"
     token="6744909507273326682"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="3537" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="2529" />
+        duration="8816" />
     <task
         name="verifier"
-        duration="2811" />
+        duration="2529" />
 
     <artifact
         location="D:\MC_Project\Group6_BlueMobQuiz\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
@@ -62,7 +62,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1509418158732"
+        timestamp="1509424607280"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="D:\MC_Project\Group6_BlueMobQuiz\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
