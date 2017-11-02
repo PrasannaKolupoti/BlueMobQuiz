@@ -2,6 +2,7 @@
 <resources>
     <string name="answerPrompt">Choose an answer</string>
     <string-array name="answerChoice">
+        <item> </item>
         <item>A</item>
         <item>B</item>
         <item>C</item>

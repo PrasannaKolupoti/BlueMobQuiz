@@ -2,6 +2,7 @@
 <resources>
     <string name="difficultyPrompt">Choose an answer</string>
     <string-array name="difficultyChoice">
+        <item> </item>
         <item>1</item>
         <item>2</item>
         <item>3</item>

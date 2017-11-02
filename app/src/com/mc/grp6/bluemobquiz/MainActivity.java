@@ -159,10 +159,4 @@ public class MainActivity extends SalesforceActivity {
             }
         });
     }
-    /*public void onGoHomeButtonClick(View v){
-        Toast.makeText(getApplicationContext(),"OnGoHomeButtonClick",Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(this, Home.class);
-        startActivity(intent);
-
-    }*/
 }

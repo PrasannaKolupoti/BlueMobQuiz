@@ -96,10 +96,4 @@
                 android:textSize="20dp"/>
         </TableRow>
     </TableLayout>
-
-<Button
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="CreateQ"
-    android:onClick="gotoCreateQ"/>
 </LinearLayout>

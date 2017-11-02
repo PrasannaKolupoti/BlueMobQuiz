@@ -71,15 +71,15 @@ public class LoginPage extends SalesforceActivity {
                             if(result.isSuccess()){
 
                                String userId = result.toString().substring(result.toString().indexOf(":\"a01")+2,result.toString().length()-5);
-                                Log.d("userId",userId);
+                                Log.d("userID",userId);
                                 if(userId.equalsIgnoreCase("a014100000Kl4BwAAJ")){
                                     Intent intent = new Intent(LoginPage.this, ProfessorHome.class);
-                                    intent.putExtra("userid",userId);
+                                    intent.putExtra("userID",userId);
                                     startActivity(intent);
                                 }
                                 else{
                                     Intent intent = new Intent(LoginPage.this, StudentHome.class);
-                                    intent.putExtra("userid",userId);
+                                    intent.putExtra("userID",userId);
                                     startActivity(intent);
                                 }
 
