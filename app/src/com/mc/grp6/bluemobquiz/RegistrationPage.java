@@ -62,8 +62,6 @@ public class RegistrationPage extends SalesforceActivity {
                     registerUser(userRecord);
                     if (successRegistration) {
                         deviceID = getDeviceID();
-                        Log.d("device id",deviceID);
-                        System.out.println("*************deviceid:" + deviceID + "*********userid:" + userID);
                         Map<String, Object> deviceRecord = new HashMap<String, Object>();
                         deviceRecord.put("Users__c", userID);
                         deviceRecord.put("DeviceID__c", deviceID);
@@ -77,8 +75,6 @@ public class RegistrationPage extends SalesforceActivity {
         });
     }
     private void registerDevice(Map<String, Object> deviceRecord) {
-
-        Toast.makeText(getApplicationContext(), "register device()", Toast.LENGTH_SHORT).show();
         RestRequest restRequest;
         try {
             restRequest = RestRequest.getRequestForCreate(getString(R.string.api_version), "Assigned_Devices__c", deviceRecord);
@@ -116,16 +112,20 @@ public class RegistrationPage extends SalesforceActivity {
         }
         client.sendAsync(restRequest, new RestClient.AsyncRequestCallback() {
             @Override
-            public void onSuccess(RestRequest request, RestResponse result)  {
-
-                if (result.isSuccess()) {
-                    try {
-                        successRegistration = true;
-                        userID = result.toString().substring(7,25);
+            public void onSuccess(RestRequest request, final RestResponse result)  {
+                result.consumeQuietly(); // consume before going back to main thread
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        if (result.isSuccess()) {
+                            try {
+                                successRegistration = true;
+                                userID = result.toString().substring(7, 25);
+                            } catch (Exception e) {
+                            }
+                        }
                     }
-                    catch (Exception e) {
-                    }
-                }
+                });
             }
             @Override
             public void onError(Exception e) {
