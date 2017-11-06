@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 #Sun Nov 05 20:32:24 AST 2017
 base.0=D\:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+=======
+#Fri Nov 03 20:57:31 ADT 2017
+base.0=C\:\\Users\\prasa\\Desktop\\Fall_2017\\MC\\Project\\BlueMobQuiz\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+>>>>>>> 6a6104ed9805556bb0e7f98438663e5603223000
 renamed.0=classes.dex
 file.0=D\:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1\\classes.dex

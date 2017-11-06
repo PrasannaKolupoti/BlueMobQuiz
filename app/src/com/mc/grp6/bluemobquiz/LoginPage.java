@@ -24,7 +24,7 @@ import java.util.Map;
 public class LoginPage extends SalesforceActivity {
 
     private RestClient client;
-    public String userName, Password;
+    public String userName, Password,id;
 
     @Override
     public void onResume(RestClient client) {
@@ -39,6 +39,7 @@ public class LoginPage extends SalesforceActivity {
         final  EditText usrName, pwd;
         usrName = (EditText) findViewById(R.id.userNameValue);
         pwd = (EditText) findViewById(R.id.passwordValue);
+
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,7 +48,7 @@ public class LoginPage extends SalesforceActivity {
                 boolean isFieldsValidated = isFieldsValidated();
                 if(isFieldsValidated){
                     try {
-                        sendRequest("select id,users__r.id from Assigned_Devices__c " +
+                        sendRequest("select id, users__r.recordtype.name, users__r.id from Assigned_Devices__c " +
                                 "where users__r.username__c =\'" + userName + "\' and users__r.password__c =\'" + Password+"\'");
                     }catch (UnsupportedEncodingException e){
                         e.printStackTrace();
@@ -70,23 +71,30 @@ public class LoginPage extends SalesforceActivity {
                         try {
                             if(result.isSuccess()){
 
-                               String userId = result.toString().substring(result.toString().indexOf(":\"a01")+2,result.toString().length()-5);
-                                Log.d("userID",userId);
-                                if(userId.equalsIgnoreCase("a014100000Kl4BwAAJ")){
+                                String userID = result.toString().substring(result.toString().indexOf(":\"a01")+2,result.toString().length()-5);
+                                System.out.println("************"+result.toString()+"\n*********"+userID);
+                                if(result.toString().contains("Professor")){
                                     Intent intent = new Intent(LoginPage.this, ProfessorHome.class);
-                                    intent.putExtra("userID",userId);
+                                    intent.putExtra("userID",userID);
                                     startActivity(intent);
                                 }
-                                else{
+                                else if(result.toString().contains("Student")){
                                     Intent intent = new Intent(LoginPage.this, StudentHome.class);
-                                    intent.putExtra("userID",userId);
+                                    intent.putExtra("userID",userID);
                                     startActivity(intent);
                                 }
+<<<<<<< HEAD
 
                                  }
 
                              else  Toast.makeText(getApplicationContext(), "Invalid User Name or Password - Please" +
                                     "try again", Toast.LENGTH_SHORT).show();
+=======
+                                else  Toast.makeText(getApplicationContext(), "Invalid User Name or Password - Click forget password to" +
+                                            "reset your password", Toast.LENGTH_SHORT).show();
+                            }
+                            else  Toast.makeText(getApplicationContext(), "Invalid Query", Toast.LENGTH_SHORT).show();
+>>>>>>> 6a6104ed9805556bb0e7f98438663e5603223000
 
                         } catch (Exception e) {
                             onError(e);

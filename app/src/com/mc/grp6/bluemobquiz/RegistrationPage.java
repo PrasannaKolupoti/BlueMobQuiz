@@ -63,7 +63,7 @@ public class RegistrationPage extends SalesforceActivity {
                     userRecord.put("Username__c", userName);
                     userRecord.put("Password__c", password);
                     registerUser(userRecord);
-                    if (successRegistration) {
+                    //if (successRegistration) {
                         deviceID = getDeviceID();
                         Map<String, Object> deviceRecord = new HashMap<String, Object>();
                         deviceRecord.put("Users__c", userID);
@@ -72,7 +72,7 @@ public class RegistrationPage extends SalesforceActivity {
                         Toast.makeText(getApplicationContext(), "Successfully Registered", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(RegistrationPage.this, LoginPage.class);
                         startActivity(intent);
-                    }
+                    //}
                 }
             }
         });
