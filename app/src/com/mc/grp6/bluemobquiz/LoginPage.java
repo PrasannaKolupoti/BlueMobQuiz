@@ -85,8 +85,8 @@ public class LoginPage extends SalesforceActivity {
 
                                  }
 
-                             else  Toast.makeText(getApplicationContext(), "Invalid User Name or Password - Click forget password to" +
-                                    "reset your password", Toast.LENGTH_SHORT).show();
+                             else  Toast.makeText(getApplicationContext(), "Invalid User Name or Password - Please" +
+                                    "try again", Toast.LENGTH_SHORT).show();
 
                         } catch (Exception e) {
                             onError(e);

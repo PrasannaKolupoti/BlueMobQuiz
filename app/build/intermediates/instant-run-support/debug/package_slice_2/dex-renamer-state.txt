@@ -1,0 +1,4 @@
+#Sun Nov 05 20:32:25 AST 2017
+base.0=D\:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\3
+renamed.0=classes.dex
+file.0=D\:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\3\\classes.dex

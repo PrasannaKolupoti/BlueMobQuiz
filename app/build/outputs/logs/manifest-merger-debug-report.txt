@@ -4,13 +4,12 @@ ADDED from D:\MC_Project\Group6_BlueMobQuiz\app\AndroidManifest.xml:2:1-60:12
 INJECTED from D:\MC_Project\Group6_BlueMobQuiz\app\AndroidManifest.xml:2:1-60:12
 INJECTED from D:\MC_Project\Group6_BlueMobQuiz\app\AndroidManifest.xml:2:1-60:12
 MERGED from [:libs:SmartSync] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SmartSync\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-13:12
-MERGED from [:libs:SmartStore] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SmartStore\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-17:12
-MERGED from [:libs:SalesforceSDK] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceSDK\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-117:12
-MERGED from [:libs:SalesforceAnalytics] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceAnalytics\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-16:12
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\fd32921c8ad7a6d416c0a8e7e0060586\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\d052e4ac5bb050214ac70150bc6bd295\AndroidManifest.xml:2:1-11:12
+MERGED from [:libs:SmartStore] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SmartStore\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\e3c608d4adbaf9fc1a27f4ddc0439ed5\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\71e4ec160c45abd6b526b0d263abcb1a\AndroidManifest.xml:17:1-28:12
+MERGED from [:libs:SalesforceSDK] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceSDK\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-117:12
 MERGED from [com.google.android.gms:play-services-gcm:10.2.0] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\play-services-gcm-10.2.0.aar\7e8421e57c0daa5d6d6dac54bc9af21e\AndroidManifest.xml:16:1-24:12
 MERGED from [com.google.android.gms:play-services-iid:10.2.0] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\play-services-iid-10.2.0.aar\c5d5104437b4667610e90731f4214fda\AndroidManifest.xml:16:1-24:12
 MERGED from [com.google.android.gms:play-services-base:10.2.0] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\play-services-base-10.2.0.aar\f4832cdcc68895e82fbe367c57656c21\AndroidManifest.xml:16:1-21:12
@@ -23,6 +22,7 @@ MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Kart
 MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\373aec9aedb06f92368aef53a59d01fc\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\677a55ac92fe59e999bbcf5451d31e89\AndroidManifest.xml:17:1-31:12
 MERGED from [net.zetetic:android-database-sqlcipher:3.5.7] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\android-database-sqlcipher-3.5.7.aar\a99c52cafc51c69465daf1960463ab50\AndroidManifest.xml:2:1-4:12
+MERGED from [:libs:SalesforceAnalytics] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceAnalytics\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-16:12
 INJECTED from D:\MC_Project\Group6_BlueMobQuiz\app\AndroidManifest.xml:2:1-60:12
 INJECTED from D:\MC_Project\Group6_BlueMobQuiz\app\AndroidManifest.xml:2:1-60:12
 	package
@@ -43,20 +43,18 @@ uses-sdk
 ADDED from D:\MC_Project\Group6_BlueMobQuiz\app\AndroidManifest.xml:8:5-10:41
 MERGED from [:libs:SmartSync] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SmartSync\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:libs:SmartSync] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SmartSync\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:libs:SmartStore] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SmartStore\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:libs:SmartStore] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SmartStore\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:libs:SalesforceSDK] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceSDK\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:libs:SalesforceSDK] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceSDK\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:libs:SalesforceAnalytics] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceAnalytics\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:libs:SalesforceAnalytics] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceAnalytics\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\fd32921c8ad7a6d416c0a8e7e0060586\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\fd32921c8ad7a6d416c0a8e7e0060586\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\d052e4ac5bb050214ac70150bc6bd295\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\d052e4ac5bb050214ac70150bc6bd295\AndroidManifest.xml:5:5-7:41
+MERGED from [:libs:SmartStore] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SmartStore\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:libs:SmartStore] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SmartStore\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\e3c608d4adbaf9fc1a27f4ddc0439ed5\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\e3c608d4adbaf9fc1a27f4ddc0439ed5\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\71e4ec160c45abd6b526b0d263abcb1a\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\71e4ec160c45abd6b526b0d263abcb1a\AndroidManifest.xml:20:5-44
+MERGED from [:libs:SalesforceSDK] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceSDK\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:libs:SalesforceSDK] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceSDK\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.gms:play-services-gcm:10.2.0] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\play-services-gcm-10.2.0.aar\7e8421e57c0daa5d6d6dac54bc9af21e\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-gcm:10.2.0] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\play-services-gcm-10.2.0.aar\7e8421e57c0daa5d6d6dac54bc9af21e\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-iid:10.2.0] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\play-services-iid-10.2.0.aar\c5d5104437b4667610e90731f4214fda\AndroidManifest.xml:17:5-43
@@ -81,6 +79,8 @@ MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\KarthikV
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\677a55ac92fe59e999bbcf5451d31e89\AndroidManifest.xml:21:5-23:58
 MERGED from [net.zetetic:android-database-sqlcipher:3.5.7] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\android-database-sqlcipher-3.5.7.aar\a99c52cafc51c69465daf1960463ab50\AndroidManifest.xml:3:3-40
 MERGED from [net.zetetic:android-database-sqlcipher:3.5.7] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\android-database-sqlcipher-3.5.7.aar\a99c52cafc51c69465daf1960463ab50\AndroidManifest.xml:3:3-40
+MERGED from [:libs:SalesforceAnalytics] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceAnalytics\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:libs:SalesforceAnalytics] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceAnalytics\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\fd32921c8ad7a6d416c0a8e7e0060586\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
@@ -123,12 +123,12 @@ ADDED from D:\MC_Project\Group6_BlueMobQuiz\app\AndroidManifest.xml:27:5-81
 		ADDED from D:\MC_Project\Group6_BlueMobQuiz\app\AndroidManifest.xml:27:22-78
 uses-permission#android.permission.INTERNET
 ADDED from D:\MC_Project\Group6_BlueMobQuiz\app\AndroidManifest.xml:28:5-67
-MERGED from [:libs:SalesforceAnalytics] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceAnalytics\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-67
-MERGED from [:libs:SalesforceAnalytics] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceAnalytics\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-67
 MERGED from [com.google.android.gms:play-services-gcm:10.2.0] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\play-services-gcm-10.2.0.aar\7e8421e57c0daa5d6d6dac54bc9af21e\AndroidManifest.xml:21:5-66
 MERGED from [com.google.android.gms:play-services-gcm:10.2.0] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\play-services-gcm-10.2.0.aar\7e8421e57c0daa5d6d6dac54bc9af21e\AndroidManifest.xml:21:5-66
 MERGED from [com.google.android.gms:play-services-iid:10.2.0] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\play-services-iid-10.2.0.aar\c5d5104437b4667610e90731f4214fda\AndroidManifest.xml:21:5-66
 MERGED from [com.google.android.gms:play-services-iid:10.2.0] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\play-services-iid-10.2.0.aar\c5d5104437b4667610e90731f4214fda\AndroidManifest.xml:21:5-66
+MERGED from [:libs:SalesforceAnalytics] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceAnalytics\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-67
+MERGED from [:libs:SalesforceAnalytics] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceAnalytics\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-67
 	android:name
 		ADDED from D:\MC_Project\Group6_BlueMobQuiz\app\AndroidManifest.xml:28:22-64
 uses-permission-sdk-23#android.permission.BLUETOOTH
@@ -139,20 +139,18 @@ application
 ADDED from D:\MC_Project\Group6_BlueMobQuiz\app\AndroidManifest.xml:30:5-58:19
 MERGED from [:libs:SmartSync] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SmartSync\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-20
 MERGED from [:libs:SmartSync] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SmartSync\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-20
-MERGED from [:libs:SmartStore] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SmartStore\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-15:19
-MERGED from [:libs:SmartStore] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SmartStore\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-15:19
-MERGED from [:libs:SalesforceSDK] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceSDK\build\intermediates\manifests\full\debug\AndroidManifest.xml:21:5-115:19
-MERGED from [:libs:SalesforceSDK] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceSDK\build\intermediates\manifests\full\debug\AndroidManifest.xml:21:5-115:19
-MERGED from [:libs:SalesforceAnalytics] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceAnalytics\build\intermediates\manifests\full\debug\AndroidManifest.xml:14:5-20
-MERGED from [:libs:SalesforceAnalytics] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceAnalytics\build\intermediates\manifests\full\debug\AndroidManifest.xml:14:5-20
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\fd32921c8ad7a6d416c0a8e7e0060586\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\fd32921c8ad7a6d416c0a8e7e0060586\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\d052e4ac5bb050214ac70150bc6bd295\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\d052e4ac5bb050214ac70150bc6bd295\AndroidManifest.xml:9:5-20
+MERGED from [:libs:SmartStore] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SmartStore\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-15:19
+MERGED from [:libs:SmartStore] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SmartStore\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-15:19
 MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\e3c608d4adbaf9fc1a27f4ddc0439ed5\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\e3c608d4adbaf9fc1a27f4ddc0439ed5\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\71e4ec160c45abd6b526b0d263abcb1a\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\71e4ec160c45abd6b526b0d263abcb1a\AndroidManifest.xml:26:5-20
+MERGED from [:libs:SalesforceSDK] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceSDK\build\intermediates\manifests\full\debug\AndroidManifest.xml:21:5-115:19
+MERGED from [:libs:SalesforceSDK] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceSDK\build\intermediates\manifests\full\debug\AndroidManifest.xml:21:5-115:19
 MERGED from [com.google.android.gms:play-services-gcm:10.2.0] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\play-services-gcm-10.2.0.aar\7e8421e57c0daa5d6d6dac54bc9af21e\AndroidManifest.xml:23:5-19
 MERGED from [com.google.android.gms:play-services-gcm:10.2.0] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\play-services-gcm-10.2.0.aar\7e8421e57c0daa5d6d6dac54bc9af21e\AndroidManifest.xml:23:5-19
 MERGED from [com.google.android.gms:play-services-iid:10.2.0] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\play-services-iid-10.2.0.aar\c5d5104437b4667610e90731f4214fda\AndroidManifest.xml:23:5-19
@@ -175,6 +173,8 @@ MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Karthik
 MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\373aec9aedb06f92368aef53a59d01fc\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\677a55ac92fe59e999bbcf5451d31e89\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\677a55ac92fe59e999bbcf5451d31e89\AndroidManifest.xml:29:5-20
+MERGED from [:libs:SalesforceAnalytics] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceAnalytics\build\intermediates\manifests\full\debug\AndroidManifest.xml:14:5-20
+MERGED from [:libs:SalesforceAnalytics] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceAnalytics\build\intermediates\manifests\full\debug\AndroidManifest.xml:14:5-20
 	android:label
 		ADDED from D:\MC_Project\Group6_BlueMobQuiz\app\AndroidManifest.xml:33:9-41
 	android:manageSpaceActivity
@@ -241,6 +241,28 @@ activity#com.mc.grp6.bluemobquiz.Home
 ADDED from D:\MC_Project\Group6_BlueMobQuiz\app\AndroidManifest.xml:57:9-51
 	android:name
 		ADDED from D:\MC_Project\Group6_BlueMobQuiz\app\AndroidManifest.xml:57:19-39
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\fd32921c8ad7a6d416c0a8e7e0060586\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\e3c608d4adbaf9fc1a27f4ddc0439ed5\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\e3c608d4adbaf9fc1a27f4ddc0439ed5\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\71e4ec160c45abd6b526b0d263abcb1a\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\71e4ec160c45abd6b526b0d263abcb1a\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\d3d0fc0234bed7215fc5e7b6bcc6a5dd\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\d3d0fc0234bed7215fc5e7b6bcc6a5dd\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\bfa55f46a568c886bc4cee0fc6193499\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\bfa55f46a568c886bc4cee0fc6193499\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\990ceeb2381aeef230a117e7392dbc06\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\990ceeb2381aeef230a117e7392dbc06\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\d0a7fe06d27c1f073ed6f2e8b082966f\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\d0a7fe06d27c1f073ed6f2e8b082966f\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\373aec9aedb06f92368aef53a59d01fc\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\373aec9aedb06f92368aef53a59d01fc\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\677a55ac92fe59e999bbcf5451d31e89\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\677a55ac92fe59e999bbcf5451d31e89\AndroidManifest.xml:25:5-27:41
+	android:value
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\fd32921c8ad7a6d416c0a8e7e0060586\AndroidManifest.xml:27:9-38
+	android:name
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\fd32921c8ad7a6d416c0a8e7e0060586\AndroidManifest.xml:26:9-47
 activity#com.salesforce.androidsdk.smartstore.ui.SmartStoreInspectorActivity
 ADDED from [:libs:SmartStore] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SmartStore\build\intermediates\manifests\full\debug\AndroidManifest.xml:14:9-104
 	android:name
@@ -407,32 +429,6 @@ ADDED from [:libs:SalesforceSDK] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\sal
 		ADDED from [:libs:SalesforceSDK] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceSDK\build\intermediates\manifests\full\debug\AndroidManifest.xml:114:13-37
 	android:name
 		ADDED from [:libs:SalesforceSDK] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceSDK\build\intermediates\manifests\full\debug\AndroidManifest.xml:113:13-89
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [:libs:SalesforceAnalytics] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceAnalytics\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:5-79
-	android:name
-		ADDED from [:libs:SalesforceAnalytics] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceAnalytics\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:22-76
-meta-data#android.support.VERSION
-ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\fd32921c8ad7a6d416c0a8e7e0060586\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\e3c608d4adbaf9fc1a27f4ddc0439ed5\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\e3c608d4adbaf9fc1a27f4ddc0439ed5\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\71e4ec160c45abd6b526b0d263abcb1a\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\71e4ec160c45abd6b526b0d263abcb1a\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\d3d0fc0234bed7215fc5e7b6bcc6a5dd\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\d3d0fc0234bed7215fc5e7b6bcc6a5dd\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\bfa55f46a568c886bc4cee0fc6193499\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\bfa55f46a568c886bc4cee0fc6193499\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\990ceeb2381aeef230a117e7392dbc06\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\990ceeb2381aeef230a117e7392dbc06\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\d0a7fe06d27c1f073ed6f2e8b082966f\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\d0a7fe06d27c1f073ed6f2e8b082966f\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\373aec9aedb06f92368aef53a59d01fc\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\373aec9aedb06f92368aef53a59d01fc\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\677a55ac92fe59e999bbcf5451d31e89\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\677a55ac92fe59e999bbcf5451d31e89\AndroidManifest.xml:25:5-27:41
-	android:value
-		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\fd32921c8ad7a6d416c0a8e7e0060586\AndroidManifest.xml:27:9-38
-	android:name
-		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\fd32921c8ad7a6d416c0a8e7e0060586\AndroidManifest.xml:26:9-47
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:10.2.0] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\play-services-base-10.2.0.aar\f4832cdcc68895e82fbe367c57656c21\AndroidManifest.xml:19:9-172
 	android:exported
@@ -447,3 +443,7 @@ ADDED from [com.google.android.gms:play-services-basement:10.2.0] C:\Users\Karth
 		ADDED from [com.google.android.gms:play-services-basement:10.2.0] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\play-services-basement-10.2.0.aar\d6368d6d274bb0d27925c782ee2b4265\AndroidManifest.xml:20:66-119
 	android:name
 		ADDED from [com.google.android.gms:play-services-basement:10.2.0] C:\Users\KarthikVermaJampani\.gradle\caches\transforms-1\files-1.1\play-services-basement-10.2.0.aar\d6368d6d274bb0d27925c782ee2b4265\AndroidManifest.xml:20:20-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:libs:SalesforceAnalytics] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceAnalytics\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:5-79
+	android:name
+		ADDED from [:libs:SalesforceAnalytics] D:\MC_Project\Group6_BlueMobQuiz\mobile_sdk\salesforcemobilesdk-android\libs\SalesforceAnalytics\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:22-76
