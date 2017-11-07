@@ -150,16 +150,6 @@ public class RegistrationPage extends SalesforceActivity {
 
     }
 
-    private boolean conNotApprSplChar(String name){
-        //todo still need to check
-        Pattern regex = Pattern.compile("[^a-zA-Z0-9!@#$%&*_ -]");
-        Matcher matcher = regex.matcher(name);
-        if(matcher.find()){
-            return true;
-        }
-        return false;
-    }
-
     private boolean isPasswordRulePassed(String name){
         Pattern regex = Pattern.compile("^(?=.*[a-z])(?=.*[A-Z])(?=.*\'d')(?=.*[$@$!%*?&])[A-Za-z\'d'$@$!%*?&]{8,}");
         Matcher matcher = regex.matcher(name);
@@ -177,14 +167,14 @@ public class RegistrationPage extends SalesforceActivity {
         //name validations
         String tempName = name, tempUserName = userName , tempPassword = password;
 
-        boolean allLetters_Name = isAlphabet(name);
+        boolean allLetters = isAlphabet(name);
         if (name.equals("")) {
             Toast.makeText(getApplicationContext(), "Please enter your name.", Toast.LENGTH_SHORT).show();
             return false;
         }else if(!getTotalSpaces(tempName)){
             Toast.makeText(getApplicationContext(), "Please enter your name with out more than 2 consecutive spaces.", Toast.LENGTH_LONG).show();
             return false;
-        }else if(!allLetters_Name){
+        }else if(!allLetters){
             Toast.makeText(getApplicationContext(), "Please do not enter any special characters in name or space at the end.", Toast.LENGTH_SHORT).show();
             return false;
         }else if (userName.equals("")) {
@@ -196,11 +186,8 @@ public class RegistrationPage extends SalesforceActivity {
         }else if (userName.length()>12) {
             Toast.makeText(getApplicationContext(), "Please choose an user name less than 12 characters in length", Toast.LENGTH_SHORT).show();
             return false;
-        }else if (conNotApprSplChar(userName)) {
-            Toast.makeText(getApplicationContext(), "Please choose any special charecter from !,@,#,$,%,&,*,_,- with an alpha numberical combination",
-                                                    Toast.LENGTH_LONG).show();
-            return false;
-        }else if (password.equals("")) {
+        }
+        else if (password.equals("")) {
             Toast.makeText(getApplicationContext(), "Please enter your password.", Toast.LENGTH_SHORT).show();
             return false;
         }else if (password.length() < 8) {

@@ -10,8 +10,8 @@
         android:id="@+id/profAttendanceHeading"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:text="ATTENDANCE"
-        android:textSize="40dp"
+        android:text="Quiz 1 Attendance"
+        android:textSize="30dp"
         android:textAlignment="center"/>
 
     <ListView

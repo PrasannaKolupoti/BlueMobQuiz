@@ -83,19 +83,10 @@ public class LoginPage extends SalesforceActivity {
                                     intent.putExtra("userID",userID);
                                     startActivity(intent);
                                 }
-<<<<<<< HEAD
-
-                                 }
-
-                             else  Toast.makeText(getApplicationContext(), "Invalid User Name or Password - Please" +
-                                    "try again", Toast.LENGTH_SHORT).show();
-=======
-                                else  Toast.makeText(getApplicationContext(), "Invalid User Name or Password - Click forget password to" +
-                                            "reset your password", Toast.LENGTH_SHORT).show();
+                                else  Toast.makeText(getApplicationContext(), "Invalid User Name or Password - Please" +
+                                            "try again", Toast.LENGTH_SHORT).show();
                             }
                             else  Toast.makeText(getApplicationContext(), "Invalid Query", Toast.LENGTH_SHORT).show();
->>>>>>> 6a6104ed9805556bb0e7f98438663e5603223000
-
                         } catch (Exception e) {
                             onError(e);
                         }

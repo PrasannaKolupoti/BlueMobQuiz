@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:text="ATTEMPTED QUIZZES"
-        android:textSize="40dp"
+        android:textSize="30dp"
         android:textAlignment="center"/>
     <TableLayout
         android:layout_width="match_parent"

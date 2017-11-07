@@ -3,86 +3,52 @@
     abi="x86"
     api-level="25"
     build-mode="COLD"
-    density="560dpi"
+    density="xxhdpi"
     format="10"
-    ir-eligibility="COMPATIBLE"
+    ir-eligibility="R_CLASS_CHANGE"
     plugin-version="3.0.0"
-<<<<<<< HEAD
-    timestamp="1509933330620"
-    token="6744909507273326682"
-=======
-    timestamp="1509761710283"
+    timestamp="1510008844002"
     token="-9200682320035429985"
->>>>>>> 6a6104ed9805556bb0e7f98438663e5603223000
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-<<<<<<< HEAD
-        duration="322" />
-=======
-        duration="452" />
->>>>>>> 6a6104ed9805556bb0e7f98438663e5603223000
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-<<<<<<< HEAD
-        duration="130" />
-=======
-        duration="16" />
->>>>>>> 6a6104ed9805556bb0e7f98438663e5603223000
+        duration="615" />
     <task
         name="verifier"
-        duration="3" />
+        duration="465" />
 
     <artifact
-        location="D:\MC_Project\Group6_BlueMobQuiz\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        location="C:\Users\prasa\Desktop\Fall_2017\MC\Project\BlueMobQuiz\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
         type="SPLIT" />
+    <artifact
+        location="C:\Users\prasa\Desktop\Fall_2017\MC\Project\BlueMobQuiz\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\prasa\Desktop\Fall_2017\MC\Project\BlueMobQuiz\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\prasa\Desktop\Fall_2017\MC\Project\BlueMobQuiz\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\prasa\Desktop\Fall_2017\MC\Project\BlueMobQuiz\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\prasa\Desktop\Fall_2017\MC\Project\BlueMobQuiz\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\prasa\Desktop\Fall_2017\MC\Project\BlueMobQuiz\app\build\outputs\apk\debug\app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-<<<<<<< HEAD
-        timestamp="1509928263732"
-        verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="D:\MC_Project\Group6_BlueMobQuiz\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="D:\MC_Project\Group6_BlueMobQuiz\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="D:\MC_Project\Group6_BlueMobQuiz\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="D:\MC_Project\Group6_BlueMobQuiz\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="D:\MC_Project\Group6_BlueMobQuiz\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="D:\MC_Project\Group6_BlueMobQuiz\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="D:\MC_Project\Group6_BlueMobQuiz\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="D:\MC_Project\Group6_BlueMobQuiz\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="D:\MC_Project\Group6_BlueMobQuiz\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="D:\MC_Project\Group6_BlueMobQuiz\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="D:\MC_Project\Group6_BlueMobQuiz\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="D:\MC_Project\Group6_BlueMobQuiz\app\build\outputs\apk\debug\app-debug.apk"
-=======
-        timestamp="1509753326886"
+        timestamp="1509995566735"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\prasa\Desktop\Fall_2017\MC\Project\BlueMobQuiz\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
@@ -119,21 +85,34 @@
             type="SPLIT" />
         <artifact
             location="C:\Users\prasa\Desktop\Fall_2017\MC\Project\BlueMobQuiz\app\build\outputs\apk\debug\app-debug.apk"
->>>>>>> 6a6104ed9805556bb0e7f98438663e5603223000
             type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-<<<<<<< HEAD
-        timestamp="1509933330620"
-=======
-        timestamp="1509761710283"
->>>>>>> 6a6104ed9805556bb0e7f98438663e5603223000
+        ir-eligibility="R_CLASS_CHANGE"
+        timestamp="1510008844002"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="D:\MC_Project\Group6_BlueMobQuiz\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            location="C:\Users\prasa\Desktop\Fall_2017\MC\Project\BlueMobQuiz\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
+        <artifact
+            location="C:\Users\prasa\Desktop\Fall_2017\MC\Project\BlueMobQuiz\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\prasa\Desktop\Fall_2017\MC\Project\BlueMobQuiz\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\prasa\Desktop\Fall_2017\MC\Project\BlueMobQuiz\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\prasa\Desktop\Fall_2017\MC\Project\BlueMobQuiz\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\prasa\Desktop\Fall_2017\MC\Project\BlueMobQuiz\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\prasa\Desktop\Fall_2017\MC\Project\BlueMobQuiz\app\build\outputs\apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>
