@@ -1,7 +1,11 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "C:\\Users\\Owner\\Desktop\\Fall17\\mc\\Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sk\\values-sk.xml",
+=======
+            "outputFile": "C:\\Users\\prasa\\Desktop\\Fall_2017\\MC\\Project\\BlueMobQuiz\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sk\\values-sk.xml",
+>>>>>>> 4e8245bc4d87f4f6716669a23a8b9e17ba9a9b20
             "map": [
                 {
                     "source": "C:\\Users\\Owner\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\77250a617f7ab910d6278b7ee06337d3\\res\\values-sk\\values-sk.xml",
@@ -21,7 +25,11 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\Owner\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-10.2.0.aar\\02f5aa345963900f6e676cb4e2606f59\\res\\values-sk\\values.xml",
+=======
+                    "source": "C:\\Users\\prasa\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-10.2.0.aar\\2758755beb89e0200a86dc60300e67eb\\res\\values-sk\\values.xml",
+>>>>>>> 4e8245bc4d87f4f6716669a23a8b9e17ba9a9b20
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -36,6 +44,7 @@
                         "endColumns": "197",
                         "endOffsets": "3274"
                     }
+<<<<<<< HEAD
                 },
                 {
                     "source": "C:\\Users\\Owner\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-10.2.0.aar\\60cede92027a1eaf4dde7624a6de45fb\\res\\values-sk\\values.xml",
@@ -53,6 +62,8 @@
                         "endColumns": "107,191,125,111,214,129,130,227,112,200,131,221,193,97,96,115",
                         "endOffsets": "2170,2362,2488,2600,2815,2945,3076,3502,3615,3816,3948,4170,4364,4462,4559,4675"
                     }
+=======
+>>>>>>> 4e8245bc4d87f4f6716669a23a8b9e17ba9a9b20
                 }
             ]
         }

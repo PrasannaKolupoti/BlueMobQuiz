@@ -11,23 +11,23 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:text="ATTENDANCE"
-        android:textSize="40dp"
+        android:textSize="30dp"
         android:textAlignment="center"/>
     <TextView
         android:id="@+id/attendanceQuizName"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:text="Quiz 1"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:textAlignment="center"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <TextView
+    <ListView
         android:id="@+id/studentList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:scrollbars="vertical"
         android:text="Student name"
         android:textAlignment="textStart"

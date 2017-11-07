@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:text="LOGIN"
-        android:textSize="40dp"
+        android:textSize="30dp"
         android:textAlignment="center"/>
     <TableLayout
         android:id="@+id/loginDetails"
@@ -71,7 +71,7 @@
                 android:layout_column="1"
                 android:layout_height="match_parent"
                 android:layout_width="match_parent"
-                android:hint="Enter password"
+                android:hint="Enter your password"
                 android:textSize="20dp"
                 android:inputType="textPassword"/>
         </TableRow>

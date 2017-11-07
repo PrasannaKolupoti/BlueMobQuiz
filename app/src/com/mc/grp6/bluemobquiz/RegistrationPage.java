@@ -2,6 +2,7 @@ package com.mc.grp6.bluemobquiz;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.PatternMatcher;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
@@ -16,6 +17,8 @@ import com.salesforce.androidsdk.ui.SalesforceActivity;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class RegistrationPage extends SalesforceActivity {
     private RestClient client;
@@ -60,7 +63,7 @@ public class RegistrationPage extends SalesforceActivity {
                     userRecord.put("Username__c", userName);
                     userRecord.put("Password__c", password);
                     registerUser(userRecord);
-                    if (successRegistration) {
+                    //if (successRegistration) {
                         deviceID = getDeviceID();
                         Map<String, Object> deviceRecord = new HashMap<String, Object>();
                         deviceRecord.put("Users__c", userID);
@@ -69,7 +72,7 @@ public class RegistrationPage extends SalesforceActivity {
                         Toast.makeText(getApplicationContext(), "Successfully Registered", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(RegistrationPage.this, LoginPage.class);
                         startActivity(intent);
-                    }
+                    //}
                 }
             }
         });
@@ -136,17 +139,58 @@ public class RegistrationPage extends SalesforceActivity {
     private String getDeviceID(){
         return Settings.Secure.getString(getContentResolver(),Settings.Secure.ANDROID_ID);
     }
+
+    private boolean isAlphabet(String name) {
+        for (int i = 0; i < name.length(); i++) {
+            if ((!(Character.isAlphabetic(name.charAt(i)))&& !(name.charAt(i)==' '))||((name.charAt(name.length()-1)==' '))) {
+                return false;
+            }
+        }
+        return true;
+
+    }
+
+    private boolean isPasswordRulePassed(String name){
+        Pattern regex = Pattern.compile("^(?=.*[a-z])(?=.*[A-Z])(?=.*\'d')(?=.*[$@$!%*?&])[A-Za-z\'d'$@$!%*?&]{8,}");
+        Matcher matcher = regex.matcher(name);
+        if(matcher.find()){
+            return true;
+        }
+        return false;
+
+    }
+
+    private  boolean getTotalSpaces(String name){
+        return !name.contains("  ");
+    }
     private boolean validateData() {
-        if (name.equals("") || name.equals("Enter your name")) {
+        //name validations
+        String tempName = name, tempUserName = userName , tempPassword = password;
+
+        boolean allLetters = isAlphabet(name);
+        if (name.equals("")) {
             Toast.makeText(getApplicationContext(), "Please enter your name.", Toast.LENGTH_SHORT).show();
             return false;
-        } else if (userName.equals("") || name.equals("Enter your username")) {
+        }else if(!getTotalSpaces(tempName)){
+            Toast.makeText(getApplicationContext(), "Please enter your name with out more than 2 consecutive spaces.", Toast.LENGTH_LONG).show();
+            return false;
+        }else if(!allLetters){
+            Toast.makeText(getApplicationContext(), "Please do not enter any special characters in name or space at the end.", Toast.LENGTH_SHORT).show();
+            return false;
+        }else if (userName.equals("")) {
             Toast.makeText(getApplicationContext(), "Please enter your Username.", Toast.LENGTH_SHORT).show();
             return false;
-        } else if (password.equals("")) {
+        }else if (!getTotalSpaces(tempUserName)) {
+            Toast.makeText(getApplicationContext(), "Please enter your Username with out more than 2 consecutive spaces .", Toast.LENGTH_SHORT).show();
+            return false;
+        }else if (userName.length()>12) {
+            Toast.makeText(getApplicationContext(), "Please choose an user name less than 12 characters in length", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        else if (password.equals("")) {
             Toast.makeText(getApplicationContext(), "Please enter your password.", Toast.LENGTH_SHORT).show();
             return false;
-        } else if (password.length() < 8) {
+        }else if (password.length() < 8) {
             Toast.makeText(getApplicationContext(), "Please enter atleast 8 character password", Toast.LENGTH_SHORT).show();
             return false;
         } else if (confirmPassword.equals("")) {

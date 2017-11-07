@@ -170,25 +170,25 @@ public final class R {
         public static final int sf__use_password_button = 0x7f0800be;
         public static final int spacer = 0x7f0800c4;
         public static final int standard = 0x7f0800cb;
-        public static final int text = 0x7f0800df;
-        public static final int text2 = 0x7f0800e0;
-        public static final int wide = 0x7f0800ed;
-        public static final int wrap_content = 0x7f0800f0;
+        public static final int text = 0x7f0800e0;
+        public static final int text2 = 0x7f0800e1;
+        public static final int wide = 0x7f0800ee;
+        public static final int wrap_content = 0x7f0800f1;
     }
     public static final class integer {
         public static final int google_play_services_version = 0x7f090003;
     }
     public static final class layout {
-        public static final int sf__account_switcher = 0x7f0a003b;
-        public static final int sf__custom_server_url = 0x7f0a003c;
-        public static final int sf__fingerprint_dialog = 0x7f0a003d;
-        public static final int sf__inspector = 0x7f0a003e;
-        public static final int sf__inspector_result_cell = 0x7f0a003f;
-        public static final int sf__login = 0x7f0a0040;
-        public static final int sf__manage_space = 0x7f0a0041;
-        public static final int sf__passcode = 0x7f0a0042;
-        public static final int sf__server_picker = 0x7f0a0043;
-        public static final int sf__server_picker_list = 0x7f0a0044;
+        public static final int sf__account_switcher = 0x7f0a003c;
+        public static final int sf__custom_server_url = 0x7f0a003d;
+        public static final int sf__fingerprint_dialog = 0x7f0a003e;
+        public static final int sf__inspector = 0x7f0a003f;
+        public static final int sf__inspector_result_cell = 0x7f0a0040;
+        public static final int sf__login = 0x7f0a0041;
+        public static final int sf__manage_space = 0x7f0a0042;
+        public static final int sf__passcode = 0x7f0a0043;
+        public static final int sf__server_picker = 0x7f0a0044;
+        public static final int sf__server_picker_list = 0x7f0a0045;
     }
     public static final class menu {
         public static final int sf__clear_custom_url = 0x7f0b0000;

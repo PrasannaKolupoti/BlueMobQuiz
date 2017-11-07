@@ -141,9 +141,6 @@ public class ProfessorCreatingQuiz extends SalesforceActivity {
                     answerRecord.put("Question__c", questionID);
                     answerRecord.put("Answer__c", selectedAnswer);
                     addAnswer(answerRecord);
-                    Toast.makeText(getApplicationContext(), "Question added", Toast.LENGTH_SHORT).show();
-                    questionNumberValue++;
-                    clearPage();
                 }
                 Toast.makeText(getApplicationContext(), "Quiz created", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(ProfessorCreatingQuiz.this, ProfessorHome.class);
