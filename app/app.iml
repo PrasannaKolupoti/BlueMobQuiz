@@ -110,26 +110,29 @@
     <orderEntry type="jdk" jdkName="Android API 25 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="com.google.android.gms:play-services-base-10.2.0" level="project" />
-    <orderEntry type="library" name="com.android.support:support-vector-drawable-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="com.android.support:animated-vector-drawable-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="com.android.support:support-annotations:26.0.0-alpha1@jar" level="project" />
     <orderEntry type="library" name="com.google.android.gms:play-services-basement-10.2.0" level="project" />
     <orderEntry type="library" name="com.google.android.gms:play-services-tasks-10.2.0" level="project" />
     <orderEntry type="library" name="com.google.android.gms:play-services-iid-10.2.0" level="project" />
+    <orderEntry type="library" name="com.android.support:animated-vector-drawable-25.4.0" level="project" />
     <orderEntry type="library" name="com.squareup.okhttp3:okhttp:3.6.0@jar" level="project" />
-    <orderEntry type="library" name="com.android.support:appcompat-v7-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="com.android.support:support-media-compat-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="com.android.support:support-core-ui-26.0.0-alpha1" level="project" />
+    <orderEntry type="library" name="com.android.support:design-25.4.0" level="project" />
+    <orderEntry type="library" name="com.android.support:transition-25.4.0" level="project" />
     <orderEntry type="library" name="com.squareup:tape:1.2.3@jar" level="project" />
+    <orderEntry type="library" name="com.android.support:support-core-ui-25.4.0" level="project" />
+    <orderEntry type="library" name="com.android.support:appcompat-v7-25.4.0" level="project" />
+    <orderEntry type="library" name="com.android.support:support-compat-25.4.0" level="project" />
     <orderEntry type="library" name="net.zetetic:android-database-sqlcipher-3.5.7" level="project" />
     <orderEntry type="library" name="com.google.android.gms:play-services-gcm-10.2.0" level="project" />
-    <orderEntry type="library" name="com.android.support:support-v4-26.0.0-alpha1" level="project" />
     <orderEntry type="library" name="com.squareup.okio:okio:1.11.0@jar" level="project" />
-    <orderEntry type="library" name="com.android.support:support-compat-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="com.android.support:support-core-utils-26.0.0-alpha1" level="project" />
+    <orderEntry type="library" name="com.android.support:support-annotations:25.4.0@jar" level="project" />
     <orderEntry type="library" name="com.android.support.constraint:constraint-layout-solver:1.0.2@jar" level="project" />
-    <orderEntry type="library" name="com.android.support:support-fragment-26.0.0-alpha1" level="project" />
+    <orderEntry type="library" name="com.android.support:support-core-utils-25.4.0" level="project" />
     <orderEntry type="library" name="com.android.support.constraint:constraint-layout-1.0.2" level="project" />
+    <orderEntry type="library" name="com.android.support:support-v4-25.4.0" level="project" />
+    <orderEntry type="library" name="com.android.support:support-vector-drawable-25.4.0" level="project" />
+    <orderEntry type="library" name="com.android.support:support-fragment-25.4.0" level="project" />
+    <orderEntry type="library" name="com.android.support:recyclerview-v7-25.4.0" level="project" />
+    <orderEntry type="library" name="com.android.support:support-media-compat-25.4.0" level="project" />
     <orderEntry type="module" module-name="SalesforceSDK" />
     <orderEntry type="module" module-name="SmartSync" />
     <orderEntry type="module" module-name="SalesforceAnalytics" />

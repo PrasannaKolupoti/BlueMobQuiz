@@ -9,7 +9,7 @@
     android:layout_height="match_parent"
     tools:context="com.mc.grp6.bluemobquiz.ProfessorCreatingQuiz">
     <include layout="@layout/header" />
-    <EditText
+    <TextView
         android:id="@+id/quizName"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
@@ -150,14 +150,16 @@
             <TextView />
         </TableRow>
         <TableRow>
+
             <Button
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
                 android:id="@+id/profNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_column="0"
                 android:layout_gravity="center"
+
                 android:text="Next"
-                android:textSize="20dp"/>
+                android:textSize="20dp" />
             <Button
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
