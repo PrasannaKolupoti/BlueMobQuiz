@@ -63,6 +63,7 @@
         <activity android:name="com.mc.grp6.bluemobquiz.ProfessorAttendance" />
         <activity android:name="com.mc.grp6.bluemobquiz.ProfessorCreatingQuiz" />
         <activity android:name="com.mc.grp6.bluemobquiz.ProfessorUpdatingQuiz" />
+        <activity android:name="com.mc.grp6.bluemobquiz.ProfessorUpdatingQuizName" />
         <activity android:name="com.mc.grp6.bluemobquiz.ProfessorHome" />
         <activity android:name="com.mc.grp6.bluemobquiz.ProfessorQuizAttendance" />
         <activity android:name="com.mc.grp6.bluemobquiz.StudentHome" />

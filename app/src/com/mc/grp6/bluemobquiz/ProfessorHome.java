@@ -62,7 +62,7 @@ public class ProfessorHome extends SalesforceActivity {
                 String quizID = quizIDList.get(position);
                 String quizName = quizNameList.get(position);
 
-                Intent intent = new Intent(ProfessorHome.this, ProfessorUpdatingQuiz.class);
+                Intent intent = new Intent(ProfessorHome.this, ProfessorUpdatingQuizName.class);
                 intent.putExtra("userID",userID);
                 intent.putExtra("quizID",quizID);
                 intent.putExtra("quizName",quizName);

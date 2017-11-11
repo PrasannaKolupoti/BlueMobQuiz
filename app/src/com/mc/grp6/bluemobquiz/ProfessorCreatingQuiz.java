@@ -207,12 +207,12 @@ public class ProfessorCreatingQuiz extends SalesforceActivity {
                         }
                     }
                 });
-                }
-                @Override
-                public void onError(Exception e) {
-                    Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
-                }
-            });
+            }
+            @Override
+            public void onError(Exception e) {
+                Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
     private boolean validateData() {
         if (questionValue.equals("") || questionValue.equals("Enter the questionField")) {

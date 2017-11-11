@@ -36,10 +36,9 @@ public class ProfessorUpdatingQuiz extends SalesforceActivity {
     public Spinner profAnswerSelection, profDifficultySelection;
     public Button nextButton, submitButton;
     public String selectedAnswer, selectedDifficulty, questionValue, option1Value, option2Value, option3Value, option4Value, quizNameValue,userID,quizName;
-    public boolean questionAdded = false, quizNameAdded = false;
     private RestClient client;
-    public String questionID, quizID="";
-    public int questionNumberValue = 1;
+    public String quizID="";
+    public int questionNumberValue;
     public ArrayList<String> questionIDList = new ArrayList<String>();
     public ArrayList<String> answerIDList = new ArrayList<String>();
     public ArrayList<String> questionList = new ArrayList<String>();
@@ -111,15 +110,21 @@ public class ProfessorUpdatingQuiz extends SalesforceActivity {
                 option2Value = option2Field.getText().toString();
                 option3Value = option3Field.getText().toString();
                 option4Value = option4Field.getText().toString();
-
+                selectedDifficulty = String.valueOf(profDifficultySelection.getSelectedItem());
+                selectedAnswer = String.valueOf(profAnswerSelection.getSelectedItem());
                 boolean successValidation = validateData();
-                if (successValidation) {
 
-                    Toast.makeText(getApplicationContext(), "Question added", Toast.LENGTH_SHORT).show();
-                    questionNumberValue++;
-                    setPage();
-                    //}
-                    //}
+                if (successValidation) {
+                    Map<String, Object> questionRecord = new HashMap<String, Object>();
+                    questionRecord.put("Question__c", questionValue);
+                    questionRecord.put("Choice1__c", option1Value);
+                    questionRecord.put("Choice2__c", option2Value);
+                    questionRecord.put("Choice3__c", option3Value);
+                    questionRecord.put("Choice4__c", option4Value);
+                    //questionRecord.put("Quiz__c", quizID);
+                    questionRecord.put("Difficulty_Level__c", selectedDifficulty);
+                    updateQuestion(questionRecord,selectedAnswer);
+                    //setPage();
                 }
             }
         });
@@ -133,7 +138,20 @@ public class ProfessorUpdatingQuiz extends SalesforceActivity {
                 option3Value = option3Field.getText().toString();
                 option4Value = option4Field.getText().toString();
                 userID = getIntent().getExtras().getString("userID");
-                Toast.makeText(getApplicationContext(), "Quiz created", Toast.LENGTH_SHORT).show();
+                selectedDifficulty = String.valueOf(profDifficultySelection.getSelectedItem());
+                selectedAnswer = String.valueOf(profAnswerSelection.getSelectedItem());
+                boolean successValidation = validateData();
+                if (successValidation) {
+                    Map<String, Object> questionRecord = new HashMap<String, Object>();
+                    questionRecord.put("Question__c", questionValue);
+                    questionRecord.put("Choice1__c", option1Value);
+                    questionRecord.put("Choice2__c", option2Value);
+                    questionRecord.put("Choice3__c", option3Value);
+                    questionRecord.put("Choice4__c", option4Value);
+                    questionRecord.put("Difficulty_Level__c", selectedDifficulty);
+                    updateQuestion(questionRecord,selectedAnswer);
+                }
+                Toast.makeText(getApplicationContext(), "Quiz updated", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(ProfessorUpdatingQuiz.this, ProfessorHome.class);
                 intent.putExtra("userID",userID);
                 startActivity(intent);
@@ -157,7 +175,6 @@ public class ProfessorUpdatingQuiz extends SalesforceActivity {
                                     answerIDList.add(answerTable.getJSONObject(i).getString("Id"));
                                     questionIDList.add(answerTable.getJSONObject(i).getString("Question__c"));
                                     answerList.add(answerTable.getJSONObject(i).getString("Answer__c"));
-                                    //System.out.println("*******"+answerTable.getJSONObject(i).toString().substring(result.toString().indexOf("\"Question__r\"")+14,result.toString().length()-17));
                                     JSONObject questionsTable = answerTable.getJSONObject(i).getJSONObject("Question__r");
                                     questionList.add(questionsTable.getString("Question__c"));
                                     option1List.add(questionsTable.getString("Choice1__c"));
@@ -192,7 +209,6 @@ public class ProfessorUpdatingQuiz extends SalesforceActivity {
     }
 
     private void setPage() {
-        System.out.println("*******************");
         int positionD = 0,positionA = 0;
         questionNumber.setText(Integer.toString(questionNumberValue));
         quizNameField.setText(quizName);
@@ -219,10 +235,10 @@ public class ProfessorUpdatingQuiz extends SalesforceActivity {
         profDifficultySelection.setSelection(positionD);
     }
 
-    private void addAnswer(Map<String, Object> answerRecord) {
+    private void updateAnswer(Map<String, Object> answerRecord) {
         RestRequest restRequest;
         try {
-            restRequest = RestRequest.getRequestForCreate(getString(R.string.api_version), "Quiz_Answers__c", answerRecord);
+            restRequest = RestRequest.getRequestForUpdate(getString(R.string.api_version), "Quiz_Answers__c",(answerIDList.get(questionNumberValue-1)), answerRecord);
         } catch (Exception e) {
             Toast.makeText(getApplicationContext(), "catch" + e.getMessage(), Toast.LENGTH_SHORT).show();
             return ;
@@ -230,13 +246,20 @@ public class ProfessorUpdatingQuiz extends SalesforceActivity {
         client.sendAsync(restRequest, new RestClient.AsyncRequestCallback() {
             @Override
             public void onSuccess(RestRequest request, RestResponse result) {
-                if (result.isSuccess()) {
-                    try {
-                    } catch (Exception e) {
-                        // You might want to log the error
-                        // or show it to the user
+                System.out.println("************answer"+result.toString());
+                result.consumeQuietly(); // consume before going back to main thread
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        try{
+                            questionNumberValue++;
+                            setPage();
+
+                        } catch(Exception e){
+                            System.out.println(e.getMessage());
+                        }
                     }
-                }
+                });
             }
 
             @Override
@@ -245,10 +268,17 @@ public class ProfessorUpdatingQuiz extends SalesforceActivity {
             }
         });
     }
-    private void addQuestion(Map<String, Object> questionRecord) {
+    private void updateQuestion(Map<String, Object> questionRecord,String selectedAnswer) {
         RestRequest restRequest;
         try {
-            restRequest = RestRequest.getRequestForCreate(getString(R.string.api_version), "Quiz_Questions__c", questionRecord);
+            restRequest = RestRequest.getRequestForUpdate(getString(R.string.api_version), "Quiz_Questions__c",(questionIDList.get(questionNumberValue-1)), questionRecord);
+            if(questionNumberValue>=questionIDList.size()){
+                Toast.makeText(getApplicationContext(), "Quiz updated", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(ProfessorUpdatingQuiz.this, ProfessorHome.class);
+                intent.putExtra("userID",userID);
+                startActivity(intent);
+            }
+
         } catch (Exception e) {
 
             Toast.makeText(getApplicationContext(), "catch" + e.getMessage(), Toast.LENGTH_SHORT).show();
@@ -257,52 +287,23 @@ public class ProfessorUpdatingQuiz extends SalesforceActivity {
         client.sendAsync(restRequest, new RestClient.AsyncRequestCallback() {
             @Override
             public void onSuccess(RestRequest request,final RestResponse result)  {
+                System.out.println("***********"+result.toString());
                 result.consumeQuietly(); // consume before going back to main thread
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        if (result.isSuccess()) {
                             try {
-                                questionAdded = true;
-                                questionID = result.toString().substring(7, 25);
-                            } catch (Exception e) {
-                            }
-                        }
-                    }
-                });
-            }
-            @Override
-            public void onError(Exception e) {
-                Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
-    private void addQuiz(Map<String, Object> quizRecord) {
-        RestRequest restRequest;
-        try {
-            restRequest = RestRequest.getRequestForCreate(getString(R.string.api_version), "Quiz__c", quizRecord);
-        } catch (Exception e) {
-            Toast.makeText(getApplicationContext(), "catch" + e.getMessage(), Toast.LENGTH_SHORT).show();
-            return ;
-        }
-        client.sendAsync(restRequest, new RestClient.AsyncRequestCallback() {
-            @Override
-            public void onSuccess(RestRequest request, final RestResponse result) {
-                result.consumeQuietly(); // consume before going back to main thread
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        if (result.isSuccess()) {
-                            try {
-                                quizNameAdded = true;
-                                quizID = result.toString().substring(7, 25);
-                            } catch (Exception e) {
-                            }
-                        }
-                    }
-                });
-            }
+                                //questionAdded = true;
 
+                                System.out.println("************"+questionNumberValue);
+                                Map<String, Object> answerRecord = new HashMap<String, Object>();
+                                answerRecord.put("Answer__c", selectedAnswer);
+                                updateAnswer(answerRecord);
+                            } catch (Exception e) {
+                            }
+                        }
+                });
+            }
             @Override
             public void onError(Exception e) {
                 Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();

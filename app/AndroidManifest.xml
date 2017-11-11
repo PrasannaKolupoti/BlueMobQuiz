@@ -51,6 +51,7 @@
         <activity android:name=".ProfessorAttendance" />
         <activity android:name=".ProfessorCreatingQuiz" />
         <activity android:name=".ProfessorUpdatingQuiz" />
+        <activity android:name=".ProfessorUpdatingQuizName" />
         <activity android:name=".ProfessorHome" />
         <activity android:name=".ProfessorQuizAttendance" />
         <activity android:name=".StudentHome" />
