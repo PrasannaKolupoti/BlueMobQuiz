@@ -137,7 +137,7 @@ public class RegistrationPage extends SalesforceActivity {
         });
     }
     private String getDeviceID(){
-        return Settings.Secure.getString(getContentResolver(),Settings.Secure.ANDROID_ID);
+        return android.provider.Settings.Secure.getString(getApplicationContext().getContentResolver(), "bluetooth_address");
     }
 
     private boolean isAlphabet(String name) {
