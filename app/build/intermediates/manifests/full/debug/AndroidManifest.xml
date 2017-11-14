@@ -66,12 +66,15 @@
         <activity android:name="com.mc.grp6.bluemobquiz.LoginPage" />
         <activity android:name="com.mc.grp6.bluemobquiz.ProfessorAttendance" />
         <activity android:name="com.mc.grp6.bluemobquiz.ProfessorCreatingQuiz" />
+        <activity android:name="com.mc.grp6.bluemobquiz.ProfessorUpdatingQuiz" />
+        <activity android:name="com.mc.grp6.bluemobquiz.ProfessorUpdatingQuizName" />
         <activity android:name="com.mc.grp6.bluemobquiz.ProfessorHome" />
         <activity android:name="com.mc.grp6.bluemobquiz.ProfessorQuizAttendance" />
         <activity android:name="com.mc.grp6.bluemobquiz.StudentHome" />
         <activity android:name="com.mc.grp6.bluemobquiz.StudentAttemptingQuiz" />
         <activity android:name="com.mc.grp6.bluemobquiz.StudentAvailableQuiz" />
         <activity android:name="com.mc.grp6.bluemobquiz.Home" />
+        <activity android:name="com.mc.grp6.bluemobquiz.ProfessorAddingQuizName" />
         <!-- SmartStore Inspector screen -->
         <activity android:name="com.salesforce.androidsdk.smartstore.ui.SmartStoreInspectorActivity" /> <!-- Metadata for supported app restrictions -->
         <meta-data
@@ -151,6 +154,10 @@
         <service
             android:name="com.salesforce.androidsdk.analytics.AnalyticsPublisherService"
             android:exported="false" />
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="25.4.0" />
 
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"

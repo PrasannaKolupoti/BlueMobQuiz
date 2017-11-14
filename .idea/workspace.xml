@@ -6,6 +6,7 @@
     </shared>
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="289802af-8fe6-47df-a349-d614cde535a7" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/debug/zip-cache/2LulaPTUXAUQ+RouUorvXUi3CeU=" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesDebug/debug/zip-cache/VwrPn0wuyfoM9iBkRzssroes3+A=" afterPath="" />
@@ -456,6 +457,391 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/8/classes.dex" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/9/classes.dex" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/5/buildId.txt" afterPath="" />
+=======
+<<<<<<< HEAD
+    <list default="true" id="dd97cd98-243a-4c40-804d-cd01eff6811b" name="Default" comment="" />
+=======
+    <list default="true" id="dd97cd98-243a-4c40-804d-cd01eff6811b" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/+AfeOaguZi2GCqs3i3s+TFg_BFo=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/0TyZqCfkZgElMoLt0owB8UiYbXY=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/9rn4s_8dRlt7JI9uZxAyeQPn8w0=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Cv3iUKOsiDbpTtqBUTKvOn2AAzE=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/H9CWS3CnWyU1SfXBKamf5Guj2JA=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/JVG8gdZazLyljTF8QcTYvb5l5bI=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/L7ddbZTKDpOum+HxJZ81YFdNqTY=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/LD9nuhegU37ZIJnwfmSpPqqI6Cg=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/LgbVptAU+FL2ZF4c7aLRooB+HgM=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/NfMO05zXfxIkjLCzDM0yYVqiOKY=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/P2Z+H0VrrdvcOCCL1NdQnZ8u5GA=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/S0sfC3m69I7tyRhznFcxuNm+HaA=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/T6y9oNv3jJhNxK9utMj5W1YSaJ4=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/UcTe9icQ_wnfZ0TQKnpcb1_UWnU=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/_lbgOKaunG6aq8FJa2nh2Av05kg=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/a7NgMc1Bi35_32NQ2teSrNf6aeA=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/afezr4dBQkc6YwMwZUQmRGkHNz0=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/bMR4T97jWR4rdyuU19sWeXyleqU=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/dbofmmjOioM0UomT2vuEqabFrsQ=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/edAq3PTz+DVsbdGZCUZy4jYDM28=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/hkLCCOxsUGk5ZhYf9AJAQ3WSROY=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/hp+Filln0k0U9_yoO0Q8nUkUzc4=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/iqoO+P890dK5EklMTKCUZUmI8SM=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/oZsYYgZe2eXfvG833XIenh+dVG4=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/uhLsIfb5j_igay0GRLAqUXxvXbQ=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/vVhomEHPlzWzIV3nWk0pBeKdfnw=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/+AfeOaguZi2GCqs3i3s+TFg_BFo=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/0TyZqCfkZgElMoLt0owB8UiYbXY=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/9rn4s_8dRlt7JI9uZxAyeQPn8w0=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/Cv3iUKOsiDbpTtqBUTKvOn2AAzE=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/H9CWS3CnWyU1SfXBKamf5Guj2JA=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/JVG8gdZazLyljTF8QcTYvb5l5bI=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/L7ddbZTKDpOum+HxJZ81YFdNqTY=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/LD9nuhegU37ZIJnwfmSpPqqI6Cg=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/LgbVptAU+FL2ZF4c7aLRooB+HgM=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/NfMO05zXfxIkjLCzDM0yYVqiOKY=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/P2Z+H0VrrdvcOCCL1NdQnZ8u5GA=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/S0sfC3m69I7tyRhznFcxuNm+HaA=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/T6y9oNv3jJhNxK9utMj5W1YSaJ4=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/UcTe9icQ_wnfZ0TQKnpcb1_UWnU=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/_lbgOKaunG6aq8FJa2nh2Av05kg=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/a7NgMc1Bi35_32NQ2teSrNf6aeA=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/afezr4dBQkc6YwMwZUQmRGkHNz0=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/bMR4T97jWR4rdyuU19sWeXyleqU=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/dbofmmjOioM0UomT2vuEqabFrsQ=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/edAq3PTz+DVsbdGZCUZy4jYDM28=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/hkLCCOxsUGk5ZhYf9AJAQ3WSROY=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/hp+Filln0k0U9_yoO0Q8nUkUzc4=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/iqoO+P890dK5EklMTKCUZUmI8SM=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/oZsYYgZe2eXfvG833XIenh+dVG4=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/uhLsIfb5j_igay0GRLAqUXxvXbQ=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/vVhomEHPlzWzIV3nWk0pBeKdfnw=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/debug/zip-cache/SC3IuWghk3Emylkfa9ainG1Be+A=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/debug/zip-cache/qXq3WKrCYXZrxeIV_RAyCgsOpW4=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/26.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/28.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/29.jar" afterPath="" />
+>>>>>>> 6a6104ed9805556bb0e7f98438663e5603223000
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/30.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/31.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/32.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/35.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/37.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/39.jar" afterPath="" />
+<<<<<<< HEAD
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4.jar" afterPath="" />
+=======
+>>>>>>> 6a6104ed9805556bb0e7f98438663e5603223000
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/41.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/android/support/compat/R.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/android/support/constraint/R$attr.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/android/support/constraint/R$id.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/android/support/constraint/R$styleable.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/android/support/constraint/R.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/android/support/coreui/R.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/android/support/coreutils/R.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/android/support/fragment/R.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/android/support/graphics/drawable/R.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/android/support/graphics/drawable/animated/R.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/android/support/mediacompat/R.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/android/support/v4/R.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/android/support/v7/appcompat/R$anim.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/android/support/v7/appcompat/R$attr.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/android/support/v7/appcompat/R$bool.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/android/support/v7/appcompat/R$color.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/android/support/v7/appcompat/R$dimen.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/android/support/v7/appcompat/R$drawable.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/android/support/v7/appcompat/R$id.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/android/support/v7/appcompat/R$integer.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/android/support/v7/appcompat/R$layout.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/android/support/v7/appcompat/R$string.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/android/support/v7/appcompat/R$style.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/android/support/v7/appcompat/R$styleable.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/android/support/v7/appcompat/R.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/google/android/gms/R$attr.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/google/android/gms/R$color.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/google/android/gms/R$drawable.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/google/android/gms/R$id.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/google/android/gms/R$integer.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/google/android/gms/R$string.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/google/android/gms/R$styleable.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/google/android/gms/R.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/google/android/gms/base/R.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/google/android/gms/gcm/R.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/google/android/gms/iid/R.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/google/android/gms/tasks/R.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/BuildConfig.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/Home$1.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/Home$2.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/Home.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/LoginPage$1.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/LoginPage$2$1.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/LoginPage$2$2.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/LoginPage$2.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/LoginPage.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/MainActivity$1$1.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/MainActivity$1$2.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/MainActivity$1.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/MainActivity.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/MainApplication.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/Manifest$permission.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/Manifest.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/NativeKeyImpl.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/ProfessorAttendance.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/ProfessorCreatingQuiz$1.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/ProfessorCreatingQuiz$2.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/ProfessorCreatingQuiz$3.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/ProfessorCreatingQuiz$4.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/ProfessorCreatingQuiz$5.dex" afterPath="" />
+<<<<<<< HEAD
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/ProfessorCreatingQuiz$6$1.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/ProfessorCreatingQuiz$6.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/ProfessorCreatingQuiz$7$1.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/ProfessorCreatingQuiz$7.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/ProfessorCreatingQuiz.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/ProfessorHome$1.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/ProfessorHome$2$1.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/ProfessorHome$2$2.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/ProfessorHome$2.dex" afterPath="" />
+=======
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/ProfessorCreatingQuiz$6.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/ProfessorCreatingQuiz$7.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/ProfessorCreatingQuiz.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/ProfessorHome$1.dex" afterPath="" />
+>>>>>>> 6a6104ed9805556bb0e7f98438663e5603223000
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/ProfessorHome.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/ProfessorQuizAttendance.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/R$anim.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/R$array.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/R$attr.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/R$bool.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/R$color.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/R$dimen.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/R$drawable.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/R$id.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/R$integer.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/R$layout.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/R$menu.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/R$string.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/R$style.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/R$styleable.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/R$xml.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/R.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/RegistrationPage$1.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/RegistrationPage$2.dex" afterPath="" />
+<<<<<<< HEAD
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/RegistrationPage$3$1.dex" afterPath="" />
+=======
+>>>>>>> 6a6104ed9805556bb0e7f98438663e5603223000
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/RegistrationPage$3.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/RegistrationPage.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/StudentAttemptingQuiz.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/StudentAvailableQuiz.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/mc/grp6/bluemobquiz/StudentHome.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/R$array.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/R$attr.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/R$color.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/R$dimen.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/R$drawable.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/R$id.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/R$integer.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/R$layout.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/R$menu.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/R$string.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/R$style.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/R$styleable.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/R$xml.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/R.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/analytics/R$string.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/analytics/R.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartstore/R$array.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartstore/R$attr.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartstore/R$color.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartstore/R$dimen.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartstore/R$drawable.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartstore/R$id.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartstore/R$integer.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartstore/R$layout.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartstore/R$menu.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartstore/R$string.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartstore/R$style.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartstore/R$styleable.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartstore/R$xml.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartstore/R.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartsync/R$array.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartsync/R$attr.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartsync/R$color.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartsync/R$dimen.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartsync/R$drawable.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartsync/R$id.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartsync/R$integer.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartsync/R$layout.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartsync/R$menu.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartsync/R$string.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartsync/R$style.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartsync/R$styleable.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartsync/R$xml.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/com/salesforce/androidsdk/smartsync/R.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42/net/sqlcipher/R.dex" afterPath="" />
+<<<<<<< HEAD
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex" afterPath="" />
+=======
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/1/buildId.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/2/buildId.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/3/buildId.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/buildId.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/9/buildId.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/android/support/compat/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/android/support/constraint/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/android/support/constraint/R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/android/support/constraint/R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/android/support/constraint/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/android/support/coreui/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/android/support/coreutils/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/android/support/fragment/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/android/support/graphics/drawable/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/android/support/graphics/drawable/animated/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/android/support/mediacompat/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/android/support/v4/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/android/support/v7/appcompat/R$anim.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/android/support/v7/appcompat/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/android/support/v7/appcompat/R$bool.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/android/support/v7/appcompat/R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/android/support/v7/appcompat/R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/android/support/v7/appcompat/R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/android/support/v7/appcompat/R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/android/support/v7/appcompat/R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/android/support/v7/appcompat/R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/android/support/v7/appcompat/R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/android/support/v7/appcompat/R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/android/support/v7/appcompat/R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/android/support/v7/appcompat/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/google/android/gms/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/google/android/gms/R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/google/android/gms/R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/google/android/gms/R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/google/android/gms/R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/google/android/gms/R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/google/android/gms/R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/google/android/gms/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/google/android/gms/base/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/google/android/gms/gcm/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/google/android/gms/iid/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/google/android/gms/tasks/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/Home$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/Home$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/Home.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/LoginPage$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/LoginPage$2$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/LoginPage$2$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/LoginPage$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/LoginPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/MainActivity$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/MainActivity$1$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/MainActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/MainActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/MainApplication.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/Manifest$permission.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/Manifest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/NativeKeyImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/ProfessorAttendance.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/ProfessorCreatingQuiz$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/ProfessorCreatingQuiz$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/ProfessorCreatingQuiz$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/ProfessorCreatingQuiz$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/ProfessorCreatingQuiz$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/ProfessorCreatingQuiz$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/ProfessorCreatingQuiz$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/ProfessorCreatingQuiz.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/ProfessorHome$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/ProfessorHome.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/ProfessorQuizAttendance.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/R$anim.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/R$array.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/R$bool.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/R$menu.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/R$xml.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/RegistrationPage$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/RegistrationPage$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/RegistrationPage$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/RegistrationPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/StudentAttemptingQuiz.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/StudentAvailableQuiz.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/mc/grp6/bluemobquiz/StudentHome.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/R$array.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/R$menu.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/R$xml.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/analytics/R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/analytics/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartstore/R$array.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartstore/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartstore/R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartstore/R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartstore/R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartstore/R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartstore/R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartstore/R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartstore/R$menu.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartstore/R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartstore/R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartstore/R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartstore/R$xml.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartstore/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartsync/R$array.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartsync/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartsync/R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartsync/R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartsync/R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartsync/R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartsync/R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartsync/R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartsync/R$menu.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartsync/R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartsync/R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartsync/R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartsync/R$xml.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/com/salesforce/androidsdk/smartsync/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/0/net/sqlcipher/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jacoco/debug/__content__.json" afterPath="" />
+>>>>>>> 6a6104ed9805556bb0e7f98438663e5603223000
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/stripDebugSymbol/debug/0/lib/arm64-v8a/libsqlcipher.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/stripDebugSymbol/debug/0/lib/armeabi-v7a/libsqlcipher.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/stripDebugSymbol/debug/0/lib/armeabi/libsqlcipher.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/stripDebugSymbol/debug/0/lib/x86/libsqlcipher.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/stripDebugSymbol/debug/0/lib/x86_64/libsqlcipher.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/stripDebugSymbol/debug/__content__.json" afterPath="" />
+>>>>>>> 3cb5d8a074c202821899d9ca0109cb7347ef681b
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
@@ -941,6 +1327,168 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/com/mc/grp6/bluemobquiz/RegistrationPage.java" afterPath="$PROJECT_DIR$/app/src/com/mc/grp6/bluemobquiz/RegistrationPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
     </list>
+<<<<<<< HEAD
+=======
+>>>>>>> 0f9a272625e26b59291eb45c7f9532c5ca06189c
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+<<<<<<< HEAD
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/attr/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/blame/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/bundles/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/check-manifest/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/classes/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/incremental/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/intermediate-jars/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/javaPrecompile/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/jniLibs/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/manifests/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/res/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/shaders/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/symbols/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/tmp/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/transforms/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/outputs/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/tmp/" />
+=======
+>>>>>>> 6a6104ed9805556bb0e7f98438663e5603223000
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceSDK/build/intermediates/attr/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceSDK/build/intermediates/blame/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceSDK/build/intermediates/bundles/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceSDK/build/intermediates/check-manifest/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceSDK/build/intermediates/classes/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceSDK/build/intermediates/incremental/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceSDK/build/intermediates/intermediate-jars/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceSDK/build/intermediates/javaPrecompile/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceSDK/build/intermediates/jniLibs/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceSDK/build/intermediates/manifests/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceSDK/build/intermediates/res/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceSDK/build/intermediates/rs/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceSDK/build/intermediates/shaders/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceSDK/build/intermediates/symbols/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceSDK/build/intermediates/tmp/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceSDK/build/intermediates/transforms/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceSDK/build/outputs/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceSDK/build/tmp/" />
+<<<<<<< HEAD
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/attr/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/blame/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/bundles/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/check-manifest/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/classes/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/incremental/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/intermediate-jars/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/javaPrecompile/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/jniLibs/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/manifests/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/res/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/shaders/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/symbols/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/tmp/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/transforms/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/outputs/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/tmp/" />
+=======
+>>>>>>> 6a6104ed9805556bb0e7f98438663e5603223000
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartStore/build/intermediates/attr/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartStore/build/intermediates/blame/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartStore/build/intermediates/bundles/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartStore/build/intermediates/check-manifest/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartStore/build/intermediates/classes/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartStore/build/intermediates/incremental/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartStore/build/intermediates/intermediate-jars/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartStore/build/intermediates/javaPrecompile/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartStore/build/intermediates/jniLibs/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartStore/build/intermediates/manifests/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartStore/build/intermediates/res/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartStore/build/intermediates/shaders/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartStore/build/intermediates/symbols/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartStore/build/intermediates/tmp/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartStore/build/intermediates/transforms/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartStore/build/outputs/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartStore/build/tmp/" />
+<<<<<<< HEAD
+=======
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/attr/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/blame/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/bundles/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/check-manifest/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/classes/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/incremental/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/intermediate-jars/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/javaPrecompile/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/jniLibs/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/manifests/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/res/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/shaders/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/symbols/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/tmp/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/intermediates/transforms/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/outputs/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SmartSync/build/tmp/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/annotations/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/attr/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/blame/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/bundles/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/check-manifest/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/classes/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/incremental/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/intermediate-jars/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/javaPrecompile/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/jniLibs/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/manifests/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/res/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/shaders/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/symbols/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/tmp/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/transforms/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/intermediates/typedefs.txt/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/outputs/" />
+    <ignored path="$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceAnalytics/build/tmp/" />
+>>>>>>> 6a6104ed9805556bb0e7f98438663e5603223000
+    <ignored path="$PROJECT_DIR$/libs/.gradle/" />
+    <ignored path="$PROJECT_DIR$/libs/build/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/assets/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/blame/" />
+<<<<<<< HEAD
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/build-info/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/builds/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/check-manifest/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/classes/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/incremental/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/incremental-classes/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/incremental-runtime-classes/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/instant-run-resources/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/instant-run-support/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/javaPrecompile/" />
+=======
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/builds/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/check-manifest/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/incremental/" />
+>>>>>>> 6a6104ed9805556bb0e7f98438663e5603223000
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/jniLibs/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/manifests/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/prebuild/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/reload-dex/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/res/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/rs/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/shaders/" />
+<<<<<<< HEAD
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/split-apk/" />
+=======
+>>>>>>> 6a6104ed9805556bb0e7f98438663e5603223000
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/splits-support/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/symbols/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/tmp/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/transforms/" />
+    <ignored path="$PROJECT_DIR$/app/build/outputs/" />
+    <ignored path="$PROJECT_DIR$/app/build/tmp/" />
+<<<<<<< HEAD
+=======
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/classes/debug/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/classes/test/debug/" />
+>>>>>>> 6a6104ed9805556bb0e7f98438663e5603223000
+>>>>>>> 3cb5d8a074c202821899d9ca0109cb7347ef681b
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -966,8 +1514,91 @@
       <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/com/mc/grp6/bluemobquiz/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="125">
               <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+=======
+            <state relative-caret-position="1021">
+              <caret line="85" column="34" lean-forward="false" selection-start-line="70" selection-start-column="50" selection-end-line="85" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+=======
+      <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/com/mc/grp6/bluemobquiz/LoginPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1190">
+              <caret line="123" column="0" lean-forward="true" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+              <folding>
+                <element signature="e#1382#2129#0" expanded="true" />
+                <element signature="e#2128#2129#0" expanded="true" />
+                <element signature="e#2639#4281#0" expanded="true" />
+                <element signature="e#4280#4281#0" expanded="true" />
+                <element signature="e#4412#4816#0" expanded="true" />
+                <element signature="e#4815#4816#0" expanded="true" />
+>>>>>>> 6a6104ed9805556bb0e7f98438663e5603223000
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="activity_registration_page.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/res/layout/activity_registration_page.xml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="-825">
+              <caret line="48" column="27" lean-forward="false" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegistrationPage.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/com/mc/grp6/bluemobquiz/RegistrationPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2896">
+              <caret line="211" column="58" lean-forward="true" selection-start-line="211" selection-start-column="58" selection-end-line="211" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1688#3136#0" expanded="false" />
+                <element signature="e#3135#3136#0" expanded="false" />
+                <element signature="e#4910#5365#0" expanded="false" />
+                <element signature="e#5364#5365#0" expanded="false" />
+                <element signature="e#6675#6676#0" expanded="true" />
+                <element signature="e#6718#6719#0" expanded="true" />
+              </folding>
+=======
+      <file leaf-file-name="ProfessorCreatingQuiz.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/com/mc/grp6/bluemobquiz/ProfessorCreatingQuiz.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1260">
+              <caret line="86" column="40" lean-forward="false" selection-start-line="86" selection-start-column="40" selection-end-line="86" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_professor_creating_quiz.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/res/layout/activity_professor_creating_quiz.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="580">
+              <caret line="29" column="47" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile_sdk/salesforcemobilesdk-android/libs/SalesforceSDK/src/com/salesforce/androidsdk/rest/RestClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1000">
+              <caret line="97" column="21" lean-forward="false" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="21" />
+>>>>>>> 3cb5d8a074c202821899d9ca0109cb7347ef681b
               <folding />
             </state>
           </provider>
@@ -7211,7 +7842,20 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
+<<<<<<< HEAD
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1510642173563" />
+=======
+<<<<<<< HEAD
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1509934062355" />
+=======
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+<<<<<<< HEAD
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1509992667429" />
+=======
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1509822994835" />
+>>>>>>> 6a6104ed9805556bb0e7f98438663e5603223000
+>>>>>>> 0f9a272625e26b59291eb45c7f9532c5ca06189c
+>>>>>>> 3cb5d8a074c202821899d9ca0109cb7347ef681b
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -7258,7 +7902,12 @@
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
       </Profilers>
       <method>
+<<<<<<< HEAD
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1510642173590" />
+=======
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1509992667430" />
+>>>>>>> 3cb5d8a074c202821899d9ca0109cb7347ef681b
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -7440,7 +8089,12 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
+<<<<<<< HEAD
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1510642173630" />
+=======
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1509992667433" />
+>>>>>>> 3cb5d8a074c202821899d9ca0109cb7347ef681b
       </method>
     </configuration>
     <list size="1">
@@ -7620,10 +8274,48 @@
           <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+<<<<<<< HEAD
             <element signature="e#2207#2223#0" expanded="true" />
             <element signature="e#2614#2630#0" expanded="true" />
             <element signature="e#3322#3353#0" expanded="true" />
             <element signature="e#4387#4418#0" expanded="true" />
+=======
+            <element signature="e#1688#3136#0" expanded="false" />
+            <element signature="e#3135#3136#0" expanded="false" />
+            <element signature="e#4910#5365#0" expanded="false" />
+            <element signature="e#5364#5365#0" expanded="false" />
+            <element signature="e#6675#6676#0" expanded="true" />
+            <element signature="e#6718#6719#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/com/mc/grp6/bluemobquiz/RegistrationPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="83" column="9" lean-forward="false" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/com/mc/grp6/bluemobquiz/ProfessorCreatingQuiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="86" column="40" lean-forward="false" selection-start-line="86" selection-start-column="40" selection-end-line="86" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/com/mc/grp6/bluemobquiz/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="123" column="0" lean-forward="true" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+          <folding>
+            <element signature="e#1382#2129#0" expanded="true" />
+            <element signature="e#2128#2129#0" expanded="true" />
+            <element signature="e#2639#4281#0" expanded="true" />
+            <element signature="e#4280#4281#0" expanded="true" />
+            <element signature="e#4412#4816#0" expanded="true" />
+            <element signature="e#4815#4816#0" expanded="true" />
+>>>>>>> 6a6104ed9805556bb0e7f98438663e5603223000
+>>>>>>> 3cb5d8a074c202821899d9ca0109cb7347ef681b
           </folding>
         </state>
       </provider>

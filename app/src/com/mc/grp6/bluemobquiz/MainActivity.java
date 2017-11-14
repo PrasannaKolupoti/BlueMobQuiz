@@ -61,7 +61,6 @@ public class MainActivity extends SalesforceActivity {
         // Setup viewx
         setContentView(R.layout.main);
     }
-
     @Override
     public void onResume() {
         // Hide everything until we are logged in

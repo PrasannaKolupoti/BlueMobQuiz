@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "D:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bs\\values-bs.xml",
             "map": [
                 {
                     "source": "C:\\Users\\KarthikVermaJampani\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-10.2.0.aar\\d6368d6d274bb0d27925c782ee2b4265\\res\\values-bs\\values.xml",
+=======
+            "outputFile": "C:\\Users\\prasa\\Desktop\\Fall_2017\\MC\\Project\\BlueMobQuiz\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bs\\values-bs.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\prasa\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-10.2.0.aar\\2758755beb89e0200a86dc60300e67eb\\res\\values-bs\\values.xml",
+>>>>>>> 3cb5d8a074c202821899d9ca0109cb7347ef681b
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -13,10 +20,11 @@
                         "endOffsets": "484"
                     },
                     "to": {
-                        "startLines": "28",
+                        "startLines": "9",
                         "startColumns": "4",
-                        "startOffsets": "3083",
+                        "startOffsets": "1113",
                         "endColumns": "199",
+<<<<<<< HEAD
                         "endOffsets": "3278"
                     }
                 },
@@ -39,6 +47,13 @@
                 },
                 {
                     "source": "C:\\Users\\KarthikVermaJampani\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-10.2.0.aar\\f4832cdcc68895e82fbe367c57656c21\\res\\values-bs\\values.xml",
+=======
+                        "endOffsets": "1308"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\prasa\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-10.2.0.aar\\907001dc941d47bbaf1d768ee6bf95d1\\res\\values-bs\\values.xml",
+>>>>>>> 3cb5d8a074c202821899d9ca0109cb7347ef681b
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -47,11 +62,11 @@
                         "endOffsets": "386,578,702,810,1019,1143,1270,1483,1588,1780,1905,2114,2286,2380,2471,2581"
                     },
                     "to": {
-                        "startLines": "21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37",
+                        "startLines": "2,3,4,5,6,7,8,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2075,2183,2375,2503,2615,2824,2952,3283,3496,3605,3797,3926,4135,4311,4409,4504",
+                        "startOffsets": "105,213,405,533,645,854,982,1313,1526,1635,1827,1956,2165,2341,2439,2534",
                         "endColumns": "107,191,127,111,208,127,130,212,108,191,128,208,175,97,94,113",
-                        "endOffsets": "2178,2370,2498,2610,2819,2947,3078,3491,3600,3792,3921,4130,4306,4404,4499,4613"
+                        "endOffsets": "208,400,528,640,849,977,1108,1521,1630,1822,1951,2160,2336,2434,2529,2643"
                     }
                 }
             ]

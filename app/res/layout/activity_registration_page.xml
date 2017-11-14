@@ -5,13 +5,12 @@ android:orientation="vertical"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 tools:context="com.mc.grp6.bluemobquiz.RegistrationPage">
-    <include layout="@layout/header" />
     <TextView
         android:id="@+id/registrationHeading"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:text="REGISTRATION"
-        android:textSize="40dp"
+        android:textSize="30dp"
         android:textAlignment="center"/>
     <TableLayout
         android:id="@+id/registrationForm"

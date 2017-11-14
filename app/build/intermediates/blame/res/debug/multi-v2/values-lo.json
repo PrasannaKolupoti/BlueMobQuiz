@@ -1,6 +1,7 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "D:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lo\\values-lo.xml",
             "map": [
                 {
@@ -22,6 +23,12 @@
                 },
                 {
                     "source": "C:\\Users\\KarthikVermaJampani\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-10.2.0.aar\\d6368d6d274bb0d27925c782ee2b4265\\res\\values-lo\\values.xml",
+=======
+            "outputFile": "C:\\Users\\prasa\\Desktop\\Fall_2017\\MC\\Project\\BlueMobQuiz\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lo\\values-lo.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\prasa\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-10.2.0.aar\\2758755beb89e0200a86dc60300e67eb\\res\\values-lo\\values.xml",
+>>>>>>> 3cb5d8a074c202821899d9ca0109cb7347ef681b
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -30,15 +37,23 @@
                         "endOffsets": "475"
                     },
                     "to": {
+<<<<<<< HEAD
                         "startLines": "28",
+=======
+                        "startLines": "9",
+>>>>>>> 3cb5d8a074c202821899d9ca0109cb7347ef681b
                         "startColumns": "4",
-                        "startOffsets": "3048",
+                        "startOffsets": "1141",
                         "endColumns": "190",
-                        "endOffsets": "3234"
+                        "endOffsets": "1327"
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\KarthikVermaJampani\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-10.2.0.aar\\f4832cdcc68895e82fbe367c57656c21\\res\\values-lo\\values.xml",
+=======
+                    "source": "C:\\Users\\prasa\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-10.2.0.aar\\907001dc941d47bbaf1d768ee6bf95d1\\res\\values-lo\\values.xml",
+>>>>>>> 3cb5d8a074c202821899d9ca0109cb7347ef681b
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -47,11 +62,11 @@
                         "endOffsets": "388,590,718,823,1034,1157,1298,1509,1612,1809,1936,2166,2353,2447,2542,2652"
                     },
                     "to": {
-                        "startLines": "21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37",
+                        "startLines": "2,3,4,5,6,7,8,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2012,2122,2324,2456,2565,2776,2903,3239,3450,3557,3754,3885,4115,4306,4404,4503",
+                        "startOffsets": "105,215,417,549,658,869,996,1332,1543,1650,1847,1978,2208,2399,2497,2596",
                         "endColumns": "109,201,131,108,210,126,144,210,106,196,130,229,190,97,98,113",
-                        "endOffsets": "2117,2319,2451,2560,2771,2898,3043,3445,3552,3749,3880,4110,4301,4399,4498,4612"
+                        "endOffsets": "210,412,544,653,864,991,1136,1538,1645,1842,1973,2203,2394,2492,2591,2705"
                     }
                 }
             ]

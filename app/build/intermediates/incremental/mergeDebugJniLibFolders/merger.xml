@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <merger version="3"><dataSet config="main"><source path="D:\MC_Project\Group6_BlueMobQuiz\app\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="D:\MC_Project\Group6_BlueMobQuiz\app\src\debug\jniLibs"/></dataSet></merger>
+=======
+<merger version="3"><dataSet config="main"><source path="C:\Users\prasa\Desktop\Fall_2017\MC\Project\BlueMobQuiz\app\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="C:\Users\prasa\Desktop\Fall_2017\MC\Project\BlueMobQuiz\app\src\debug\jniLibs"/></dataSet></merger>
+>>>>>>> 3cb5d8a074c202821899d9ca0109cb7347ef681b

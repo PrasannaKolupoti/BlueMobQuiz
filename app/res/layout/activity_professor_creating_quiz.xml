@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.mc.grp6.bluemobquiz.ProfessorCreatingQuiz">
-
-    <EditText
+    <include layout="@layout/header" />
+    <TextView
         android:id="@+id/quizName"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:hint="Enter name for the quiz"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:textAlignment="center"/>
     <TableLayout
         android:id="@+id/questions"
@@ -19,10 +22,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/quizName"
         android:stretchColumns="1">
-
-        <TableRow>
-            <TextView />
-        </TableRow>
         <TableRow
             android:layout_height="match_parent"
             android:layout_width="match_parent">
@@ -151,14 +150,16 @@
             <TextView />
         </TableRow>
         <TableRow>
+
             <Button
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
                 android:id="@+id/profNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_column="0"
                 android:layout_gravity="center"
+
                 android:text="Next"
-                android:textSize="20dp"/>
+                android:textSize="20dp" />
             <Button
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
@@ -171,3 +172,4 @@
         </TableRow>
     </TableLayout>
 </LinearLayout>
+</ScrollView>

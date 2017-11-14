@@ -29,10 +29,6 @@
 
     <uses-permission-sdk-23 android:name="android.permission.BLUETOOTH" />
 
-    <meta-data
-        android:name="android.support.VERSION"
-        android:value="26.0.0-alpha1" />
-
     <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
@@ -66,13 +62,19 @@
         <activity android:name="com.mc.grp6.bluemobquiz.LoginPage" />
         <activity android:name="com.mc.grp6.bluemobquiz.ProfessorAttendance" />
         <activity android:name="com.mc.grp6.bluemobquiz.ProfessorCreatingQuiz" />
+        <activity android:name="com.mc.grp6.bluemobquiz.ProfessorUpdatingQuiz" />
+        <activity android:name="com.mc.grp6.bluemobquiz.ProfessorUpdatingQuizName" />
         <activity android:name="com.mc.grp6.bluemobquiz.ProfessorHome" />
         <activity android:name="com.mc.grp6.bluemobquiz.ProfessorQuizAttendance" />
         <activity android:name="com.mc.grp6.bluemobquiz.StudentHome" />
         <activity android:name="com.mc.grp6.bluemobquiz.StudentAttemptingQuiz" />
         <activity android:name="com.mc.grp6.bluemobquiz.StudentAvailableQuiz" />
         <activity android:name="com.mc.grp6.bluemobquiz.Home" />
-        <!-- SmartStore Inspector screen -->
+        <activity android:name="com.mc.grp6.bluemobquiz.ProfessorAddingQuizName" />
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="25.4.0" /> <!-- SmartStore Inspector screen -->
         <activity android:name="com.salesforce.androidsdk.smartstore.ui.SmartStoreInspectorActivity" /> <!-- Metadata for supported app restrictions -->
         <meta-data
             android:name="android.content.APP_RESTRICTIONS"

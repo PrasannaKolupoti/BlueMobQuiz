@@ -8,4 +8,5 @@
     <string name="fetch_contacts_button">Fetch Contacts</string>
     <string name="fetch_accounts_button">Fetch Accounts</string>
     <string name="clear_button">Clear</string>
+    <string name="title_activity_dialog_quiz_name">DialogQuizName</string>
 </resources>

@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 
 dependencies {
+    implementation 'com.android.support:design:25.4.0'
     compile project(':libs:SmartSync')
     // From node_modules
     compile 'com.android.support:appcompat-v7:26.+'
@@ -39,5 +40,16 @@ android {
     compileOptions {
         targetCompatibility 1.8
         sourceCompatibility 1.8
+    }
+}
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '25.4.0'
+            }
+        }
+
     }
 }
