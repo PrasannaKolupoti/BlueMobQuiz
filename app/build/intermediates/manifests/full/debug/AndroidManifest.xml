@@ -39,10 +39,6 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-    <meta-data
-        android:name="android.support.VERSION"
-        android:value="26.0.0-alpha1" />
-
     <application
         android:name="com.mc.grp6.bluemobquiz.MainApplication"
         android:debuggable="true"

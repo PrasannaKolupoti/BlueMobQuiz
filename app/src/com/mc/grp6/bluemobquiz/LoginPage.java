@@ -1,7 +1,6 @@
 package com.mc.grp6.bluemobquiz;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -49,8 +48,9 @@ public class LoginPage extends SalesforceActivity {
                 boolean isFieldsValidated = isFieldsValidated();
                 if(isFieldsValidated){
                     try {
-                        sendRequest("select id, users__r.recordtype.name, users__r.id from Assigned_Devices__c " +
-                                "where users__r.username__c =\'" + userName + "\' and users__r.password__c =\'" + Password+"\'");
+                        String currentDeviceID = android.provider.Settings.Secure.getString(getApplicationContext().getContentResolver(), "bluetooth_address");
+                        sendRequest("select id,DeviceID__c, users__r.recordtype.name, users__r.id from Assigned_Devices__c " +
+                                "where users__r.username__c =\'" + userName + "\' and users__r.password__c =\'" + Password+"\'",currentDeviceID);
                     }catch (UnsupportedEncodingException e){
                         e.printStackTrace();
                     }
@@ -60,11 +60,12 @@ public class LoginPage extends SalesforceActivity {
 
     }
 
-    private void sendRequest(String soql) throws UnsupportedEncodingException {
+    private void sendRequest(String soql, String currentDeviceID) throws UnsupportedEncodingException {
         final RestRequest restRequest = RestRequest.getRequestForQuery(ApiVersionStrings.getVersionNumber(this), soql);
         client.sendAsync(restRequest, new RestClient.AsyncRequestCallback() {
             @Override
             public void onSuccess(RestRequest request, final RestResponse result) {
+
                 result.consumeQuietly(); // consume before going back to main thread
                 runOnUiThread(new Runnable() {
                     @Override
@@ -84,18 +85,10 @@ public class LoginPage extends SalesforceActivity {
                                     intent.putExtra("userID",userID);
                                     startActivity(intent);
                                 }
-<<<<<<< HEAD
-                                else  Toast.makeText(getApplicationContext(), "Invalid User Name or Password - Click forget password to" +
-                                            "reset your password", Toast.LENGTH_SHORT).show();
-                            }
-                            else  Toast.makeText(getApplicationContext(), "Invalid Query", Toast.LENGTH_SHORT).show();
-
-=======
                                 else  Toast.makeText(getApplicationContext(), "Invalid User Name or Password - Please" +
                                             "try again", Toast.LENGTH_SHORT).show();
                             }
                             else  Toast.makeText(getApplicationContext(), "Invalid Query", Toast.LENGTH_SHORT).show();
->>>>>>> 3cb5d8a074c202821899d9ca0109cb7347ef681b
                         } catch (Exception e) {
                             onError(e);
                         }

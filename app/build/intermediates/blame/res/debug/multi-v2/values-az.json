@@ -1,17 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
             "outputFile": "D:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-az\\values-az.xml",
             "map": [
                 {
                     "source": "C:\\Users\\KarthikVermaJampani\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-10.2.0.aar\\d6368d6d274bb0d27925c782ee2b4265\\res\\values-az\\values.xml",
-=======
-            "outputFile": "C:\\Users\\prasa\\Desktop\\Fall_2017\\MC\\Project\\BlueMobQuiz\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-az\\values-az.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\prasa\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-10.2.0.aar\\2758755beb89e0200a86dc60300e67eb\\res\\values-az\\values.xml",
->>>>>>> 3cb5d8a074c202821899d9ca0109cb7347ef681b
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -28,11 +21,7 @@
                     }
                 },
                 {
-<<<<<<< HEAD
                     "source": "C:\\Users\\KarthikVermaJampani\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-10.2.0.aar\\f4832cdcc68895e82fbe367c57656c21\\res\\values-az\\values.xml",
-=======
-                    "source": "C:\\Users\\prasa\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-10.2.0.aar\\907001dc941d47bbaf1d768ee6bf95d1\\res\\values-az\\values.xml",
->>>>>>> 3cb5d8a074c202821899d9ca0109cb7347ef681b
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -45,28 +34,7 @@
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
                         "startOffsets": "105,216,403,538,650,855,990,1346,1571,1683,1863,2002,2205,2391,2485,2580",
                         "endColumns": "110,186,134,111,204,134,134,224,111,179,138,202,185,93,94,109",
-<<<<<<< HEAD
-                        "endOffsets": "2049,2236,2371,2483,2688,2823,2958,3404,3516,3696,3835,4038,4224,4318,4413,4523"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\KarthikVermaJampani\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\fd32921c8ad7a6d416c0a8e7e0060586\\res\\values-az\\values-az.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,163,271,394,493,605,693,800,914,995,1074,1159,1266,1373,1473,1582,1686,1796,1893,1976",
-                        "endColumns": "107,107,122,98,111,87,106,113,80,78,84,106,106,99,108,103,109,96,82,100",
-                        "endOffsets": "158,266,389,488,600,688,795,909,990,1069,1154,1261,1368,1468,1577,1681,1791,1888,1971,2072"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,37,38",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,213,321,444,543,655,743,850,964,1045,1124,1209,1316,1423,1523,1632,1736,1846,4528,4611",
-                        "endColumns": "107,107,122,98,111,87,106,113,80,78,84,106,106,99,108,103,109,96,82,100",
-                        "endOffsets": "208,316,439,538,650,738,845,959,1040,1119,1204,1311,1418,1518,1627,1731,1841,1938,4606,4707"
-=======
                         "endOffsets": "211,398,533,645,850,985,1120,1566,1678,1858,1997,2200,2386,2480,2575,2685"
->>>>>>> 3cb5d8a074c202821899d9ca0109cb7347ef681b
                     }
                 }
             ]
