@@ -1,6 +1,7 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "C:\\Users\\Owner\\Desktop\\Fall17\\mc\\Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-kk\\values-kk.xml",
             "map": [
                 {
@@ -22,6 +23,12 @@
                 },
                 {
                     "source": "C:\\Users\\Owner\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-10.2.0.aar\\60cede92027a1eaf4dde7624a6de45fb\\res\\values-kk\\values.xml",
+=======
+            "outputFile": "D:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-kk\\values-kk.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\KarthikVermaJampani\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-10.2.0.aar\\f4832cdcc68895e82fbe367c57656c21\\res\\values-kk\\values.xml",
+>>>>>>> 41312ef00cd2039bad76add96dfc1dd24cac0618
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -30,11 +37,28 @@
                         "endOffsets": "383,568,692,796,995,1119,1253,1477,1581,1769,1896,2108,2291,2380,2465,2568"
                     },
                     "to": {
-                        "startLines": "21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37",
+                        "startLines": "2,3,4,5,6,7,8,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2049,2154,2339,2467,2575,2774,2902,3263,3487,3595,3783,3914,4126,4313,4406,4495",
+                        "startOffsets": "105,210,395,523,631,830,958,1319,1543,1651,1839,1970,2182,2369,2462,2551",
                         "endColumns": "104,184,127,107,198,127,137,223,107,187,130,211,186,92,88,106",
-                        "endOffsets": "2149,2334,2462,2570,2769,2897,3035,3482,3590,3778,3909,4121,4308,4401,4490,4597"
+                        "endOffsets": "205,390,518,626,825,953,1091,1538,1646,1834,1965,2177,2364,2457,2546,2653"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\KarthikVermaJampani\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-10.2.0.aar\\d6368d6d274bb0d27925c782ee2b4265\\res\\values-kk\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "285",
+                        "endColumns": "222",
+                        "endOffsets": "507"
+                    },
+                    "to": {
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "1096",
+                        "endColumns": "222",
+                        "endOffsets": "1314"
                     }
                 },
                 {

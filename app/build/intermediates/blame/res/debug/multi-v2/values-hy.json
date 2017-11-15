@@ -1,6 +1,7 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "C:\\Users\\Owner\\Desktop\\Fall17\\mc\\Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hy\\values-hy.xml",
             "map": [
                 {
@@ -22,6 +23,29 @@
                 },
                 {
                     "source": "C:\\Users\\Owner\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-10.2.0.aar\\60cede92027a1eaf4dde7624a6de45fb\\res\\values-hy\\values.xml",
+=======
+            "outputFile": "D:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hy\\values-hy.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\KarthikVermaJampani\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-10.2.0.aar\\d6368d6d274bb0d27925c782ee2b4265\\res\\values-hy\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "285",
+                        "endColumns": "209",
+                        "endOffsets": "494"
+                    },
+                    "to": {
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "1149",
+                        "endColumns": "209",
+                        "endOffsets": "1354"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\KarthikVermaJampani\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-10.2.0.aar\\f4832cdcc68895e82fbe367c57656c21\\res\\values-hy\\values.xml",
+>>>>>>> 41312ef00cd2039bad76add96dfc1dd24cac0618
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -30,11 +54,11 @@
                         "endOffsets": "386,583,715,821,1034,1168,1306,1532,1638,1837,1971,2192,2384,2475,2568,2675"
                     },
                     "to": {
-                        "startLines": "21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37",
+                        "startLines": "2,3,4,5,6,7,8,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2062,2170,2367,2503,2613,2826,2964,3316,3542,3652,3851,3989,4210,4406,4501,4598",
+                        "startOffsets": "105,213,410,546,656,869,1007,1359,1585,1695,1894,2032,2253,2449,2544,2641",
                         "endColumns": "107,196,135,109,212,137,141,225,109,198,137,220,195,94,96,110",
-                        "endOffsets": "2165,2362,2498,2608,2821,2959,3101,3537,3647,3846,3984,4205,4401,4496,4593,4704"
+                        "endOffsets": "208,405,541,651,864,1002,1144,1580,1690,1889,2027,2248,2444,2539,2636,2747"
                     }
                 },
                 {

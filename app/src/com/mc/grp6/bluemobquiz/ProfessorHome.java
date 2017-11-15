@@ -1,9 +1,9 @@
 package com.mc.grp6.bluemobquiz;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -26,6 +26,9 @@ public class ProfessorHome extends SalesforceActivity {
     private RestClient client;
     public String userID;
     private ArrayAdapter<String> listAdapter;
+    public ArrayList<String> quizIDList = new ArrayList<String>();
+    public ArrayList<String> quizNameList = new ArrayList<String>();
+
     @Override
     public void onResume() {
         // Create list adapter
@@ -37,7 +40,7 @@ public class ProfessorHome extends SalesforceActivity {
     public void onResume(RestClient client) {
         this.client = client;
         try {
-            displayQuizzes("SELECT Name FROM Quiz__c");
+            displayQuizzes("SELECT ID,Name FROM Quiz__c");
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
@@ -49,13 +52,27 @@ public class ProfessorHome extends SalesforceActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_professor_home);
+        userID = getIntent().getExtras().getString("userID");
         Button createQuizButton = (Button) findViewById(R.id.createQuizButton);
+        ListView quizList = (ListView) findViewById(R.id.quizListView);
+        quizList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(getApplicationContext(),"on item click",Toast.LENGTH_SHORT);
+                String quizID = quizIDList.get(position);
+                String quizName = quizNameList.get(position);
 
+                Intent intent = new Intent(ProfessorHome.this, ProfessorUpdatingQuizName.class);
+                intent.putExtra("userID",userID);
+                intent.putExtra("quizID",quizID);
+                intent.putExtra("quizName",quizName);
+                startActivity(intent);
+            }
+        });
         createQuizButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                userID = getIntent().getExtras().getString("userID");
-                Intent intent = new Intent(ProfessorHome.this, ProfessorCreatingQuiz.class);
+                Intent intent = new Intent(ProfessorHome.this, ProfessorAddingQuizName.class);
                 intent.putExtra("userID",userID);
                 startActivity(intent);
             }
@@ -75,6 +92,8 @@ public class ProfessorHome extends SalesforceActivity {
                             listAdapter.clear();
                             JSONArray records = result.asJSONObject().getJSONArray("records");
                             for (int i = 0; i < records.length(); i++) {
+                                quizIDList.add(records.getJSONObject(i).getString("Id"));
+                                quizNameList.add(records.getJSONObject(i).getString("Name"));
                                 listAdapter.add(records.getJSONObject(i).getString("Name"));
                             }
                         } catch (Exception e) {

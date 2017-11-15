@@ -26,7 +26,9 @@
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission-sdk-23 android:name="android.permission.BLUETOOTH"/>
+
+    <uses-permission-sdk-23 android:name="android.permission.BLUETOOTH" />
+
     <application
         android:name=".MainApplication"
         android:icon="@drawable/sf__icon"
@@ -44,17 +46,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".RegistrationPage" />
+        <activity android:name=".RegistrationPage" />
         <activity android:name=".LoginPage" />
         <activity android:name=".ProfessorAttendance" />
         <activity android:name=".ProfessorCreatingQuiz" />
+        <activity android:name=".ProfessorUpdatingQuiz" />
+        <activity android:name=".ProfessorUpdatingQuizName" />
         <activity android:name=".ProfessorHome" />
         <activity android:name=".ProfessorQuizAttendance" />
         <activity android:name=".StudentHome" />
         <activity android:name=".StudentAttemptingQuiz" />
         <activity android:name=".StudentAvailableQuiz" />
-        <activity android:name=".Home"></activity>
+        <activity android:name=".Home" />
+        <activity android:name=".ProfessorAddingQuizName"></activity>
     </application>
 
 </manifest>
