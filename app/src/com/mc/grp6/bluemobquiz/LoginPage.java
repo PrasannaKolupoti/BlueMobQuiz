@@ -1,6 +1,9 @@
 package com.mc.grp6.bluemobquiz;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -16,15 +19,19 @@ import com.salesforce.androidsdk.rest.RestResponse;
 import com.salesforce.androidsdk.ui.SalesforceActivity;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 public class LoginPage extends SalesforceActivity {
 
     private RestClient client;
-    public String userName, Password,id;
+    public String userName, Password,id, userID, currentDeviceID;
+    public ArrayList<String> deviceIDList = new ArrayList<String>();
 
     @Override
     public void onResume(RestClient client) {
@@ -48,7 +55,7 @@ public class LoginPage extends SalesforceActivity {
                 boolean isFieldsValidated = isFieldsValidated();
                 if(isFieldsValidated){
                     try {
-                        String currentDeviceID = android.provider.Settings.Secure.getString(getApplicationContext().getContentResolver(), "bluetooth_address");
+                        currentDeviceID = android.provider.Settings.Secure.getString(getApplicationContext().getContentResolver(), "bluetooth_address");
                         sendRequest("select id,DeviceID__c, users__r.recordtype.name, users__r.id from Assigned_Devices__c " +
                                 "where users__r.username__c =\'" + userName + "\' and users__r.password__c =\'" + Password+"\'",currentDeviceID);
                     }catch (UnsupportedEncodingException e){
@@ -70,23 +77,65 @@ public class LoginPage extends SalesforceActivity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
+                        Boolean loginSuccess = false;
                         try {
                             if(result.isSuccess()){
 
-                                String userID = result.toString().substring(result.toString().indexOf(":\"a01")+2,result.toString().length()-5);
-                                System.out.println("************"+result.toString()+"\n*********"+userID);
+                                userID = result.toString().substring(result.toString().indexOf(":\"a01")+2,result.toString().length()-5);
+                                JSONArray records = result.asJSONObject().getJSONArray("records");
+                                for (int i = 0; i < records.length(); i++) {
+                                    deviceIDList.add(records.getJSONObject(i).getString("DeviceID__c"));
+                                }
+                                System.out.println("************"+result.toString()+"\n*********"+userID+"\n********"+deviceIDList.get(0));
                                 if(result.toString().contains("Professor")){
                                     Intent intent = new Intent(LoginPage.this, ProfessorHome.class);
                                     intent.putExtra("userID",userID);
                                     startActivity(intent);
                                 }
-                                else if(result.toString().contains("Student")){
-                                    Intent intent = new Intent(LoginPage.this, StudentHome.class);
-                                    intent.putExtra("userID",userID);
-                                    startActivity(intent);
+
+                                else if(result.toString().contains("Student")) {
+                                    System.out.println("**********currdevID:" + currentDeviceID);
+                                    for (int i = 0; i < deviceIDList.size(); i++) {
+                                        if (currentDeviceID.equals(deviceIDList.get(i))) {
+                                            loginSuccess = true;
+                                            System.out.println("**********deviceIDList.get(i):" + deviceIDList.get(i));
+                                            Intent intent = new Intent(LoginPage.this, StudentHome.class);
+                                            intent.putExtra("userID", userID);
+                                            startActivity(intent);
+
+                                        }
+                                    }
+                                    if (!loginSuccess) {
+                                        Toast.makeText(getApplicationContext(), "Invalid Device ", Toast.LENGTH_SHORT).show();
+                                        AlertDialog.Builder builder;
+                                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                                            builder = new AlertDialog.Builder(LoginPage.this, android.R.style.Theme_Material_Dialog_Alert);
+                                        } else {
+                                            builder = new AlertDialog.Builder(LoginPage.this);
+                                        }
+                                        builder.setTitle("New Device")
+                                                .setMessage("Do you want to add this device?")
+                                                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                                                    public void onClick(DialogInterface dialog, int which) {
+                                                        Map<String, Object> deviceRecord = new HashMap<String, Object>();
+                                                        deviceRecord.put("Users__c", userID);
+                                                        deviceRecord.put("DeviceID__c", currentDeviceID);
+                                                        registerDevice(deviceRecord);
+                                                        dialog.dismiss();
+                                                    }
+                                                })
+                                                .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                                                    @Override
+                                                    public void onClick(DialogInterface dialog, int which) {
+                                                        Toast.makeText(getApplicationContext(), "You can't login with this device ", Toast.LENGTH_SHORT).show();
+                                                        dialog.dismiss();
+                                                    }
+                                                })
+                                                .setIcon(android.R.drawable.ic_dialog_alert)
+                                                .show();
+                                    }
                                 }
-                                else  Toast.makeText(getApplicationContext(), "Invalid User Name or Password - Please" +
-                                            "try again", Toast.LENGTH_SHORT).show();
+                                else  Toast.makeText(getApplicationContext(), "Invalid User Name or Password - Please try again", Toast.LENGTH_SHORT).show();
                             }
                             else  Toast.makeText(getApplicationContext(), "Invalid Query", Toast.LENGTH_SHORT).show();
                         } catch (Exception e) {
@@ -101,11 +150,46 @@ public class LoginPage extends SalesforceActivity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        Toast.makeText(LoginPage.this,
-                                LoginPage.this.getString(SalesforceSDKManager.getInstance().getSalesforceR().stringGenericError(), "Error: "+exception.toString()),
-                                Toast.LENGTH_LONG).show();
+                        Toast.makeText(LoginPage.this,"User not registered",Toast.LENGTH_SHORT).show();
                     }
                 });
+            }
+        });
+    }
+
+    private void registerDevice(Map<String, Object> deviceRecord) {
+        RestRequest restRequest;
+        try {
+            restRequest = RestRequest.getRequestForCreate(getString(R.string.api_version), "Assigned_Devices__c", deviceRecord);
+        } catch (Exception e) {
+            Toast.makeText(getApplicationContext(), "catch" + e.getMessage(), Toast.LENGTH_SHORT).show();
+            return ;
+        }
+        client.sendAsync(restRequest, new RestClient.AsyncRequestCallback() {
+            @Override
+            public void onSuccess(RestRequest request, RestResponse result) {
+                result.consumeQuietly(); // consume before going back to main thread
+                System.out.println("**********"+result.toString());
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        if (result.isSuccess()) {
+                            try {
+                                Toast.makeText(getApplicationContext(), "Device added successfully", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(LoginPage.this, LoginPage.class);
+                                startActivity(intent);
+                            } catch (Exception e) {
+                                // You might want to log the error
+                                // or show it to the user
+                            }
+                        }
+                    }
+                });
+            }
+
+            @Override
+            public void onError(Exception e) {
+                Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }
