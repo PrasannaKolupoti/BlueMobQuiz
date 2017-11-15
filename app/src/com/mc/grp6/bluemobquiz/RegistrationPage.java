@@ -63,16 +63,7 @@ public class RegistrationPage extends SalesforceActivity {
                     userRecord.put("Username__c", userName);
                     userRecord.put("Password__c", password);
                     registerUser(userRecord);
-                    //if (successRegistration) {
-                        deviceID = getDeviceID();
-                        Map<String, Object> deviceRecord = new HashMap<String, Object>();
-                        deviceRecord.put("Users__c", userID);
-                        deviceRecord.put("DeviceID__c", deviceID);
-                        registerDevice(deviceRecord);
-                        Toast.makeText(getApplicationContext(), "Successfully Registered", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(RegistrationPage.this, LoginPage.class);
-                        startActivity(intent);
-                    //}
+
                 }
             }
         });
@@ -88,13 +79,22 @@ public class RegistrationPage extends SalesforceActivity {
         client.sendAsync(restRequest, new RestClient.AsyncRequestCallback() {
             @Override
             public void onSuccess(RestRequest request, RestResponse result) {
-                if (result.isSuccess()) {
-                    try {
-                    } catch (Exception e) {
-                        // You might want to log the error
-                        // or show it to the user
+                result.consumeQuietly(); // consume before going back to main thread
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        if (result.isSuccess()) {
+                            try {
+                                Toast.makeText(getApplicationContext(), "Successfully Registered", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(RegistrationPage.this, LoginPage.class);
+                                startActivity(intent);
+                            } catch (Exception e) {
+                                // You might want to log the error
+                                // or show it to the user
+                            }
+                        }
                     }
-                }
+                });
             }
 
             @Override
@@ -122,8 +122,14 @@ public class RegistrationPage extends SalesforceActivity {
                     public void run() {
                         if (result.isSuccess()) {
                             try {
-                                successRegistration = true;
                                 userID = result.toString().substring(7, 25);
+                                deviceID = getDeviceID();
+                                System.out.println("**********deviceID"+deviceID);
+                                Map<String, Object> deviceRecord = new HashMap<String, Object>();
+                                deviceRecord.put("Users__c", userID);
+                                deviceRecord.put("DeviceID__c", deviceID);
+                                registerDevice(deviceRecord);
+
                             } catch (Exception e) {
                             }
                         }
@@ -137,7 +143,7 @@ public class RegistrationPage extends SalesforceActivity {
         });
     }
     private String getDeviceID(){
-        return Settings.Secure.getString(getContentResolver(),Settings.Secure.ANDROID_ID);
+        return android.provider.Settings.Secure.getString(getApplicationContext().getContentResolver(), "bluetooth_address");
     }
 
     private boolean isAlphabet(String name) {
