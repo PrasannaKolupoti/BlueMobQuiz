@@ -142,12 +142,12 @@ public final class R {
         public static final int sf__show_custom_url_edit = 0x7f0900dc;
         public static final int sf__switcher_apply_button = 0x7f0900dd;
         public static final int sf__use_password_button = 0x7f0900de;
-        public static final int spacer = 0x7f0900e8;
-        public static final int standard = 0x7f0900ef;
-        public static final int text = 0x7f090105;
-        public static final int text2 = 0x7f090106;
-        public static final int wide = 0x7f09011b;
-        public static final int wrap_content = 0x7f09011e;
+        public static final int spacer = 0x7f0900e7;
+        public static final int standard = 0x7f0900ee;
+        public static final int text = 0x7f090104;
+        public static final int text2 = 0x7f090105;
+        public static final int wide = 0x7f09011a;
+        public static final int wrap_content = 0x7f09011d;
     }
     public static final class integer {
         public static final int google_play_services_version = 0x7f0a0006;

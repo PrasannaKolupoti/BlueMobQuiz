@@ -31,14 +31,14 @@
                 android:layout_column="0"
                 android:textSize="20dp"
                 android:textAlignment="textStart" />
-            <Button
+           <!-- <Button
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:id="@+id/shareQuizButton"
                 android:layout_column="1"
                 android:layout_gravity="end"
                 android:text="Share"
-                android:textSize="20dp"/>
+                android:textSize="20dp"/> -->
 
         </TableRow>
     </TableLayout>
