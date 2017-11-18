@@ -169,6 +169,9 @@ public class RegistrationPage extends SalesforceActivity {
     private  boolean getTotalSpaces(String name){
         return !name.contains("  ");
     }
+    private  boolean verifySpace(String name){
+        return !name.contains(" ");
+    }
     private boolean validateData() {
         //name validations
         String tempName = name, tempUserName = userName , tempPassword = password;
@@ -186,8 +189,8 @@ public class RegistrationPage extends SalesforceActivity {
         }else if (userName.equals("")) {
             Toast.makeText(getApplicationContext(), "Please enter your Username.", Toast.LENGTH_SHORT).show();
             return false;
-        }else if (!getTotalSpaces(tempUserName)) {
-            Toast.makeText(getApplicationContext(), "Please enter your Username with out more than 2 consecutive spaces .", Toast.LENGTH_SHORT).show();
+        }else if (!verifySpace(tempUserName)) {
+            Toast.makeText(getApplicationContext(), "Please enter your Username with out spaces .", Toast.LENGTH_SHORT).show();
             return false;
         }else if (userName.length()>12) {
             Toast.makeText(getApplicationContext(), "Please choose an user name less than 12 characters in length", Toast.LENGTH_SHORT).show();

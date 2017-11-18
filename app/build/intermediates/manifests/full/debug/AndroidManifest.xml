@@ -6,7 +6,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="19"
+        android:minSdkVersion="23"
         android:targetSdkVersion="26" />
 
     <!--
@@ -18,17 +18,13 @@
         android:name="com.mc.grp6.bluemobquiz.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.mc.grp6.bluemobquiz.C2D_MESSAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.bluetooth" />
+
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <uses-permission-sdk-23 android:name="android.permission.BLUETOOTH" />
-
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
     <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
@@ -37,6 +33,7 @@
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- TODO: Remove the -sdk-23 tag when the minsdk version is 23 -->
     <uses-permission-sdk-23 android:name="android.permission.USE_FINGERPRINT" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
@@ -71,10 +68,7 @@
         <activity android:name="com.mc.grp6.bluemobquiz.StudentAvailableQuiz" />
         <activity android:name="com.mc.grp6.bluemobquiz.Home" />
         <activity android:name="com.mc.grp6.bluemobquiz.ProfessorAddingQuizName" />
-
-        <meta-data
-            android:name="android.support.VERSION"
-            android:value="25.4.0" /> <!-- SmartStore Inspector screen -->
+        <!-- SmartStore Inspector screen -->
         <activity android:name="com.salesforce.androidsdk.smartstore.ui.SmartStoreInspectorActivity" /> <!-- Metadata for supported app restrictions -->
         <meta-data
             android:name="android.content.APP_RESTRICTIONS"
@@ -153,6 +147,10 @@
         <service
             android:name="com.salesforce.androidsdk.analytics.AnalyticsPublisherService"
             android:exported="false" />
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="25.4.0" />
 
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
