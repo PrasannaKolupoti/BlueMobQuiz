@@ -19,28 +19,30 @@
         android:stretchColumns="0,1,2"
         android:id="@+id/headings">
         <TableRow>
-
             <TextView
                 android:id="@+id/quizHeading"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
+                android:layout_weight=".50"
                 android:text="Quiz"
                 android:textSize="20dp"
                 android:layout_gravity="start"/>
             <TextView
                 android:id="@+id/marksHeading"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_column="1"
+                android:layout_weight=".25"
                 android:text="Marks"
                 android:textSize="20dp"
                 android:layout_gravity="start"/>
             <TextView
                 android:id="@+id/rankHeading"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
+                android:layout_weight=".25"
                 android:text="Rank"
                 android:textSize="20dp"
                 android:layout_gravity="start"/>
