@@ -23,7 +23,7 @@ import java.util.ArrayList;
 public class StudentAvailableQuiz extends SalesforceActivity {
     public RestClient client;
     public String userID, quizID, quizName, ownerDevices;
-    public int quizposition;
+    public int quizPosition;
     private ArrayAdapter<String> listAdapter;
     public ArrayList<String> quizIDList = new ArrayList<String>();
     public ArrayList<String> quizNameList = new ArrayList<String>();
@@ -52,12 +52,12 @@ public class StudentAvailableQuiz extends SalesforceActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_available_quiz);
         userID = getIntent().getExtras().getString("userID");
-        ListView availablequizList = (ListView) findViewById(R.id.availableQuizList);
-        availablequizList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        ListView availableQuizList = (ListView) findViewById(R.id.availableQuizList);
+        availableQuizList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String quizID = quizIDList.get(quizposition);
-                String quizName = quizNameList.get(quizposition);
+                String quizID = quizIDList.get(quizPosition);
+                String quizName = quizNameList.get(quizPosition);
                 Intent intent = new Intent(StudentAvailableQuiz.this, StudentAttemptingQuiz.class);
                 intent.putExtra("userID",userID);
                 intent.putExtra("quizID",quizID);
@@ -68,8 +68,6 @@ public class StudentAvailableQuiz extends SalesforceActivity {
     }
     private void searchQuizzes(String soql) throws UnsupportedEncodingException {
         RestRequest restRequest = RestRequest.getRequestForQuery(ApiVersionStrings.getVersionNumber(this), soql);
-        System.out.println("*********restRequest:"+restRequest);
-        System.out.println("*********restRequest:"+restRequest.toString());
         client.sendAsync(restRequest, new RestClient.AsyncRequestCallback() {
             @Override
             public void onSuccess(RestRequest request, final RestResponse result) {
@@ -86,23 +84,14 @@ public class StudentAvailableQuiz extends SalesforceActivity {
                                 quizStatusList.add(records.getJSONObject(i).getString("Is_Active__c"));
                                 ownerDevicesList.add(records.getJSONObject(i).getString("Owner_Devices__c"));
                                 userID = getIntent().getExtras().getString("userID");
-                                System.out.println("*********userID:"+userID);
                                 scannedDevicesList = getIntent().getStringArrayListExtra("scannedDevicesList");
-                                for (String address : scannedDevicesList) {
-                                    System.out.println("*********address:"+address);
-                                }
                                 if(quizStatusList.get(i).equals("true")){
                                     quizID = quizIDList.get(i);
                                     quizName = quizNameList.get(i);
                                     ownerDevices = ownerDevicesList.get(i);
-                                    quizposition = i;
-                                    System.out.println("*********quizID:"+quizID);
-                                    System.out.println("*********quizName:"+quizName);
-                                    System.out.println("*********ownerDevices:"+ownerDevices);
-
+                                    quizPosition = i;
                                     for(String id: scannedDevicesList){
-                                        System.out.println("*********id:"+id);
-                                        if(ownerDevices.contains(id)){
+                                        if(ownerDevices.contains(id) && (listAdapter.getPosition(quizName))==-1){
                                             listAdapter.add(quizName);
                                         }
                                     }
@@ -114,7 +103,6 @@ public class StudentAvailableQuiz extends SalesforceActivity {
                     }
                 });
             }
-
             @Override
             public void onError(final Exception exception) {
                 runOnUiThread(new Runnable() {

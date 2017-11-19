@@ -10,25 +10,28 @@
 
             <TextView
                 android:id="@+id/answeredQuiz"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
+                android:layout_weight=".50"
                 android:text="Quiz 1"
                 android:textSize="20dp"
                 android:layout_gravity="start"/>
             <TextView
                 android:id="@+id/marks"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_column="1"
+                android:layout_weight=".25"
                 android:text="80"
                 android:textSize="20dp"
                 android:layout_gravity="start"/>
             <TextView
                 android:id="@+id/rank"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
+                android:layout_weight=".25"
                 android:text="5"
                 android:textSize="20dp"
                 android:layout_gravity="start"/>
