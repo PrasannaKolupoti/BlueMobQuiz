@@ -30,7 +30,7 @@ public class ProfessorHome extends SalesforceActivity {
 
     private RestClient client;
     public String userID;
-    private ArrayAdapter<String> listAdapter;
+    private ArrayAdapter<String> createdQuizAdapter;
     public ArrayList<String> quizIDList = new ArrayList<String>();
     public ArrayList<String> quizNameList = new ArrayList<String>();
     public ArrayList<String> quizStatusList = new ArrayList<String>();
@@ -38,19 +38,19 @@ public class ProfessorHome extends SalesforceActivity {
     @Override
     public void onResume() {
         // Create list adapter
-        listAdapter = new ArrayAdapter<String>(this, R.layout.professor_listviewquizzes,R.id.quiz, new ArrayList<String>());
-        ((ListView) findViewById(R.id.quizListView)).setAdapter(listAdapter);
+        createdQuizAdapter = new ArrayAdapter<String>(this, R.layout.professor_listviewquizzes,R.id.quiz, new ArrayList<String>());
+        ((ListView) findViewById(R.id.quizListView)).setAdapter(createdQuizAdapter);
         super.onResume();
     }
     @Override
     public void onResume(RestClient client) {
         this.client = client;
         try {
-            displayQuizzes("SELECT ID,Name,Is_Active__c FROM Quiz__c");
+            displayCreatedQuizzes("SELECT ID,Name,Is_Active__c FROM Quiz__c");
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
-        ((ListView) findViewById(R.id.quizListView)).setAdapter(listAdapter);
+        ((ListView) findViewById(R.id.quizListView)).setAdapter(createdQuizAdapter);
 
     }
 
@@ -190,7 +190,7 @@ public class ProfessorHome extends SalesforceActivity {
     }
 
 
-    private void displayQuizzes(String soql) throws UnsupportedEncodingException {
+    private void displayCreatedQuizzes(String soql) throws UnsupportedEncodingException {
         RestRequest restRequest = RestRequest.getRequestForQuery(ApiVersionStrings.getVersionNumber(this), soql);
         client.sendAsync(restRequest, new RestClient.AsyncRequestCallback() {
             @Override
@@ -200,14 +200,13 @@ public class ProfessorHome extends SalesforceActivity {
                     @Override
                     public void run() {
                         try {
-                            System.out.println("*********Is_Active__c:"+result.toString());
-                            listAdapter.clear();
+                            createdQuizAdapter.clear();
                             JSONArray records = result.asJSONObject().getJSONArray("records");
                             for (int i = 0; i < records.length(); i++) {
                                 quizIDList.add(records.getJSONObject(i).getString("Id"));
                                 quizNameList.add(records.getJSONObject(i).getString("Name"));
                                 quizStatusList.add(records.getJSONObject(i).getString("Is_Active__c"));
-                                listAdapter.add(records.getJSONObject(i).getString("Name"));
+                                createdQuizAdapter.add(records.getJSONObject(i).getString("Name"));
                             }
                         } catch (Exception e) {
                             onError(e);

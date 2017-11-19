@@ -132,6 +132,7 @@ public class ProfessorCreatingQuiz extends SalesforceActivity {
     }
 
     private void clearPage() {
+        questionNumberValue++;
         quizName.setText(quizNameValue);
         questionNumber.setText(Integer.toString(questionNumberValue));
         question.getText().clear();
@@ -195,7 +196,6 @@ public class ProfessorCreatingQuiz extends SalesforceActivity {
                                 System.out.println("*********************PQuestionID:"+questionID);
                                 System.out.println("*********************PQuizID:"+quizID);
                                 System.out.println("*********************PAnswer:"+selectedAnswer);
-                                questionNumberValue++;
                                 System.out.println("************"+questionNumberValue);
                                 Map<String, Object> answerRecord = new HashMap<String, Object>();
                                 answerRecord.put("Quiz__c",quizID);

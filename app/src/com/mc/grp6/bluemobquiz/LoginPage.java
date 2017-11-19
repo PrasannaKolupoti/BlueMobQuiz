@@ -20,6 +20,7 @@ import com.salesforce.androidsdk.ui.SalesforceActivity;
 
 import org.json.JSONArray;
 import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -32,12 +33,10 @@ public class LoginPage extends SalesforceActivity {
     private RestClient client;
     public String userName, Password,id, userID, currentDeviceID;
     public ArrayList<String> deviceIDList = new ArrayList<String>();
-
     @Override
     public void onResume(RestClient client) {
         this.client = client;
     }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,9 +63,7 @@ public class LoginPage extends SalesforceActivity {
                 }
             }
         });
-
     }
-
     private void sendRequest(String soql, String currentDeviceID) throws UnsupportedEncodingException {
         final RestRequest restRequest = RestRequest.getRequestForQuery(ApiVersionStrings.getVersionNumber(this), soql);
         client.sendAsync(restRequest, new RestClient.AsyncRequestCallback() {
@@ -80,21 +77,55 @@ public class LoginPage extends SalesforceActivity {
                         Boolean loginSuccess = false;
                         try {
                             if(result.isSuccess()){
-
-                                userID = result.toString().substring(result.toString().indexOf(":\"a01")+2,result.toString().length()-5);
                                 JSONArray records = result.asJSONObject().getJSONArray("records");
+                                JSONObject userIDRecord = records.getJSONObject(0).getJSONObject("Users__r");
+                                userID = userIDRecord.getString("Id");
                                 for (int i = 0; i < records.length(); i++) {
                                     deviceIDList.add(records.getJSONObject(i).getString("DeviceID__c"));
                                 }
-                                System.out.println("************"+result.toString()+"\n*********"+userID+"\n********"+deviceIDList.get(0));
+                                System.out.println("************"+result.toString()+"\n*********UserId:"+userID+"\n********Device ID:"+deviceIDList.get(0));
                                 if(result.toString().contains("Professor")){
-                                    Intent intent = new Intent(LoginPage.this, ProfessorHome.class);
-                                    intent.putExtra("userID",userID);
-                                    startActivity(intent);
+                                    for (int i = 0; i < deviceIDList.size(); i++) {
+                                        if (currentDeviceID.equals(deviceIDList.get(i))) {
+                                            loginSuccess = true;
+                                            System.out.println("**********deviceIDList.get(i):" + deviceIDList.get(i));
+                                            Intent intent = new Intent(LoginPage.this, ProfessorHome.class);
+                                            intent.putExtra("userID",userID);
+                                            startActivity(intent);
+                                        }
+                                    }
+                                    if (!loginSuccess) {
+                                        Toast.makeText(getApplicationContext(), "Invalid Device ", Toast.LENGTH_SHORT).show();
+                                        AlertDialog.Builder builder;
+                                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                                            builder = new AlertDialog.Builder(LoginPage.this, android.R.style.Theme_Material_Dialog_Alert);
+                                        } else {
+                                            builder = new AlertDialog.Builder(LoginPage.this);
+                                        }
+                                        builder.setTitle("New Device")
+                                                .setMessage("Do you want to add this device?")
+                                                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                                                    public void onClick(DialogInterface dialog, int which) {
+                                                        Map<String, Object> deviceRecord = new HashMap<String, Object>();
+                                                        deviceRecord.put("Users__c", userID);
+                                                        deviceRecord.put("DeviceID__c", currentDeviceID);
+                                                        registerDevice(deviceRecord);
+                                                        dialog.dismiss();
+                                                    }
+                                                })
+                                                .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                                                    @Override
+                                                    public void onClick(DialogInterface dialog, int which) {
+                                                        Toast.makeText(getApplicationContext(), "You can't login with this device ", Toast.LENGTH_SHORT).show();
+                                                        dialog.dismiss();
+                                                    }
+                                                })
+                                                .setIcon(android.R.drawable.ic_dialog_alert)
+                                                .show();
+                                    }
                                 }
 
                                 else if(result.toString().contains("Student")) {
-                                    System.out.println("**********currdevID:" + currentDeviceID);
                                     for (int i = 0; i < deviceIDList.size(); i++) {
                                         if (currentDeviceID.equals(deviceIDList.get(i))) {
                                             loginSuccess = true;
@@ -186,7 +217,6 @@ public class LoginPage extends SalesforceActivity {
                     }
                 });
             }
-
             @Override
             public void onError(Exception e) {
                 Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
