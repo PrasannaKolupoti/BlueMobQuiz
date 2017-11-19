@@ -2059,6 +2059,7 @@
         <item>C</item>
         <item>D</item>
     </string-array></file><file path="C:\Users\prasa\Desktop\Fall_2017\MC\Project\BlueMobQuiz\app\res\values\string_answer_student.xml" qualifiers=""><string name="studentAnswerPrompt">Choose an answer</string><string-array name="studentAnswerChoice">
+        <item> </item>
         <item>A</item>
         <item>B</item>
         <item>C</item>

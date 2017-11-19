@@ -53,7 +53,12 @@
         android:dividerHeight="1dp"
         android:footerDividersEnabled="false"
         android:layout_weight="0.82" />
-
+    <ProgressBar
+        android:id="@+id/loadingProgressBar"
+        style="?android:attr/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
