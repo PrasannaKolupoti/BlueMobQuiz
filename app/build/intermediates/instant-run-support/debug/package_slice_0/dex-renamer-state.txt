@@ -1,4 +1,4 @@
-#Sun Nov 19 13:19:22 AST 2017
+#Sun Nov 19 18:39:17 AST 2017
 base.0=C\:\\Users\\Owner\\Desktop\\Fall17\\mc\\Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
 renamed.0=classes.dex
 file.0=C\:\\Users\\Owner\\Desktop\\Fall17\\mc\\Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1\\classes.dex
