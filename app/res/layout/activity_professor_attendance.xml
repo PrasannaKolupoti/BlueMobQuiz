@@ -10,7 +10,7 @@
         android:id="@+id/profAttendanceHeading"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:text="Quiz 1 Attendance"
+        android:text="Attempted Quizzes"
         android:textSize="30dp"
         android:textAlignment="center"/>
 
