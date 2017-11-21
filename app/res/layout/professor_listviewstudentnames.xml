@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="0,1">
+        <TableRow>
+            <TextView
+                android:id="@+id/studentName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight=".75"
+                android:text="Student 1"
+                android:textSize="20dp"
+                android:layout_gravity="start"/>
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight=".25"
+                android:text="30"
+                android:textSize="20dp"
+                android:layout_gravity="start"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

@@ -31,13 +31,9 @@ import java.util.ArrayList;
 public class StudentHome extends SalesforceActivity {
 
     private static final String TAG = "StudentHome";
-    private ArrayAdapter<String> attemptedQuizNameAdapter;
-    private ArrayAdapter<Integer> scoreAdapter;
-    private ArrayAdapter<String> rankAdapter;
     private RestClient client;
     public String quizID,quizName, userID;
     public int score, rank;
-    public ArrayList<String> quizStatusList = new ArrayList<String>();
     public ArrayList<String> deviceAddressList = new ArrayList<>();
     public Button searchQuiz;
     BluetoothAdapter mBluetoothAdapter;
@@ -51,11 +47,6 @@ public class StudentHome extends SalesforceActivity {
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
-
-        /*attemptedQuizNameAdapter = new ArrayAdapter<String>(this, R.layout.student_listviewattemptedquizzes,R.id.answeredQuiz, new ArrayList<String>());
-        ((ListView) findViewById(R.id.attemptedQuizListView)).setAdapter(attemptedQuizNameAdapter);
-        scoreAdapter = new ArrayAdapter<Integer>(this, R.layout.student_listviewattemptedquizzes,R.id.marks, new ArrayList<Integer>());
-        ((ListView) findViewById(R.id.attemptedQuizListView)).setAdapter(scoreAdapter);*/
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -168,8 +159,6 @@ public class StudentHome extends SalesforceActivity {
                     @Override
                     public void run() {
                         try {
-                            //attemptedQuizNameAdapter.clear();
-                            //scoreAdapter.clear();
                             finalResult = new ArrayList<DisplayResults>();
                             DisplayResults displayResults;
                             JSONArray resultTable = result.asJSONObject().getJSONArray("records");
@@ -186,12 +175,10 @@ public class StudentHome extends SalesforceActivity {
                                 displayResults.setMarks(score);
                                 displayResults.setRank(rank);
                                 finalResult.add(displayResults);
-                                //attemptedQuizNameAdapter.add(quizName);
-                                //scoreAdapter.add(score);
                             }
 
                             final ListView lv = (ListView) findViewById(R.id.attemptedQuizListView);
-                            lv.setAdapter(new CustomBaseAdapter(getApplicationContext(), finalResult));
+                            lv.setAdapter(new StudentCustomBaseAdapter(getApplicationContext(), finalResult));
                         } catch (Exception e) {
                             onError(e);
                         }

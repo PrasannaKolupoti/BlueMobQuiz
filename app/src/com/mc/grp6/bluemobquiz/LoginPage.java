@@ -85,16 +85,16 @@ public class LoginPage extends SalesforceActivity {
                                 }
                                 System.out.println("************"+result.toString()+"\n*********UserId:"+userID+"\n********Device ID:"+deviceIDList.get(0));
                                 if(result.toString().contains("Professor")){
-                                    for (int i = 0; i < deviceIDList.size(); i++) {
-                                        if (currentDeviceID.equals(deviceIDList.get(i))) {
+                                    //for (int i = 0; i < deviceIDList.size(); i++) {
+                                      //  if (currentDeviceID.equals(deviceIDList.get(i))) {
                                             loginSuccess = true;
-                                            System.out.println("**********deviceIDList.get(i):" + deviceIDList.get(i));
+                                            //System.out.println("**********deviceIDList.get(i):" + deviceIDList.get(i));
                                             Intent intent = new Intent(LoginPage.this, ProfessorHome.class);
                                             intent.putExtra("userID",userID);
                                             startActivity(intent);
-                                        }
-                                    }
-                                    if (!loginSuccess) {
+                                        //}
+                                    //}
+                                    /*if (!loginSuccess) {
                                         Toast.makeText(getApplicationContext(), "Invalid Device ", Toast.LENGTH_SHORT).show();
                                         AlertDialog.Builder builder;
                                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -122,7 +122,7 @@ public class LoginPage extends SalesforceActivity {
                                                 })
                                                 .setIcon(android.R.drawable.ic_dialog_alert)
                                                 .show();
-                                    }
+                                    }*/
                                 }
 
                                 else if(result.toString().contains("Student")) {

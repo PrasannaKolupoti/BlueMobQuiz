@@ -5,6 +5,9 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.view.GestureDetectorCompat;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -30,6 +33,7 @@ public class ProfessorHome extends SalesforceActivity {
 
     private RestClient client;
     public String userID;
+    private GestureDetectorCompat gestureObject;
     private ArrayAdapter<String> createdQuizAdapter;
     public ArrayList<String> quizIDList = new ArrayList<String>();
     public ArrayList<String> quizNameList = new ArrayList<String>();
@@ -59,6 +63,7 @@ public class ProfessorHome extends SalesforceActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_professor_home);
         userID = getIntent().getExtras().getString("userID");
+        gestureObject = new GestureDetectorCompat(this, new CustomGesture());
         Button createQuizButton = (Button) findViewById(R.id.createQuizButton);
         ListView quizList = (ListView) findViewById(R.id.quizListView);
         quizList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -148,7 +153,45 @@ public class ProfessorHome extends SalesforceActivity {
             }
         });
     }
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        this.gestureObject.onTouchEvent(event);
+        return super.onTouchEvent(event);
+    }
+    class CustomGesture extends GestureDetector.SimpleOnGestureListener{
+        @Override
+        public boolean onFling(MotionEvent event1, MotionEvent event2, float velocityX, float velocityY) {
+            boolean result = false;
+            try {
+                float diffY = event2.getY() - event1.getY();
+                float diffX = event2.getX() - event1.getX();
+                if (Math.abs(diffX) > Math.abs(diffY)) {
+                    if (Math.abs(diffX) > 1 && Math.abs(velocityX) > 1) {
+                        if (diffX > 0) {
+                            // Swipe Right
+                        } else {
+                            // Swipe Left
+                        }
+                    }
+                    result = true;
+                } else if (Math.abs(diffY) > 1 && Math.abs(velocityY) > 1) {
+                    if (diffY > 0) {
+                        // Swipe Bottom
+                    } else {
+                        // Swipe Top
+                        Intent intent = new Intent(ProfessorHome.this, ProfessorAttendance.class);
+                        intent.putExtra("userID",userID);
+                        startActivity(intent);
+                    }
+                }
+                result = true;
 
+            } catch (Exception exception) {
+                exception.printStackTrace();
+            }
+            return result;
+        }
+    }
     private void sharingQuiz(String quizID, String quizStatus,  Map<String, Object> shareQuizRecord) {
         RestRequest restRequest;
         try {
