@@ -2,6 +2,7 @@ package com.mc.grp6.bluemobquiz;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -26,12 +27,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class StudentAttemptingQuiz extends SalesforceActivity {
-    public TextView questionField, option1Field, option2Field, option3Field, option4Field, questionNumber,quizNameField;
+    public TextView questionField, option1Field, option2Field, option3Field, option4Field, questionNumber,quizNameField, timer;
     public Spinner studAnswerSelection;
     public Button nextButton, submitButton;
-    public String selectedAnswer, questionValue, option1Value, option2Value, option3Value, option4Value, quizNameValue,userID,quizName, quizID, questionID;
+    public String selectedAnswer,userID,quizName, quizID, questionID;
     private RestClient client;
-    public int questionNumberValue;
+    public int questionNumberValue,seconds, numQuestions;
     public ArrayList<String> questionIDList = new ArrayList<String>();
     public ArrayList<String> answerIDList = new ArrayList<String>();
     public ArrayList<String> questionList = new ArrayList<String>();
@@ -39,10 +40,18 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
     public ArrayList<String> option2List = new ArrayList<String>();
     public ArrayList<String> option3List = new ArrayList<String>();
     public ArrayList<String> option4List = new ArrayList<String>();
-    public ArrayList<String> answerList = new ArrayList<String>();
-    public void onResume() {
+    CountDownTimer countDownTimer;
+    public Boolean next = false;
+    /*@Override
+    public void onResume(){
+        next = getIntent().getExtras().getBoolean("next");
+        timer = (TextView) findViewById(R.id.timer);
+        if(next){
+            seconds = getIntent().getExtras().getInt("seconds");
+            countDownTimer(seconds,timer);
+        }
         super.onResume();
-    }
+    }*/
     @Override
     public void onResume(RestClient client) {
         this.client = client;
@@ -61,6 +70,9 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
         userID = getIntent().getExtras().getString("userID");
         quizID = getIntent().getExtras().getString("quizID");
         quizName = getIntent().getExtras().getString("quizName");
+        seconds = getIntent().getExtras().getInt("time");
+        timer = (TextView) findViewById(R.id.timer);
+        //countDownTimer(seconds,timer);
         questionNumber = (TextView) findViewById(R.id.studentQuestionNumber);
         quizNameField = (TextView) findViewById(R.id.studentQuizName);
         questionField = (TextView) findViewById(R.id.studentQuestion);
@@ -71,6 +83,7 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
         studAnswerSelection = (Spinner) findViewById(R.id.studentAnswerSpinner);
         nextButton = (Button) findViewById(R.id.studentNext);
         submitButton = (Button) findViewById(R.id.studentSubmit);
+
         studAnswerSelection.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
@@ -84,6 +97,7 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //countDownTimer.cancel();
                 selectedAnswer = String.valueOf(studAnswerSelection.getSelectedItem());
                 //boolean successValidation = validateData();
                 //if (successValidation) {
@@ -99,9 +113,11 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //countDownTimer.cancel();
                 selectedAnswer = String.valueOf(studAnswerSelection.getSelectedItem());
                 //boolean successValidation = validateData();
                 //if (successValidation) {
+
                 Map<String, Object> answerRecord = new HashMap<String, Object>();
                 answerRecord.put("Answer__c", selectedAnswer);
                 answerRecord.put("Quiz_Question__c", questionID);
@@ -112,21 +128,60 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
                 Toast.makeText(getApplicationContext(), "Quiz Submitted", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(StudentAttemptingQuiz.this, StudentHome.class);
                 intent.putExtra("userID",userID);
-                startActivity(intent);            }
+                startActivity(intent);
+            }
         });
-
-
     }
+
+    private void countDownTimer(int sec, TextView timer) {
+        countDownTimer =new CountDownTimer(sec * 1000 + 1000, 1000) {
+
+            public void onTick(long millisUntilFinished) {
+                int sec = (int) (millisUntilFinished / 1000);
+
+                int hours = sec / (60 * 60);
+                int tempMint = (sec - (hours * 60 * 60));
+                int minutes = tempMint / 60;
+                sec = tempMint - (minutes * 60);
+
+                timer.setText(String.format("%02d", hours)
+                        + ":" + String.format("%02d", minutes)
+                        + ":" + String.format("%02d", sec));
+                seconds = sec;
+
+            }
+
+            public void onFinish() {
+                Toast.makeText(getApplicationContext(),"Time UP!!!",Toast.LENGTH_LONG).show();
+                selectedAnswer = String.valueOf(studAnswerSelection.getSelectedItem());
+                Map<String, Object> answerRecord = new HashMap<String, Object>();
+                answerRecord.put("Answer__c", selectedAnswer);
+                answerRecord.put("Quiz_Question__c", questionID);
+                answerRecord.put("User__c", userID);
+                insertAnswer(answerRecord);
+                Toast.makeText(getApplicationContext(), "Quiz Submitted", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(StudentAttemptingQuiz.this, StudentHome.class);
+                intent.putExtra("userID",userID);
+                startActivity(intent);
+            }
+        }.start();
+    }
+
     private void insertAnswer(Map<String, Object> answerRecord) {
         RestRequest restRequest;
         try {
             restRequest = RestRequest.getRequestForCreate(getString(R.string.api_version), "User_Answers__c", answerRecord);
 
             if(questionNumberValue>=questionIDList.size()){
+                //countDownTimer.cancel();
+                next = true;
                 Toast.makeText(getApplicationContext(), "Quiz Submitted", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(StudentAttemptingQuiz.this, StudentHome.class);
                 intent.putExtra("userID",userID);
+                intent.putExtra("seconds",seconds);
+                intent.putExtra("next",next);
                 startActivity(intent);
+
             }
 
         } catch (Exception e) {
@@ -137,7 +192,7 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
         client.sendAsync(restRequest, new RestClient.AsyncRequestCallback() {
             @Override
             public void onSuccess(RestRequest request,final RestResponse result)  {
-                System.out.println("***********"+result.toString());
+                //System.out.println("***********"+result.toString());
                 result.consumeQuietly(); // consume before going back to main thread
                 runOnUiThread(new Runnable() {
                     @Override
@@ -188,7 +243,9 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
                                     option2List.add(questionsTable.getString("Choice2__c"));
                                     option3List.add(questionsTable.getString("Choice3__c"));
                                     option4List.add(questionsTable.getString("Choice4__c"));
+
                                 }
+                                numQuestions = questionIDList.size();
                                 questionNumberValue = 1;
                                 setPage();
                             } catch (Exception e) {
