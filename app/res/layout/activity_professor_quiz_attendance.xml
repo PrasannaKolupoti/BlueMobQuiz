@@ -4,6 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context="com.mc.grp6.bluemobquiz.ProfessorQuizAttendance">
     <include layout="@layout/header" />
     <TextView
@@ -11,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:text="ATTENDANCE"
+        android:textColor="#FFFFFF"
         android:textSize="30dp"
         android:textAlignment="center"/>
     <TextView
@@ -18,18 +20,47 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:text="Quiz 1"
-        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
         android:textAlignment="center"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1"
+        android:id="@+id/headings">
+        <TableRow>
+            <TextView
+                android:id="@+id/studentNames"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight=".75"
+                android:text="Name"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:layout_gravity="start"/>
+            <TextView
+                android:id="@+id/marksHeading"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight=".25"
+                android:text="Marks"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:layout_gravity="start"/>
+        </TableRow>
+    </TableLayout>
     <ListView
         android:id="@+id/studentList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scrollbars="vertical"
         android:text="Student name"
+        android:textColor="#FFFFFF"
         android:textAlignment="textStart"
         android:textSize="20dp" />
 

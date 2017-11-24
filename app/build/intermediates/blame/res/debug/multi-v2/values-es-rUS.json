@@ -36,6 +36,7 @@
                         "endColumns": "204",
                         "endOffsets": "3340"
                     }
+<<<<<<< HEAD
                 },
                 {
                     "source": "C:\\Users\\KarthikVermaJampani\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\d8866badbe0f7efc637620ee34ce5e4a\\res\\values-es-rUS\\values-es-rUS.xml",
@@ -53,6 +54,8 @@
                         "endColumns": "119,107,122,108,107,84,100,122,84,81,81,111,111,100,107,106,106,121,99,81,100",
                         "endOffsets": "220,328,451,560,668,753,854,977,1062,1144,1226,1338,1450,1551,1659,1766,1873,1995,2095,4842,4943"
                     }
+=======
+>>>>>>> 50635a3be491b54e125c5495fc4a4f92d9900450
                 }
             ]
         }

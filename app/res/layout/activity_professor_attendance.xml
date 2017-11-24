@@ -4,13 +4,15 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context="com.mc.grp6.bluemobquiz.ProfessorAttendance">
     <include layout="@layout/header" />
     <TextView
         android:id="@+id/profAttendanceHeading"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:text="Quiz 1 Attendance"
+        android:text="Attempted Quizzes"
+        android:textColor="#FFFFFF"
         android:textSize="30dp"
         android:textAlignment="center"/>
 

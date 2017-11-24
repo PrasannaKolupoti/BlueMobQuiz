@@ -19,6 +19,7 @@
                         "endColumns": "104,184,127,107,198,127,137,223,107,187,130,211,186,92,88,106",
                         "endOffsets": "205,390,518,626,825,953,1091,1538,1646,1834,1965,2177,2364,2457,2546,2653"
                     }
+<<<<<<< HEAD
                 },
                 {
                     "source": "C:\\Users\\KarthikVermaJampani\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-10.2.0.aar\\d6368d6d274bb0d27925c782ee2b4265\\res\\values-kk\\values.xml",
@@ -36,6 +37,8 @@
                         "endColumns": "222",
                         "endOffsets": "1314"
                     }
+=======
+>>>>>>> 50635a3be491b54e125c5495fc4a4f92d9900450
                 }
             ]
         }

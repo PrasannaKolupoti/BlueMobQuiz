@@ -4,7 +4,11 @@
             "outputFile": "D:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-ldltr-v21\\values-ldltr-v21.xml",
             "map": [
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\KarthikVermaJampani\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\d8866badbe0f7efc637620ee34ce5e4a\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+=======
+                    "source": "C:\\Users\\Owner\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\96e6d76b45787c1ee98304ccefb56b54\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+>>>>>>> 50635a3be491b54e125c5495fc4a4f92d9900450
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

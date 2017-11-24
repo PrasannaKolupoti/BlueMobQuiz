@@ -36,6 +36,7 @@
                         "endColumns": "205",
                         "endOffsets": "3315"
                     }
+<<<<<<< HEAD
                 },
                 {
                     "source": "C:\\Users\\KarthikVermaJampani\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-10.2.0.aar\\f4832cdcc68895e82fbe367c57656c21\\res\\values-hi\\values.xml",
@@ -53,6 +54,8 @@
                         "endColumns": "110,202,128,113,209,131,130,218,110,196,131,207,183,92,95,113",
                         "endOffsets": "2190,2393,2522,2636,2846,2978,3109,3534,3645,3842,3974,4182,4366,4459,4555,4669"
                     }
+=======
+>>>>>>> 50635a3be491b54e125c5495fc4a4f92d9900450
                 }
             ]
         }

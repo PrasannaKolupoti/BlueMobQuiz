@@ -4,6 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context="com.mc.grp6.bluemobquiz.Home">
     <TextView
         android:id="@+id/homeHeading"
@@ -11,6 +12,7 @@
         android:layout_width="match_parent"
         android:text="WELCOME"
         android:textSize="30dp"
+        android:textColor="#FFFFFF"
         android:layout_gravity="center_horizontal"
         android:textAlignment="center"/>
     <TableLayout
@@ -81,18 +83,20 @@
                 android:layout_width="wrap_content"
                 android:id="@+id/homeLoginButton"
                 android:layout_column="0"
-
                 android:layout_gravity="center"
                 android:text="Login"
+                android:background="#1F5E60"
+                android:textColor="#FFFFFF"
                 android:textSize="20dp"/>
             <Button
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:id="@+id/homeRegisterButton"
                 android:layout_column="1"
-
                 android:layout_gravity="center"
                 android:text="Register"
+                android:background="#1F5E60"
+                android:textColor="#FFFFFF"
                 android:textSize="20dp"/>
         </TableRow>
     </TableLayout>

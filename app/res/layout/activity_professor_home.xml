@@ -4,6 +4,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:id="@+id/professorHome"
     tools:context="com.mc.grp6.bluemobquiz.ProfessorHome">
     <include layout="@layout/header" />
     <TextView
@@ -11,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:text="QUIZZES"
+        android:textColor="#FFFFFF"
         android:textSize="30dp"
         android:textAlignment="center"/>
     <TableLayout
@@ -28,18 +31,10 @@
                 android:layout_height="match_parent"
                 android:layout_width="match_parent"
                 android:text="List of quizzes"
+                android:textColor="#FFFFFF"
                 android:layout_column="0"
                 android:textSize="20dp"
                 android:textAlignment="textStart" />
-           <!-- <Button
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:id="@+id/shareQuizButton"
-                android:layout_column="1"
-                android:layout_gravity="end"
-                android:text="Share"
-                android:textSize="20dp"/> -->
-
         </TableRow>
     </TableLayout>
     <ListView
@@ -62,6 +57,8 @@
                 android:layout_column="0"
                 android:layout_gravity="center"
                 android:text="Create Quiz"
+                android:background="#1F5E60"
+                android:textColor="#FFFFFF"
                 android:textSize="20dp"/>
         </TableRow>
     </TableLayout>
