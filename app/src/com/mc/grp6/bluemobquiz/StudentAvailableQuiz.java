@@ -27,6 +27,8 @@ public class StudentAvailableQuiz extends SalesforceActivity {
     private ArrayAdapter<String> listAdapter;
     public ArrayList<String> quizIDList = new ArrayList<String>();
     public ArrayList<String> quizNameList = new ArrayList<String>();
+    public ArrayList<String> uniqueQuizIDList = new ArrayList<String>();
+    public ArrayList<String> uniqueQuizNameList = new ArrayList<String>();
     public ArrayList<String> quizStatusList = new ArrayList<String>();
     public ArrayList<String> ownerDevicesList = new ArrayList<String>();
     public ArrayList<String> scannedDevicesList = new ArrayList<String>();
@@ -56,15 +58,18 @@ public class StudentAvailableQuiz extends SalesforceActivity {
         availableQuizList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String quizID = quizIDList.get(quizPosition);
-                String quizName = quizNameList.get(quizPosition);
+                String uniqueQuizID = uniqueQuizIDList.get(position);
+                String uniqueQuizName = uniqueQuizNameList.get(position);
+                System.out.println("***********3quizID:"+quizID+"\n************3quizName:"+quizName);
                 Intent intent = new Intent(StudentAvailableQuiz.this, StudentAttemptingQuiz.class);
                 intent.putExtra("userID",userID);
-                intent.putExtra("quizID",quizID);
-                intent.putExtra("quizName",quizName);
+                intent.putExtra("quizID",uniqueQuizID);
+                intent.putExtra("quizName",uniqueQuizName);
+                //intent.putExtra("time",150);
                 startActivity(intent);
             }
         });
+
     }
     private void searchQuizzes(String soql) throws UnsupportedEncodingException {
         RestRequest restRequest = RestRequest.getRequestForQuery(ApiVersionStrings.getVersionNumber(this), soql);
@@ -88,11 +93,16 @@ public class StudentAvailableQuiz extends SalesforceActivity {
                                 if(quizStatusList.get(i).equals("true")){
                                     quizID = quizIDList.get(i);
                                     quizName = quizNameList.get(i);
+                                    System.out.println("***********1quizID:"+quizID+"\n************1quizName:"+quizName);
                                     ownerDevices = ownerDevicesList.get(i);
                                     quizPosition = i;
                                     for(String id: scannedDevicesList){
                                         if(ownerDevices.contains(id) && (listAdapter.getPosition(quizName))==-1){
                                             listAdapter.add(quizName);
+                                            System.out.println("***********2quizID:"+quizID+"\n************2quizName:"+quizName);
+                                            uniqueQuizIDList.add(quizID);
+                                            uniqueQuizNameList.add(quizName);
+                                            System.out.println("***********2uniqueQuizIDList:"+uniqueQuizIDList.get(i)+"\n************2uniqueQuizIDList:"+uniqueQuizNameList.get(i));
                                         }
                                     }
                                 }

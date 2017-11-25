@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context="com.mc.grp6.bluemobquiz.LoginPage">
     <TextView
         android:id="@+id/loginHeading"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:text="LOGIN"
+        android:textColor="#FFFFFF"
         android:textSize="30dp"
         android:textAlignment="center"/>
     <TableLayout
@@ -43,6 +45,7 @@
                 android:layout_height="match_parent"
                 android:layout_width="match_parent"
                 android:text="Username"
+                android:textColor="#FFFFFF"
                 android:textSize="20dp"/>
             <EditText
                 android:id="@+id/userNameValue"
@@ -65,6 +68,7 @@
                 android:layout_height="match_parent"
                 android:layout_width="match_parent"
                 android:text="Password"
+                android:textColor="#FFFFFF"
                 android:textSize="20dp"/>
             <EditText
                 android:id="@+id/passwordValue"
@@ -93,5 +97,7 @@
         android:layout_below="@id/loginDetails"
         android:layout_gravity="center"
         android:text="Login"
+        android:background="#1F5E60"
+        android:textColor="#FFFFFF"
         android:textSize="20dp"/>
 </LinearLayout>

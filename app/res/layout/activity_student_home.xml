@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     android:weightSum="1"
     tools:context="com.mc.grp6.bluemobquiz.StudentHome">
     <include layout="@layout/header" />
@@ -11,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:text="ATTEMPTED QUIZZES"
+        android:textColor="#FFFFFF"
         android:textSize="30dp"
         android:textAlignment="center"/>
     <TableLayout
@@ -26,6 +28,7 @@
                 android:layout_column="0"
                 android:layout_weight=".50"
                 android:text="Quiz"
+                android:textColor="#FFFFFF"
                 android:textSize="20dp"
                 android:layout_gravity="start"/>
             <TextView
@@ -35,6 +38,7 @@
                 android:layout_column="1"
                 android:layout_weight=".25"
                 android:text="Marks"
+                android:textColor="#FFFFFF"
                 android:textSize="20dp"
                 android:layout_gravity="start"/>
             <TextView
@@ -44,6 +48,7 @@
                 android:layout_column="2"
                 android:layout_weight=".25"
                 android:text="Rank"
+                android:textColor="#FFFFFF"
                 android:textSize="20dp"
                 android:layout_gravity="start"/>
         </TableRow>
@@ -74,6 +79,8 @@
                 android:layout_column="0"
                 android:layout_gravity="center"
                 android:text="Search Quiz"
+                android:background="#1F5E60"
+                android:textColor="#FFFFFF"
                 android:textSize="20dp"/>
         </TableRow>
     </TableLayout>
