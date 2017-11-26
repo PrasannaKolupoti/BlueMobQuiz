@@ -21,11 +21,7 @@
                     }
                 },
                 {
-<<<<<<< HEAD
                     "source": "C:\\Users\\KarthikVermaJampani\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-10.2.0.aar\\d6368d6d274bb0d27925c782ee2b4265\\res\\values-is\\values.xml",
-=======
-                    "source": "C:\\Users\\Owner\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-10.2.0.aar\\02f5aa345963900f6e676cb4e2606f59\\res\\values-is\\values.xml",
->>>>>>> 50635a3be491b54e125c5495fc4a4f92d9900450
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

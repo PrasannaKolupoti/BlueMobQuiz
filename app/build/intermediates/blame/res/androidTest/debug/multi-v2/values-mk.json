@@ -1,7 +1,6 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
             "outputFile": "D:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-mk\\values-mk.xml",
             "map": [
                 {
@@ -21,10 +20,6 @@
                         "endOffsets": "209,402,537,649,853,988,1127,1539,1648,1845,1980,2192,2381,2480,2574,2682"
                     }
                 },
-=======
-            "outputFile": "C:\\Users\\Owner\\Desktop\\Fall17\\mc\\Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-mk\\values-mk.xml",
-            "map": [
->>>>>>> 50635a3be491b54e125c5495fc4a4f92d9900450
                 {
                     "source": "C:\\Users\\KarthikVermaJampani\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-10.2.0.aar\\d6368d6d274bb0d27925c782ee2b4265\\res\\values-mk\\values.xml",
                     "from": {

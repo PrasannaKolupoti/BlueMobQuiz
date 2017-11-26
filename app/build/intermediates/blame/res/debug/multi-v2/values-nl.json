@@ -21,7 +21,6 @@
                     }
                 },
                 {
-<<<<<<< HEAD
                     "source": "C:\\Users\\KarthikVermaJampani\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-10.2.0.aar\\d6368d6d274bb0d27925c782ee2b4265\\res\\values-nl\\values.xml",
                     "from": {
                         "startLines": "4",
@@ -40,9 +39,6 @@
                 },
                 {
                     "source": "C:\\Users\\KarthikVermaJampani\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-10.2.0.aar\\f4832cdcc68895e82fbe367c57656c21\\res\\values-nl\\values.xml",
-=======
-                    "source": "C:\\Users\\Owner\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-10.2.0.aar\\60cede92027a1eaf4dde7624a6de45fb\\res\\values-nl\\values.xml",
->>>>>>> 50635a3be491b54e125c5495fc4a4f92d9900450
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -57,26 +53,6 @@
                         "endColumns": "111,186,131,112,225,128,134,236,107,199,127,221,211,97,92,107",
                         "endOffsets": "2189,2376,2508,2621,2847,2976,3111,3550,3658,3858,3986,4208,4420,4518,4611,4719"
                     }
-<<<<<<< HEAD
-=======
-                },
-                {
-                    "source": "C:\\Users\\Owner\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-10.2.0.aar\\02f5aa345963900f6e676cb4e2606f59\\res\\values-nl\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "285",
-                        "endColumns": "201",
-                        "endOffsets": "486"
-                    },
-                    "to": {
-                        "startLines": "28",
-                        "startColumns": "4",
-                        "startOffsets": "3116",
-                        "endColumns": "201",
-                        "endOffsets": "3313"
-                    }
->>>>>>> 50635a3be491b54e125c5495fc4a4f92d9900450
                 }
             ]
         }

@@ -1,7 +1,6 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
             "outputFile": "D:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
@@ -95,12 +94,6 @@
                 },
                 {
                     "source": "C:\\Users\\KarthikVermaJampani\\.gradle\\caches\\transforms-1\\files-1.1\\transition-25.4.0.aar\\9873180fcb7c12c8427af0cc7035553b\\res\\values\\values.xml",
-=======
-            "outputFile": "C:\\Users\\Owner\\Desktop\\Fall17\\mc\\Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\Owner\\.gradle\\caches\\transforms-1\\files-1.1\\transition-25.4.0.aar\\43fc06a1004d86590827e9ae37ebef06\\res\\values\\values.xml",
->>>>>>> 50635a3be491b54e125c5495fc4a4f92d9900450
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

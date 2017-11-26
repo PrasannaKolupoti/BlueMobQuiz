@@ -1,7 +1,6 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
             "outputFile": "D:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-fi\\values-fi.xml",
             "map": [
                 {
@@ -19,25 +18,6 @@
                         "startOffsets": "105,213,321,444,544,645,731,836,954,1041,1123,1203,1310,1413,1510,1616,1715,1819,1938,4551,4631",
                         "endColumns": "107,107,122,99,100,85,104,117,86,81,79,106,102,96,105,98,103,118,98,79,100",
                         "endOffsets": "208,316,439,539,640,726,831,949,1036,1118,1198,1305,1408,1505,1611,1710,1814,1933,2032,4626,4727"
-=======
-            "outputFile": "C:\\Users\\Owner\\Desktop\\Fall17\\mc\\Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-fi\\values-fi.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\Owner\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-10.2.0.aar\\02f5aa345963900f6e676cb4e2606f59\\res\\values-fi\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "285",
-                        "endColumns": "208",
-                        "endOffsets": "493"
-                    },
-                    "to": {
-                        "startLines": "28",
-                        "startColumns": "4",
-                        "startOffsets": "3042",
-                        "endColumns": "208",
-                        "endOffsets": "3246"
->>>>>>> 50635a3be491b54e125c5495fc4a4f92d9900450
                     }
                 },
                 {
