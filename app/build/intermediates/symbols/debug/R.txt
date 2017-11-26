@@ -832,7 +832,8 @@ int drawable sf__oauth_container_dropshadow 0x7f080094
 int drawable sf__progress_spinner 0x7f080095
 int drawable sf__refresh_loader 0x7f080096
 int drawable sf__toolbar_background 0x7f080097
-int drawable timer 0x7f080098
+int drawable spinner 0x7f080098
+int drawable timer 0x7f080099
 int id Text1 0x7f090000
 int id action0 0x7f090001
 int id action_bar 0x7f090002

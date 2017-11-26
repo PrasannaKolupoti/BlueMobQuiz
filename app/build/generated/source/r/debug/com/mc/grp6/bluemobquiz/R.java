@@ -3377,7 +3377,8 @@ public final class R {
     public static final int sf__progress_spinner=0x7f080095;
     public static final int sf__refresh_loader=0x7f080096;
     public static final int sf__toolbar_background=0x7f080097;
-    public static final int timer=0x7f080098;
+    public static final int spinner=0x7f080098;
+    public static final int timer=0x7f080099;
   }
   public static final class id {
     public static final int Text1=0x7f090000;

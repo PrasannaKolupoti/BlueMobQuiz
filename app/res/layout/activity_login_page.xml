@@ -53,6 +53,8 @@
                 android:layout_height="match_parent"
                 android:layout_width="match_parent"
                 android:hint="Enter your username"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
                 android:textSize="20dp"/>
 
         </TableRow>
@@ -76,6 +78,8 @@
                 android:layout_height="match_parent"
                 android:layout_width="match_parent"
                 android:hint="Enter your password"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
                 android:textSize="20dp"
                 android:inputType="textPassword"/>
         </TableRow>

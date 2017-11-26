@@ -272,7 +272,7 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
     }
 
     private void setPage() {
-        questionNumber.setText(Integer.toString(questionNumberValue));
+        questionNumber.setText(Integer.toString(questionNumberValue)+" ");
         questionID = questionIDList.get(questionNumberValue-1);
         quizNameField.setText(quizName);
         questionField.setText(questionList.get(questionNumberValue-1));

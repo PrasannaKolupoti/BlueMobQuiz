@@ -6,6 +6,7 @@ import android.support.v4.view.GestureDetectorCompat;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.salesforce.androidsdk.app.SalesforceSDKManager;
@@ -23,16 +24,17 @@ import java.util.ArrayList;
 
 public class ProfessorQuizAttendance extends SalesforceActivity {
     private RestClient client;
-    public String quizID,userName, userID;
+    public String quizID,userName, userID, quizName;
     private GestureDetectorCompat gestureObject;
     public int score, rank;
     ArrayList<DisplayAttendance> attendanceList;
+    public TextView quizNameHeading;
     @Override
     public void onResume(RestClient client) {
         this.client = client;
         quizID = getIntent().getExtras().getString("quizID");
         try {
-            displayAttendance("SELECT Score__c, User__r.Name FROM User_Results__c where Quiz__c = \'"+quizID+"\'");
+            displayAttendance("SELECT Score__c, Rank__c, User__r.Name FROM User_Results__c where Quiz__c = \'"+quizID+"\'");
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
@@ -42,6 +44,9 @@ public class ProfessorQuizAttendance extends SalesforceActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_professor_quiz_attendance);
         userID = getIntent().getExtras().getString("userID");
+        quizName = getIntent().getExtras().getString("quizName");
+        quizNameHeading = (TextView) findViewById(R.id.attendanceQuizName);
+        quizNameHeading.setText(quizName);
         gestureObject = new GestureDetectorCompat(this, new CustomGesture());
     }
     @Override
@@ -101,12 +106,14 @@ public class ProfessorQuizAttendance extends SalesforceActivity {
                             for (int i = 0; i < resultTable.length(); i++) {
                                 displayAttendance = new DisplayAttendance();
                                 score = (((int) Double.parseDouble(resultTable.getJSONObject(i).getString("Score__c"))));
+                                rank = resultTable.getJSONObject(i).getInt("Rank__c");
                                 JSONObject quizTable = resultTable .getJSONObject(i).getJSONObject("User__r");
                                 userName = quizTable.getString("Name");
                                 System.out.println("*************score:"+score);
                                 System.out.println("*************userName:"+userName);
                                 displayAttendance.setStudentName(userName);
                                 displayAttendance.setMarks(score);
+                                displayAttendance.setRank(rank);
                                 attendanceList.add(displayAttendance);
                             }
                             final ListView lv = (ListView) findViewById(R.id.studentList);
