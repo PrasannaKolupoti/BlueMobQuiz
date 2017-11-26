@@ -5,14 +5,14 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:stretchColumns="0,1">
+        android:stretchColumns="0">
         <TableRow>
             <TextView
                 android:id="@+id/studentName"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
-                android:layout_weight=".75"
+                android:layout_weight=".60"
                 android:text="Student 1"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
@@ -22,7 +22,17 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_column="1"
-                android:layout_weight=".25"
+                android:layout_weight=".20"
+                android:text="30"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:layout_gravity="start"/>
+            <TextView
+                android:id="@+id/rank"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight=".20"
                 android:text="30"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"

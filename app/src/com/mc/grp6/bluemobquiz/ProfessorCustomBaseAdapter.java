@@ -39,6 +39,7 @@ public class ProfessorCustomBaseAdapter extends BaseAdapter {
             holder = new ProfessorCustomBaseAdapter.ViewHolder();
             holder.studentName = (TextView) convertView.findViewById(R.id.studentName);
             holder.marks = (TextView) convertView.findViewById(R.id.score);
+            holder.rank = (TextView) convertView.findViewById(R.id.rank);
             convertView.setTag(holder);
         } else {
             holder = (ProfessorCustomBaseAdapter.ViewHolder) convertView.getTag();
@@ -46,11 +47,13 @@ public class ProfessorCustomBaseAdapter extends BaseAdapter {
 
         holder.studentName.setText(attendance.get(position).getStudentName());
         holder.marks.setText(Integer.toString(attendance.get(position).getMarks()));
+        holder.rank.setText(Integer.toString(attendance.get(position).getRank()));
         return convertView;
     }
 
     static class ViewHolder {
         TextView studentName;
         TextView marks;
+        TextView rank;
     }
 }

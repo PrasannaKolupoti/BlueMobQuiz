@@ -66,7 +66,7 @@
                 android:text="1 "
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
-                android:layout_gravity="center_vertical"/>
+                android:layout_gravity="left"/>
             <TextView
                 android:id="@+id/studentQuestion"
                 android:layout_column="1"
@@ -86,7 +86,7 @@
         android:id="@+id/studentQuestionBody">
         <TableRow
             android:layout_height="wrap_content"
-            android:layout_width="match_parent">
+            android:layout_width="wrap_content">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -103,7 +103,7 @@
         </TableRow>
         <TableRow
             android:layout_height="wrap_content"
-            android:layout_width="match_parent">
+            android:layout_width="wrap_content">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -120,7 +120,7 @@
         </TableRow>
         <TableRow
             android:layout_height="wrap_content"
-            android:layout_width="match_parent">
+            android:layout_width="wrap_content">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -137,7 +137,7 @@
         </TableRow>
         <TableRow
             android:layout_height="wrap_content"
-            android:layout_width="match_parent">
+            android:layout_width="wrap_content">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -155,7 +155,7 @@
         <TableRow></TableRow>
     </TableLayout>
     <TableLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <TableRow>
             <TextView />
@@ -165,7 +165,7 @@
                 android:id="@+id/studentAnswer"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:text="Answer"
+                android:text="Answer "
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
                 android:layout_column="0"/>

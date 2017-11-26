@@ -7,7 +7,7 @@ package com.mc.grp6.bluemobquiz;
 public class DisplayAttendance {
     private String studentName = "";
     private int marks = 0;
-
+    private int rank = 0;
     public void setStudentName(String quizName) {
         this.studentName = quizName;
     }
@@ -22,6 +22,12 @@ public class DisplayAttendance {
 
     public int getMarks() {
         return marks;
+    }
+    public void setRank(int rank) {
+        this.rank = rank;
+    }
+    public int getRank() {
+        return rank;
     }
 }
 

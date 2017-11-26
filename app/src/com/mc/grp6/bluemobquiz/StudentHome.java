@@ -43,7 +43,7 @@ public class StudentHome extends SalesforceActivity {
         this.client = client;
         try {
             userID = getIntent().getExtras().getString("userID");
-            displayAttemptedQuizzes("SELECT Quiz__c, Quiz__r.Name, Score__c FROM User_Results__c where User__c = \'"+userID+"\'");
+            displayAttemptedQuizzes("SELECT Quiz__c, Quiz__r.Name, Score__c, Rank__c FROM User_Results__c where User__c = \'"+userID+"\'");
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
@@ -166,6 +166,7 @@ public class StudentHome extends SalesforceActivity {
                                 displayResults = new DisplayResults();
                                 quizID = resultTable.getJSONObject(i).getString("Quiz__c");
                                 score = (((int) Double.parseDouble(resultTable.getJSONObject(i).getString("Score__c"))));
+                                rank = resultTable.getJSONObject(i).getInt("Rank__c");
                                 JSONObject quizTable = resultTable .getJSONObject(i).getJSONObject("Quiz__r");
                                 quizName = quizTable.getString("Name");
                                 System.out.println("*************quizID:"+quizID);
