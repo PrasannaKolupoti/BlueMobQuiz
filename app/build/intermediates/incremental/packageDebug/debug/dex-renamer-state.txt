@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-#Sat Nov 25 22:02:40 AST 2017
+#Sun Nov 26 02:42:36 AST 2017
 base.0=D\:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 renamed.0=classes.dex
 file.0=D\:\\MC_Project\\Group6_BlueMobQuiz\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex
-=======
-#Sat Nov 25 22:38:48 AST 2017
-base.0=C\:\\Users\\prasa\\Desktop\\Fall_2017\\MC\\Project\\BlueMobQuiz\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\18
-renamed.0=classes.dex
-file.0=C\:\\Users\\prasa\\Desktop\\Fall_2017\\MC\\Project\\BlueMobQuiz\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\18\\classes.dex
->>>>>>> aba1b2cf273a3d6e7ac8b4d16e533942937e6918
