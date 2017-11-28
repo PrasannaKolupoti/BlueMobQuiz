@@ -26,6 +26,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
+import java.util.Random;
 
 public class StudentAttemptingQuiz extends SalesforceActivity {
     public TextView questionField, option1Field, option2Field, option3Field, option4Field, questionNumber,quizNameField, timer;
@@ -365,22 +366,34 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
     }
 
     private void setPage() {
-
-        for(int i=1; i<=difficultyLevelList.size(); i++) {
-            questionNumberValue = i;
-            if(Integer.parseInt(difficultyLevelList.get(i-1)) != difficultyLevel || QuestionSet.contains(i-1)) {
-
+        if(QuestionSet.size()==0) {
+            Random rand = new Random();
+            questionNumberValue = rand.nextInt(numQuestions) + 1;
+            QuestionSet.add(questionNumberValue-1);
+            if(difficultyLevelList.get(questionNumberValue-1).equals("1")){
+                currCountDiff1++;
+            } else if(difficultyLevelList.get(questionNumberValue-1).equals("2")){
+                currCountDiff2++;
+            } else if(difficultyLevelList.get(questionNumberValue-1).equals("3")) {
+                currCountDiff3++;
             }
-            else {
-                QuestionSet.add(questionNumberValue-1);
-                if(difficultyLevelList.get(questionNumberValue-1).equals("1")){
-                    currCountDiff1++;
-                } else if(difficultyLevelList.get(questionNumberValue-1).equals("2")){
-                    currCountDiff2++;
-                } else if(difficultyLevelList.get(questionNumberValue-1).equals("3")){
-                    currCountDiff3++;
+        } else{
+            for(int i=1; i<=difficultyLevelList.size(); i++) {
+                questionNumberValue = i;
+                if(Integer.parseInt(difficultyLevelList.get(i-1)) != difficultyLevel || QuestionSet.contains(i-1)) {
+
                 }
-                break;
+                else {
+                    QuestionSet.add(questionNumberValue-1);
+                    if(difficultyLevelList.get(questionNumberValue-1).equals("1")){
+                        currCountDiff1++;
+                    } else if(difficultyLevelList.get(questionNumberValue-1).equals("2")){
+                        currCountDiff2++;
+                    } else if(difficultyLevelList.get(questionNumberValue-1).equals("3")){
+                        currCountDiff3++;
+                    }
+                    break;
+                }
             }
         }
 
@@ -396,5 +409,4 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
         option4Field.setText(option4List.get(questionNumberValue-1));
         studAnswerSelection.setSelection(0);
     }
-
 }

@@ -5,6 +5,7 @@
     android:background="@drawable/background"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.mc.grp6.bluemobquiz.StudentAttemptingQuiz">
+    <!-- Image Source: http://www.intrawallpaper.com/static/images/recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg-->
     <include layout="@layout/header" />
     <TableLayout
         android:id="@+id/quizNameAndTimer"
@@ -22,7 +23,7 @@
                 android:layout_column="0"
                 android:text="Quiz 1"
                 android:textColor="#FFFFFF"
-                android:textSize="30dp"
+                android:textSize="25dp"
                 android:textAlignment="center"/>
             <!--Image Source: https://pixabay.com/en/stopwatch-timer-clock-symbol-icon-2624277/-->
             <ImageView
@@ -178,7 +179,7 @@
                 android:popupBackground="@drawable/spinner"
                 android:entries="@array/studentAnswerChoice"
                 android:prompt="@string/studentAnswerPrompt" />
-            <!--Image source: https://www.dreamstime.com/stock-photo-wood-metallic-texture-background-rustic-banner-blue-tones-image51204566-->
+            <!--Image source: https://pixabay.com/en/background-tree-wood-texture-2132910/-->
         </TableRow>
     </TableLayout>
     <TableLayout
@@ -213,7 +214,7 @@
                 android:layout_column="1"
                 android:layout_below="@id/registrationForm"
                 android:layout_gravity="center"
-                android:text="Submit"
+                android:text="  Submit  "
                 android:background="#1F5E60"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"/>

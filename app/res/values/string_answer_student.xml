@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="studentAnswerPrompt" color="#000000">Choose an answer</string>
-    <string-array name="studentAnswerChoice" color="#000000">
+    <string name="studentAnswerPrompt">Choose an answer</string>
+    <string-array name="studentAnswerChoice">
         <item> </item>
         <item>A</item>
         <item>B</item>

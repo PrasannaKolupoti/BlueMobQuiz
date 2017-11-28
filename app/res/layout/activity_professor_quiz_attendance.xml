@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     tools:context="com.mc.grp6.bluemobquiz.ProfessorQuizAttendance">
+    <!-- Image Source: http://www.intrawallpaper.com/static/images/recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg-->
     <include layout="@layout/header" />
     <TextView
         android:id="@+id/quizAttendanceHeading"
@@ -13,8 +14,12 @@
         android:layout_width="match_parent"
         android:text="ATTENDANCE"
         android:textColor="#FFFFFF"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:textAlignment="center"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20dp" />
     <TextView
         android:id="@+id/attendanceQuizName"
         android:layout_height="wrap_content"

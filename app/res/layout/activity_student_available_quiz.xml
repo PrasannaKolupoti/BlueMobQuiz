@@ -5,6 +5,7 @@
     android:background="@drawable/background"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.mc.grp6.bluemobquiz.StudentAvailableQuiz">
+    <!-- Image Source: http://www.intrawallpaper.com/static/images/recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg-->
     <include layout="@layout/header" />
     <TextView
         android:id="@+id/studAvailableQuizHeading"
@@ -12,9 +13,12 @@
         android:layout_width="match_parent"
         android:text="AVAILABLE QUIZZES"
         android:textColor="#FFFFFF"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:textAlignment="center"/>
-
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20dp" />
     <ListView
         android:id="@+id/availableQuizList"
         android:layout_width="fill_parent"

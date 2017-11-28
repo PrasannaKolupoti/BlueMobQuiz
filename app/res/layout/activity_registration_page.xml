@@ -6,24 +6,26 @@ xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:background="@drawable/background"
     tools:context="com.mc.grp6.bluemobquiz.RegistrationPage">
+    <!-- Image Source: http://www.intrawallpaper.com/static/images/recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg-->
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="25dp" />
     <TextView
         android:id="@+id/registrationHeading"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:text="REGISTRATION"
         android:textColor="#FFFFFF"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:textAlignment="center"/>
+
     <TableLayout
         android:id="@+id/registrationForm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/registrationHeading"
         android:stretchColumns="1">
-
-        <TableRow>
-            <TextView />
-        </TableRow>
         <TableRow>
             <TextView />
         </TableRow>
@@ -34,111 +36,132 @@ xmlns:tools="http://schemas.android.com/tools"
             <TextView />
         </TableRow>
         <TableRow
-            android:layout_height="match_parent"
-            android:layout_width="match_parent">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
             <TextView
                 android:id="@+id/name"
-                android:layout_column="0"
-                android:layout_height="match_parent"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="center_vertical"
                 android:text="Name"
                 android:textColor="#FFFFFF"
-                android:textSize="20dp"
-                android:layout_gravity="center_vertical"/>
+                android:textSize="20dp" />
+
             <EditText
                 android:id="@+id/nameValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_column="1"
                 android:hint="Enter your name"
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
                 android:textColor="#FFFFFF"
                 android:textColorHint="#FFFFFF"
-                android:textSize="20dp"/>
+                android:textSize="20dp" />
 
         </TableRow>
+
         <TableRow>
+
             <TextView />
         </TableRow>
+
         <TableRow
-            android:layout_height="match_parent"
-            android:layout_width="match_parent">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
             <TextView
                 android:id="@+id/userName"
-                android:layout_column="0"
-                android:layout_height="match_parent"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="center_vertical"
                 android:text="Username"
                 android:textColor="#FFFFFF"
-                android:layout_gravity="center_vertical"
-                android:textSize="20dp"/>
+                android:textSize="20dp" />
+
             <EditText
                 android:id="@+id/userNameValue"
-                android:layout_column="1"
-                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
                 android:hint="Enter your username"
                 android:textColor="#FFFFFF"
                 android:textColorHint="#FFFFFF"
-                android:textSize="20dp"/>
+                android:textSize="20dp" />
 
         </TableRow>
+
         <TableRow>
+
             <TextView />
         </TableRow>
+
         <TableRow
-            android:layout_height="match_parent"
-            android:layout_width="match_parent">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
             <TextView
                 android:id="@+id/password"
-                android:layout_column="0"
-                android:layout_height="match_parent"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
                 android:layout_gravity="center_vertical"
                 android:text="Password"
                 android:textColor="#FFFFFF"
-                android:textSize="20dp"/>
+                android:textSize="20dp" />
+
             <EditText
                 android:id="@+id/passwordValue"
-                android:layout_column="1"
-                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
                 android:hint="Enter password"
+                android:inputType="textPassword"
                 android:textColor="#FFFFFF"
                 android:textColorHint="#FFFFFF"
-                android:textSize="20dp"
-                android:inputType="textPassword"/>
+                android:textSize="20dp" />
         </TableRow>
+
         <TableRow>
+
             <TextView />
         </TableRow>
+
         <TableRow
-            android:layout_height="match_parent"
-            android:layout_width="match_parent">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
             <TextView
                 android:id="@+id/confirmPassword"
-                android:layout_column="0"
-                android:layout_height="match_parent"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
                 android:layout_gravity="center_vertical"
                 android:text="Confirm Password"
                 android:textColor="#FFFFFF"
-                android:textSize="20dp"/>
+                android:textSize="20dp" />
+
             <EditText
                 android:id="@+id/confirmPasswordValue"
-                android:layout_column="1"
-                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:hint="Re-enter the password"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:hint="Re-enter password"
+                android:inputType="textPassword"
                 android:textColor="#FFFFFF"
                 android:textColorHint="#FFFFFF"
-                android:inputType="textPassword"
-                android:textSize="20dp"/>
+                android:textSize="20dp" />
 
         </TableRow>
+
         <TableRow>
+
             <TextView />
         </TableRow>
+
         <TableRow>
+
             <TextView />
         </TableRow>
     </TableLayout>
@@ -149,7 +172,7 @@ xmlns:tools="http://schemas.android.com/tools"
         android:layout_column="1"
         android:layout_below="@id/registrationForm"
         android:layout_gravity="center"
-        android:text="Register"
+        android:text="   Register   "
         android:background="#1F5E60"
         android:textColor="#FFFFFF"
         android:textSize="20dp"/>

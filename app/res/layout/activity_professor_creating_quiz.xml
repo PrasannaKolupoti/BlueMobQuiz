@@ -9,6 +9,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/background"
         tools:context="com.mc.grp6.bluemobquiz.ProfessorCreatingQuiz">
+        <!-- Image Source: http://www.intrawallpaper.com/static/images/recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg-->
         <include layout="@layout/header" />
         <TextView
             android:id="@+id/quizName"
@@ -130,7 +131,7 @@
                     android:popupBackground="@drawable/spinner"
                     android:entries="@array/answerChoice"
                     android:prompt="@string/answerPrompt" />
-                <!--Image source: https://www.dreamstime.com/stock-photo-wood-metallic-texture-background-rustic-banner-blue-tones-image51204566-->
+                <!--Image source: https://pixabay.com/en/background-tree-wood-texture-2132910/-->
             </TableRow>
         </TableLayout>
         <TableLayout
@@ -157,7 +158,7 @@
                     android:popupBackground="@drawable/spinner"
                     android:entries="@array/difficultyChoice"
                     android:prompt="@string/difficultyPrompt" />
-                <!--Image source: https://www.dreamstime.com/stock-photo-wood-metallic-texture-background-rustic-banner-blue-tones-image51204566-->
+                <!--Image source: https://pixabay.com/en/background-tree-wood-texture-2132910/-->
             </TableRow>
         </TableLayout>
         <TableLayout
@@ -186,7 +187,7 @@
                     android:id="@+id/profSubmit"
                     android:layout_column="1"
                     android:layout_gravity="center"
-                    android:text="Submit"
+                    android:text="  Submit  "
                     android:background="#1F5E60"
                     android:textColor="#FFFFFF"
                     android:textSize="20dp"/>

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     tools:context="com.mc.grp6.bluemobquiz.Home">
+    <!-- Image Source: http://www.intrawallpaper.com/static/images/recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg-->
     <TextView
         android:id="@+id/homeHeading"
         android:layout_height="wrap_content"
@@ -44,7 +45,8 @@
                 android:layout_width="200dp"
                 android:layout_gravity="center"
                 android:src="@drawable/logo"/>
-
+            <!-- Image Source:  https://secure.logomaker.com/home-return
+                                https://www.peko-step.com/en/tool/alphachannel_en.html-->
         </TableRow>
         <TableRow>
             <TextView />
@@ -94,7 +96,7 @@
                 android:id="@+id/homeRegisterButton"
                 android:layout_column="1"
                 android:layout_gravity="center"
-                android:text="Register"
+                android:text="   Register   "
                 android:background="#1F5E60"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"/>

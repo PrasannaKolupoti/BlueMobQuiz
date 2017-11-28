@@ -9,6 +9,7 @@ android:layout_height="wrap_content">
     android:layout_height="match_parent"
     android:background="@drawable/background"
     tools:context="com.mc.grp6.bluemobquiz.ProfessorAddingQuizName">
+    <!-- Image Source: http://www.intrawallpaper.com/static/images/recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg-->
     <include layout="@layout/header" />
 
     <TableLayout

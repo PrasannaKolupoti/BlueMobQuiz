@@ -6,6 +6,7 @@
     android:background="@drawable/background"
     android:weightSum="1"
     tools:context="com.mc.grp6.bluemobquiz.StudentHome">
+    <!-- Image Source: http://www.intrawallpaper.com/static/images/recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg-->
     <include layout="@layout/header" />
     <TextView
         android:id="@+id/attemptedQuizHeading"
@@ -13,14 +14,19 @@
         android:layout_width="match_parent"
         android:text="ATTEMPTED QUIZZES"
         android:textColor="#FFFFFF"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:textAlignment="center"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="10dp" />
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:stretchColumns="0,1,2"
         android:id="@+id/headings">
         <TableRow>
+
             <TextView
                 android:id="@+id/quizHeading"
                 android:layout_width="0dp"
@@ -53,10 +59,14 @@
                 android:layout_gravity="start"/>
         </TableRow>
     </TableLayout>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="10dp" />
     <ListView
         android:id="@+id/attemptedQuizListView"
         android:layout_width="fill_parent"
-        android:layout_height="304dp"
+        android:layout_height="275dp"
         android:dividerHeight="1dp"
         android:footerDividersEnabled="false"
         android:layout_weight="0.82" />
@@ -78,7 +88,7 @@
                 android:id="@+id/searchQuizButton"
                 android:layout_column="0"
                 android:layout_gravity="center"
-                android:text="Search Quiz"
+                android:text="    Search Quiz    "
                 android:background="#1F5E60"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"/>
