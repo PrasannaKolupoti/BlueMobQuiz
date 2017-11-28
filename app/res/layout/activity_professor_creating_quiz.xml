@@ -154,8 +154,10 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:drawSelectorOnTop="true"
+                    android:popupBackground="@drawable/spinner"
                     android:entries="@array/difficultyChoice"
                     android:prompt="@string/difficultyPrompt" />
+                <!--Image source: https://www.dreamstime.com/stock-photo-wood-metallic-texture-background-rustic-banner-blue-tones-image51204566-->
             </TableRow>
         </TableLayout>
         <TableLayout

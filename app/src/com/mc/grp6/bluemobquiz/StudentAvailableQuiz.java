@@ -102,7 +102,6 @@ public class StudentAvailableQuiz extends SalesforceActivity {
                                             System.out.println("***********2quizID:"+quizID+"\n************2quizName:"+quizName);
                                             uniqueQuizIDList.add(quizID);
                                             uniqueQuizNameList.add(quizName);
-                                            System.out.println("***********2uniqueQuizIDList:"+uniqueQuizIDList.get(i)+"\n************2uniqueQuizIDList:"+uniqueQuizNameList.get(i));
                                         }
                                     }
                                 }

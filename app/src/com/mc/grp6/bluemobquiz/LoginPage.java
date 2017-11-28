@@ -83,7 +83,7 @@ public class LoginPage extends SalesforceActivity {
                                 for (int i = 0; i < records.length(); i++) {
                                     deviceIDList.add(records.getJSONObject(i).getString("DeviceID__c"));
                                 }
-                                System.out.println("************"+result.toString()+"\n*********UserId:"+userID+"\n********Device ID:"+deviceIDList.get(0));
+                                System.out.println("************"+result.toString()+"\n*********UserId:"+userID+"\n********Device ID:"+currentDeviceID);
                                 if(result.toString().contains("Professor")){
                                     for (int i = 0; i < deviceIDList.size(); i++) {
                                         if (currentDeviceID.equals(deviceIDList.get(i))) {

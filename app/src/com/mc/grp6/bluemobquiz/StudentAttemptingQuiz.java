@@ -24,6 +24,7 @@ import org.json.JSONObject;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 
 public class StudentAttemptingQuiz extends SalesforceActivity {
@@ -32,7 +33,7 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
     public Button nextButton, submitButton;
     public String selectedAnswer,userID,quizName, quizID, questionID;
     private RestClient client;
-    public int questionNumberValue,seconds, numQuestions;
+    public int questionNumberValue,quesNum=1,seconds, numQuestions,difficultyLevel=1,diffLevel,countDiff1=0,countDiff2=0,countDiff3=0,currCountDiff1=0,currCountDiff2=0,currCountDiff3=0;
     public ArrayList<String> questionIDList = new ArrayList<String>();
     public ArrayList<String> answerIDList = new ArrayList<String>();
     public ArrayList<String> questionList = new ArrayList<String>();
@@ -40,8 +41,10 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
     public ArrayList<String> option2List = new ArrayList<String>();
     public ArrayList<String> option3List = new ArrayList<String>();
     public ArrayList<String> option4List = new ArrayList<String>();
+    public ArrayList<String> difficultyLevelList = new ArrayList<String>();
     CountDownTimer countDownTimer;
-    public Boolean next = false;
+    public Boolean next = false, isCorrectAnswer;
+    HashSet<Integer> QuestionSet = new HashSet <Integer> ();
     /*@Override
     public void onResume(){
         next = getIntent().getExtras().getBoolean("next");
@@ -57,7 +60,7 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
         this.client = client;
         quizID = getIntent().getExtras().getString("quizID");
         try {
-            setQuestion("SELECT id, Question__c, Question__r.Question__c, Question__r.Choice1__c, Question__r.Choice2__c, Question__r.Choice3__c, Question__r.Choice4__c from Quiz_Answers__c where Quiz__c =\'" + quizID + "\'");
+            setQuestion("SELECT id, Question__c, Question__r.Question__c, Question__r.Choice1__c, Question__r.Choice2__c, Question__r.Choice3__c, Question__r.Choice4__c,Question__r.Difficulty_Level__c from Quiz_Answers__c where Quiz__c =\'" + quizID + "\'");
         }catch (UnsupportedEncodingException e){
             e.printStackTrace();
         }
@@ -138,12 +141,10 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
 
             public void onTick(long millisUntilFinished) {
                 int sec = (int) (millisUntilFinished / 1000);
-
                 int hours = sec / (60 * 60);
                 int tempMint = (sec - (hours * 60 * 60));
                 int minutes = tempMint / 60;
                 sec = tempMint - (minutes * 60);
-
                 timer.setText(String.format("%02d", hours)
                         + ":" + String.format("%02d", minutes)
                         + ":" + String.format("%02d", sec));
@@ -172,14 +173,14 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
         try {
             restRequest = RestRequest.getRequestForCreate(getString(R.string.api_version), "User_Answers__c", answerRecord);
 
-            if(questionNumberValue>=questionIDList.size()){
+            if(quesNum>questionIDList.size()){
                 //countDownTimer.cancel();
                 next = true;
                 Toast.makeText(getApplicationContext(), "Quiz Submitted", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(StudentAttemptingQuiz.this, StudentHome.class);
                 intent.putExtra("userID",userID);
-                intent.putExtra("seconds",seconds);
-                intent.putExtra("next",next);
+                //intent.putExtra("seconds",seconds);
+                //intent.putExtra("next",next);
                 startActivity(intent);
 
             }
@@ -198,8 +199,9 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
                     @Override
                     public void run() {
                         try {
-                            questionNumberValue++;
-                            setPage();
+                            //questionNumberValue++;
+                            nextQuestion("SELECT Is_Answer_Correct__c from Answer_Correction__c where User__c =\'" + userID + "\' and Quiz_Answer__r.Question__c =\'"+questionID+"\'");
+                            //setPage();
                         } catch (Exception e) {
                         }
                     }
@@ -212,15 +214,97 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
         });
     }
 
-    private boolean validateData() {
-        if (selectedAnswer.equals(studAnswerSelection.getItemAtPosition(0))) {
-            Toast.makeText(getApplicationContext(), "Please select an answer.", Toast.LENGTH_SHORT).show();
-            return false;
-        } else {
-            return true;
-        }
+    private void nextQuestion(String soql) throws UnsupportedEncodingException {
+        RestRequest restRequest = RestRequest.getRequestForQuery(ApiVersionStrings.getVersionNumber(this), soql);
+        client.sendAsync(restRequest, new RestClient.AsyncRequestCallback() {
+            @Override
+            public void onSuccess(RestRequest request, final RestResponse result) throws JSONException {
+                System.out.println("*********Result:" + result.toString());
+                result.consumeQuietly(); // consume before going back to main thread
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        if (result.isSuccess()) {
+                            try {
+                                JSONArray answerCorrectionTable = result.asJSONObject().getJSONArray("records");
+                                isCorrectAnswer = Boolean.valueOf(answerCorrectionTable.getJSONObject(0).getString("Is_Answer_Correct__c"));
+                                /*if (isCorrectAnswer && difficultyLevel!=3) {
+                                    difficultyLevel++;
+                                }
+                                else if(!isCorrectAnswer && difficultyLevel!=1){
+                                    difficultyLevel--;
+                                }*/
+                                if(isCorrectAnswer){
+                                    switch (difficultyLevel){
+                                        case 1: if(currCountDiff2 < countDiff2)
+                                                    difficultyLevel = 2;
+                                                else if(currCountDiff3 < countDiff3)
+                                                    difficultyLevel = 3;
+                                                else if(currCountDiff1 < countDiff1)
+                                                    difficultyLevel = 1;
+                                                break;
+                                        case 2: if(currCountDiff3 < countDiff3)
+                                                    difficultyLevel = 3;
+                                                else if(currCountDiff2 < countDiff2)
+                                                    difficultyLevel = 2;
+                                                else if(currCountDiff1 < countDiff1)
+                                                    difficultyLevel = 1;
+                                                break;
+                                        case 3: if(currCountDiff3 < countDiff3)
+                                                    difficultyLevel = 3;
+                                                else if(currCountDiff2 < countDiff2)
+                                                    difficultyLevel = 2;
+                                                else if(currCountDiff1 < countDiff1)
+                                                    difficultyLevel = 1;
+                                                break;
+                                    }
+                                }
+                                else {
+                                    switch (difficultyLevel){
+                                        case 1: if(currCountDiff1 < countDiff1)
+                                                    difficultyLevel = 1;
+                                                else if(currCountDiff2 < countDiff2)
+                                                    difficultyLevel = 2;
+                                                else if(currCountDiff3 < countDiff3)
+                                                    difficultyLevel = 3;
+                                                break;
+                                        case 2: if(currCountDiff1 < countDiff1)
+                                                    difficultyLevel = 1;
+                                                else if(currCountDiff2 < countDiff2)
+                                                    difficultyLevel = 2;
+                                                else if(currCountDiff3 < countDiff3)
+                                                    difficultyLevel = 3;
+                                                break;
+                                        case 3: if(currCountDiff2 < countDiff2)
+                                                    difficultyLevel = 2;
+                                                else if(currCountDiff1 < countDiff1)
+                                                    difficultyLevel = 1;
+                                                 else if(currCountDiff3 < countDiff3)
+                                                        difficultyLevel = 3;
+                                                break;
+                                    }
+                                }
+                                setPage();
+                            } catch (Exception e) {
+                                System.out.println(e.getMessage());
+                            }
+                        }
+                    }
+                });
+            }
+            @Override
+            public void onError(final Exception exception) {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        Toast.makeText(StudentAttemptingQuiz.this,
+                                StudentAttemptingQuiz.this.getString(SalesforceSDKManager.getInstance().getSalesforceR().stringGenericError(), exception.toString()),
+                                Toast.LENGTH_LONG).show();
+                    }
+                });
+            }
+        });
     }
-
     private void setQuestion(String soql) throws UnsupportedEncodingException {
         RestRequest restRequest = RestRequest.getRequestForQuery(ApiVersionStrings.getVersionNumber(this), soql);
         client.sendAsync(restRequest, new RestClient.AsyncRequestCallback() {
@@ -243,6 +327,15 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
                                     option2List.add(questionsTable.getString("Choice2__c"));
                                     option3List.add(questionsTable.getString("Choice3__c"));
                                     option4List.add(questionsTable.getString("Choice4__c"));
+                                    difficultyLevelList.add(questionsTable.getString("Difficulty_Level__c"));
+                                    if(difficultyLevelList.get(i).equals("1")){
+                                        countDiff1++;
+                                    } else if(difficultyLevelList.get(i).equals("2")){
+                                        countDiff2++;
+                                    } else if(difficultyLevelList.get(i).equals("3")){
+                                        countDiff3++;
+                                    }
+
 
                                 }
                                 numQuestions = questionIDList.size();
@@ -272,7 +365,28 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
     }
 
     private void setPage() {
-        questionNumber.setText(Integer.toString(questionNumberValue)+" ");
+
+        for(int i=1; i<=difficultyLevelList.size(); i++) {
+            questionNumberValue = i;
+            if(Integer.parseInt(difficultyLevelList.get(i-1)) != difficultyLevel || QuestionSet.contains(i-1)) {
+
+            }
+            else {
+                QuestionSet.add(questionNumberValue-1);
+                if(difficultyLevelList.get(questionNumberValue-1).equals("1")){
+                    currCountDiff1++;
+                } else if(difficultyLevelList.get(questionNumberValue-1).equals("2")){
+                    currCountDiff2++;
+                } else if(difficultyLevelList.get(questionNumberValue-1).equals("3")){
+                    currCountDiff3++;
+                }
+                break;
+            }
+        }
+
+        diffLevel = Integer.parseInt(difficultyLevelList.get(questionNumberValue-1));
+        questionNumber.setText(Integer.toString(quesNum)+" ");
+        quesNum++;
         questionID = questionIDList.get(questionNumberValue-1);
         quizNameField.setText(quizName);
         questionField.setText(questionList.get(questionNumberValue-1));
