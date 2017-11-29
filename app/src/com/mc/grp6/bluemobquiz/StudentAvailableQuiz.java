@@ -65,7 +65,6 @@ public class StudentAvailableQuiz extends SalesforceActivity {
                 intent.putExtra("userID",userID);
                 intent.putExtra("quizID",uniqueQuizID);
                 intent.putExtra("quizName",uniqueQuizName);
-                //intent.putExtra("time",150);
                 startActivity(intent);
             }
         });

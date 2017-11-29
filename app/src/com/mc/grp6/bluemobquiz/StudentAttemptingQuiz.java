@@ -34,7 +34,8 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
     public Button nextButton, submitButton;
     public String selectedAnswer,userID,quizName, quizID, questionID;
     private RestClient client;
-    public int questionNumberValue,quesNum=1,seconds, numQuestions,difficultyLevel=1,diffLevel,countDiff1=0,countDiff2=0,countDiff3=0,currCountDiff1=0,currCountDiff2=0,currCountDiff3=0;
+    public int questionNumberValue,quesNum=1,seconds, numQuestions,difficultyLevel=1;
+    public int remainingSeconds = -1, countDiff1=0,countDiff2=0,countDiff3=0,currCountDiff1=0,currCountDiff2=0,currCountDiff3=0;
     public ArrayList<String> questionIDList = new ArrayList<String>();
     public ArrayList<String> answerIDList = new ArrayList<String>();
     public ArrayList<String> questionList = new ArrayList<String>();
@@ -46,16 +47,6 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
     CountDownTimer countDownTimer;
     public Boolean next = false, isCorrectAnswer;
     HashSet<Integer> QuestionSet = new HashSet <Integer> ();
-    /*@Override
-    public void onResume(){
-        next = getIntent().getExtras().getBoolean("next");
-        timer = (TextView) findViewById(R.id.timer);
-        if(next){
-            seconds = getIntent().getExtras().getInt("seconds");
-            countDownTimer(seconds,timer);
-        }
-        super.onResume();
-    }*/
     @Override
     public void onResume(RestClient client) {
         this.client = client;
@@ -66,7 +57,6 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
             e.printStackTrace();
         }
     }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,9 +64,7 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
         userID = getIntent().getExtras().getString("userID");
         quizID = getIntent().getExtras().getString("quizID");
         quizName = getIntent().getExtras().getString("quizName");
-        seconds = getIntent().getExtras().getInt("time");
         timer = (TextView) findViewById(R.id.timer);
-        //countDownTimer(seconds,timer);
         questionNumber = (TextView) findViewById(R.id.studentQuestionNumber);
         quizNameField = (TextView) findViewById(R.id.studentQuizName);
         questionField = (TextView) findViewById(R.id.studentQuestion);
@@ -87,13 +75,11 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
         studAnswerSelection = (Spinner) findViewById(R.id.studentAnswerSpinner);
         nextButton = (Button) findViewById(R.id.studentNext);
         submitButton = (Button) findViewById(R.id.studentSubmit);
-
         studAnswerSelection.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
                 selectedAnswer = String.valueOf(studAnswerSelection.getSelectedItem());
             }
-
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
             }
@@ -101,7 +87,8 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //countDownTimer.cancel();
+                countDownTimer.cancel();
+                //countDownTimer = null;
                 selectedAnswer = String.valueOf(studAnswerSelection.getSelectedItem());
                 //boolean successValidation = validateData();
                 //if (successValidation) {
@@ -117,29 +104,24 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //countDownTimer.cancel();
+                countDownTimer.cancel();
+                countDownTimer = null;
                 selectedAnswer = String.valueOf(studAnswerSelection.getSelectedItem());
-                //boolean successValidation = validateData();
-                //if (successValidation) {
-
                 Map<String, Object> answerRecord = new HashMap<String, Object>();
                 answerRecord.put("Answer__c", selectedAnswer);
                 answerRecord.put("Quiz_Question__c", questionID);
                 answerRecord.put("User__c", userID);
                 insertAnswer(answerRecord);
-                //setPage();
-                //}
                 Toast.makeText(getApplicationContext(), "Quiz Submitted", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(StudentAttemptingQuiz.this, StudentHome.class);
                 intent.putExtra("userID",userID);
                 startActivity(intent);
             }
         });
-    }
 
+    }
     private void countDownTimer(int sec, TextView timer) {
         countDownTimer =new CountDownTimer(sec * 1000 + 1000, 1000) {
-
             public void onTick(long millisUntilFinished) {
                 int sec = (int) (millisUntilFinished / 1000);
                 int hours = sec / (60 * 60);
@@ -149,22 +131,24 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
                 timer.setText(String.format("%02d", hours)
                         + ":" + String.format("%02d", minutes)
                         + ":" + String.format("%02d", sec));
-                seconds = sec;
-
+                remainingSeconds = (hours*60*60)+(minutes*60)+sec;
+                if(remainingSeconds==0){
+                    selectedAnswer = String.valueOf(studAnswerSelection.getSelectedItem());
+                    Map<String, Object> answerRecord = new HashMap<String, Object>();
+                    answerRecord.put("Answer__c", selectedAnswer);
+                    answerRecord.put("Quiz_Question__c", questionID);
+                    answerRecord.put("User__c", userID);
+                    insertAnswer(answerRecord);
+                }
             }
-
             public void onFinish() {
-                Toast.makeText(getApplicationContext(),"Time UP!!!",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"Time UP!!!",Toast.LENGTH_SHORT).show();
                 selectedAnswer = String.valueOf(studAnswerSelection.getSelectedItem());
                 Map<String, Object> answerRecord = new HashMap<String, Object>();
                 answerRecord.put("Answer__c", selectedAnswer);
                 answerRecord.put("Quiz_Question__c", questionID);
                 answerRecord.put("User__c", userID);
                 insertAnswer(answerRecord);
-                Toast.makeText(getApplicationContext(), "Quiz Submitted", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(StudentAttemptingQuiz.this, StudentHome.class);
-                intent.putExtra("userID",userID);
-                startActivity(intent);
             }
         }.start();
     }
@@ -174,16 +158,14 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
         try {
             restRequest = RestRequest.getRequestForCreate(getString(R.string.api_version), "User_Answers__c", answerRecord);
 
-            if(quesNum>questionIDList.size()){
-                //countDownTimer.cancel();
+            if(quesNum>questionIDList.size() || remainingSeconds==1){
+                countDownTimer.cancel();
+                countDownTimer = null;
                 next = true;
                 Toast.makeText(getApplicationContext(), "Quiz Submitted", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(StudentAttemptingQuiz.this, StudentHome.class);
                 intent.putExtra("userID",userID);
-                //intent.putExtra("seconds",seconds);
-                //intent.putExtra("next",next);
                 startActivity(intent);
-
             }
 
         } catch (Exception e) {
@@ -201,7 +183,8 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
                     public void run() {
                         try {
                             //questionNumberValue++;
-                            nextQuestion("SELECT Is_Answer_Correct__c from Answer_Correction__c where User__c =\'" + userID + "\' and Quiz_Answer__r.Question__c =\'"+questionID+"\'");
+                            if(remainingSeconds > 1 && quesNum <= questionIDList.size())
+                                nextQuestion("SELECT Is_Answer_Correct__c from Answer_Correction__c where User__c =\'" + userID + "\' and Quiz_Answer__r.Question__c =\'"+questionID+"\'");
                             //setPage();
                         } catch (Exception e) {
                         }
@@ -229,12 +212,6 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
                             try {
                                 JSONArray answerCorrectionTable = result.asJSONObject().getJSONArray("records");
                                 isCorrectAnswer = Boolean.valueOf(answerCorrectionTable.getJSONObject(0).getString("Is_Answer_Correct__c"));
-                                /*if (isCorrectAnswer && difficultyLevel!=3) {
-                                    difficultyLevel++;
-                                }
-                                else if(!isCorrectAnswer && difficultyLevel!=1){
-                                    difficultyLevel--;
-                                }*/
                                 if(isCorrectAnswer){
                                     switch (difficultyLevel){
                                         case 1: if(currCountDiff2 < countDiff2)
@@ -336,21 +313,20 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
                                     } else if(difficultyLevelList.get(i).equals("3")){
                                         countDiff3++;
                                     }
-
-
                                 }
                                 numQuestions = questionIDList.size();
+                                seconds = numQuestions * 30;
+                                //countDownTimer(seconds,timer);
+                                remainingSeconds=seconds;
                                 questionNumberValue = 1;
                                 setPage();
                             } catch (Exception e) {
                                 System.out.println(e.getMessage());
                             }
-
                         }
                     }
                 });
             }
-
             @Override
             public void onError(final Exception exception) {
                 runOnUiThread(new Runnable() {
@@ -364,7 +340,6 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
             }
         });
     }
-
     private void setPage() {
         if(QuestionSet.size()==0) {
             Random rand = new Random();
@@ -381,7 +356,6 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
             for(int i=1; i<=difficultyLevelList.size(); i++) {
                 questionNumberValue = i;
                 if(Integer.parseInt(difficultyLevelList.get(i-1)) != difficultyLevel || QuestionSet.contains(i-1)) {
-
                 }
                 else {
                     QuestionSet.add(questionNumberValue-1);
@@ -396,8 +370,6 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
                 }
             }
         }
-
-        diffLevel = Integer.parseInt(difficultyLevelList.get(questionNumberValue-1));
         questionNumber.setText(Integer.toString(quesNum)+" ");
         quesNum++;
         questionID = questionIDList.get(questionNumberValue-1);
@@ -408,5 +380,7 @@ public class StudentAttemptingQuiz extends SalesforceActivity {
         option3Field.setText(option3List.get(questionNumberValue-1));
         option4Field.setText(option4List.get(questionNumberValue-1));
         studAnswerSelection.setSelection(0);
+        if(remainingSeconds!=0)
+            countDownTimer(remainingSeconds,timer);
     }
 }

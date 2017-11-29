@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:android="http://schemas.android.com/tools">
     <string name="answerPrompt">Choose an answer</string>
     <string-array name="answerChoice" >
-        <item> </item>
+        <item>--Select--</item>
         <item>A</item>
         <item>B</item>
         <item>C</item>
