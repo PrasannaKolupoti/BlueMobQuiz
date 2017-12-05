@@ -12,8 +12,9 @@ import java.util.ArrayList;
 /**
  * Created by prasa on 2017-11-21.
  */
-
+//Setting values of multiple textview fields present in listview
 public class ProfessorCustomBaseAdapter extends BaseAdapter {
+    //Variable declaration and initialization
     private static ArrayList<DisplayAttendance> attendance = new ArrayList<>();
     private LayoutInflater mInflater;
     public ProfessorCustomBaseAdapter(Context context, ArrayList<DisplayAttendance> finalResults) {
@@ -34,6 +35,7 @@ public class ProfessorCustomBaseAdapter extends BaseAdapter {
     }
     public View getView(int position, View convertView, ViewGroup parent) {
         ProfessorCustomBaseAdapter.ViewHolder holder;
+
         if (convertView == null) {
             convertView = mInflater.inflate(R.layout.professor_listviewstudentnames, null);
             holder = new ProfessorCustomBaseAdapter.ViewHolder();
@@ -44,7 +46,7 @@ public class ProfessorCustomBaseAdapter extends BaseAdapter {
         } else {
             holder = (ProfessorCustomBaseAdapter.ViewHolder) convertView.getTag();
         }
-
+        //setting values of textviews present in listview
         holder.studentName.setText(attendance.get(position).getStudentName());
         holder.marks.setText(Integer.toString(attendance.get(position).getMarks()));
         holder.rank.setText(Integer.toString(attendance.get(position).getRank()));
@@ -52,6 +54,7 @@ public class ProfessorCustomBaseAdapter extends BaseAdapter {
     }
 
     static class ViewHolder {
+        //Views in ListView
         TextView studentName;
         TextView marks;
         TextView rank;

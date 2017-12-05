@@ -10,7 +10,6 @@ import android.content.IntentFilter;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.view.GestureDetectorCompat;
-import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
@@ -33,9 +32,8 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-
 public class ProfessorHome extends SalesforceActivity {
-
+    //Variable declaration and initialization
     private RestClient client;
     public String userID;
     private GestureDetectorCompat gestureObject;
@@ -44,8 +42,6 @@ public class ProfessorHome extends SalesforceActivity {
     public ArrayList<String> quizNameList = new ArrayList<String>();
     public ArrayList<String> quizStatusList = new ArrayList<String>();
     BluetoothAdapter mBluetoothAdapter;
-    private static final String TAG = "ProfessorHome";
-
     @Override
     public void onResume() {
         // Create list adapter
@@ -53,10 +49,13 @@ public class ProfessorHome extends SalesforceActivity {
         ((ListView) findViewById(R.id.quizListView)).setAdapter(createdQuizAdapter);
         super.onResume();
     }
+    //Method that is called after the activity resumes once we have a RestClient.
     @Override
     public void onResume(RestClient client) {
+        // Keeping reference to rest client
         this.client = client;
         try {
+            //calling displayCreatedQuizzes() with query to get the quizzes as parameter
             displayCreatedQuizzes("SELECT ID,Name,Is_Active__c FROM Quiz__c");
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
@@ -64,7 +63,6 @@ public class ProfessorHome extends SalesforceActivity {
         ((ListView) findViewById(R.id.quizListView)).setAdapter(createdQuizAdapter);
 
     }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,12 +72,13 @@ public class ProfessorHome extends SalesforceActivity {
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         Button createQuizButton = (Button) findViewById(R.id.createQuizButton);
         ListView quizList = (ListView) findViewById(R.id.quizListView);
+        //Listening to item click and performing action
         quizList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String quizID = quizIDList.get(position);
                 String quizName = quizNameList.get(position);
-
+                //Redirect to ProfessorUpdatingQuizName page to update that particular quiz
                 Intent intent = new Intent(ProfessorHome.this, ProfessorUpdatingQuizName.class);
                 intent.putExtra("userID",userID);
                 intent.putExtra("quizID",quizID);
@@ -87,16 +86,21 @@ public class ProfessorHome extends SalesforceActivity {
                 startActivity(intent);
             }
         });
+        //Listening to item long click and performing action
         quizList.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 String quizID = quizIDList.get(position);
                 String isActive  = quizStatusList.get(position) ;
+                //checking if bluetooth is enabled or not
                 if(!mBluetoothAdapter.isEnabled()) {
+                    //calling enableDisableBT() to enable bluetooth
                     enableDisableBT();
                     checkBTPermissions();
+                    //calling makeBtDiscoverable() to make the device discoverable
                     makeBtDiscoverable(view);
                 }
+                //Checking if quiz is not shared
                 if(isActive.equals("false")){
                     String quizStatus = "shared";
                     AlertDialog.Builder builder;
@@ -111,7 +115,7 @@ public class ProfessorHome extends SalesforceActivity {
                                 public void onClick(DialogInterface dialog, int which) {
                                     Map<String, Object> shareQuiz = new HashMap<String, Object>();
                                     shareQuiz.put("Is_Active__c", "true");
-
+                                    //Calling sharingQuiz with quizId and active status
                                     sharingQuiz(quizID, quizStatus, shareQuiz);
                                     dialog.dismiss();
                                 }
@@ -125,6 +129,7 @@ public class ProfessorHome extends SalesforceActivity {
                             .setIcon(android.R.drawable.ic_dialog_alert)
                             .show();
                 }
+                //Checking if quiz is already shared
                 else if(isActive.equals("true")){
                     String quizStatus = "unshared";
                     AlertDialog.Builder builder;
@@ -139,6 +144,7 @@ public class ProfessorHome extends SalesforceActivity {
                                 public void onClick(DialogInterface dialog, int which) {
                                     Map<String, Object> shareQuiz = new HashMap<String, Object>();
                                     shareQuiz.put("Is_Active__c", "false");
+                                    //Calling sharingQuiz with quizId and active status
                                     sharingQuiz(quizID, quizStatus, shareQuiz);
                                     dialog.dismiss();
                                 }
@@ -156,21 +162,24 @@ public class ProfessorHome extends SalesforceActivity {
                 return true;
             }
         });
+        //Create quiz button click listener
         createQuizButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Redirect to ProfessorAddingQuizName page
                 Intent intent = new Intent(ProfessorHome.this, ProfessorAddingQuizName.class);
                 intent.putExtra("userID",userID);
                 startActivity(intent);
             }
         });
     }
+    //Destroying the broadcast receivers
     public void onDestroy(){
         super.onDestroy();
         unregisterReceiver(mBroadcastReceiver1);
         unregisterReceiver(mBroadcastReceiver2);
     }
-    // This method is required for all devices running API23+. Android must programmatically check the permissions for bluetooth. Putting the proper permissions in the manifest is not enough.
+    //Checking the permissions for bluetooth.
     private void checkBTPermissions() {
         if(Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP){
             int permissionCheck = this.checkSelfPermission("Manifest.permission.ACCESS_FINE_LOCATION");
@@ -181,9 +190,8 @@ public class ProfessorHome extends SalesforceActivity {
         }else{
         }
     }
+    // Making the device discoverable for 600 seconds
     public void makeBtDiscoverable(View view) {
-        Log.d(TAG, "Enable_Discoverable: Making device discoverable for 600 seconds.");
-
         Intent discoverableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_DISCOVERABLE);
         discoverableIntent.putExtra(BluetoothAdapter.EXTRA_DISCOVERABLE_DURATION, 600);
         startActivity(discoverableIntent);
@@ -192,10 +200,7 @@ public class ProfessorHome extends SalesforceActivity {
         registerReceiver(mBroadcastReceiver2,intentFilter);
 
     }
-    /**
-     * Broadcast Receiver for changes made to bluetooth states such as:
-     * 1) Discoverability mode on/off or expire.
-     */
+    //Broadcast Receiver for changes made to bluetooth states such as: Discoverability mode on/off or expire.
     private final BroadcastReceiver mBroadcastReceiver2 = new BroadcastReceiver() {
 
         @Override
@@ -209,20 +214,15 @@ public class ProfessorHome extends SalesforceActivity {
                 switch (mode) {
                     //Device is in Discoverable Mode
                     case BluetoothAdapter.SCAN_MODE_CONNECTABLE_DISCOVERABLE:
-                        Log.d(TAG, "mBroadcastReceiver2: Discoverability Enabled.");
                         break;
                     //Device not in discoverable mode
                     case BluetoothAdapter.SCAN_MODE_CONNECTABLE:
-                        Log.d(TAG, "mBroadcastReceiver2: Discoverability Disabled. Able to receive connections.");
                         break;
                     case BluetoothAdapter.SCAN_MODE_NONE:
-                        Log.d(TAG, "mBroadcastReceiver2: Discoverability Disabled. Not able to receive connections.");
                         break;
                     case BluetoothAdapter.STATE_CONNECTING:
-                        Log.d(TAG, "mBroadcastReceiver2: Connecting....");
                         break;
                     case BluetoothAdapter.STATE_CONNECTED:
-                        Log.d(TAG, "mBroadcastReceiver2: Connected.");
                         break;
                 }
 
@@ -249,6 +249,7 @@ public class ProfessorHome extends SalesforceActivity {
             }
         }
     };
+    //Switching on bluetooth
     public void enableDisableBT(){
         if(mBluetoothAdapter == null){
         }
@@ -259,11 +260,14 @@ public class ProfessorHome extends SalesforceActivity {
             registerReceiver(mBroadcastReceiver1, BTIntent);
         }
     }
+    //Gestures
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         this.gestureObject.onTouchEvent(event);
         return super.onTouchEvent(event);
     }
+    //Gestures
+    //https://developer.android.com/reference/android/view/GestureDetector.OnGestureListener.html#onFling(android.view.MotionEvent, android.view.MotionEvent, float, float)
     class CustomGesture extends GestureDetector.SimpleOnGestureListener{
         @Override
         public boolean onFling(MotionEvent event1, MotionEvent event2, float velocityX, float velocityY) {
@@ -285,6 +289,7 @@ public class ProfessorHome extends SalesforceActivity {
                         // Swipe Bottom
                     } else {
                         // Swipe Top
+                        //Redirecting to ProfessorAttendance page
                         Intent intent = new Intent(ProfessorHome.this, ProfessorAttendance.class);
                         intent.putExtra("userID",userID);
                         startActivity(intent);
@@ -298,6 +303,7 @@ public class ProfessorHome extends SalesforceActivity {
             return result;
         }
     }
+    //Setting the status of quiz based on whether it is shared or unshared
     private void sharingQuiz(String quizID, String quizStatus,  Map<String, Object> shareQuizRecord) {
         RestRequest restRequest;
         try {
@@ -324,7 +330,6 @@ public class ProfessorHome extends SalesforceActivity {
                                     startActivity(intent);
 
                             } catch (Exception e) {
-                                System.out.println("*****exception"+e.getMessage());
                             }
                         }
                     }
@@ -337,8 +342,7 @@ public class ProfessorHome extends SalesforceActivity {
             }
         });
     }
-
-
+    //Retrieving the list of created quizzes from database
     private void displayCreatedQuizzes(String soql) throws UnsupportedEncodingException {
         RestRequest restRequest = RestRequest.getRequestForQuery(ApiVersionStrings.getVersionNumber(this), soql);
         client.sendAsync(restRequest, new RestClient.AsyncRequestCallback() {
@@ -355,6 +359,7 @@ public class ProfessorHome extends SalesforceActivity {
                                 quizIDList.add(records.getJSONObject(i).getString("Id"));
                                 quizNameList.add(records.getJSONObject(i).getString("Name"));
                                 quizStatusList.add(records.getJSONObject(i).getString("Is_Active__c"));
+                                //Adding the list of created quizzes to array adapter
                                 createdQuizAdapter.add(records.getJSONObject(i).getString("Name"));
                             }
                         } catch (Exception e) {
@@ -377,5 +382,6 @@ public class ProfessorHome extends SalesforceActivity {
             }
         });
     }
-
 }
+// Referenced Android developer to understand bluetooth enabling/discovering functionality
+// https://developer.android.com/guide/topics/connectivity/bluetooth.html

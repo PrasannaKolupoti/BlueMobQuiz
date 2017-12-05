@@ -5,7 +5,7 @@
     android:background="@drawable/background"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.mc.grp6.bluemobquiz.StudentAvailableQuiz">
-    <!-- Image Source: http://www.intrawallpaper.com/static/images/recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg-->
+    <!-- Image Source: http://www.photos-public-domain.com/wp-content/uploads/2012/05/light-blue-paper-texture.jpg-->
     <include layout="@layout/header" />
     <TextView
         android:id="@+id/studAvailableQuizHeading"

@@ -3,7 +3,9 @@ package com.mc.grp6.bluemobquiz;
 /**
  * Created by Owner on 2017-11-19.
  */
+//setters and getters for quizname,marks,rank
 public class DisplayResults {
+    //Variable declaration and initialization
     private String quizName = "";
     private int marks = 0 ;
     private int rank = 0;

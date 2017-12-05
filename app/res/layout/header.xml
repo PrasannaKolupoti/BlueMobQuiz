@@ -10,7 +10,7 @@
 		android:layout_centerVertical="true"
 		android:onClick="onLogoutClick"
 		android:text="@string/logout_button"
-        android:background="#1F5E60"
+        android:background="#204AAB"
         android:textColor="#FFFFFF"/>
 
 </RelativeLayout>

@@ -20,15 +20,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ProfessorAddingQuizName extends SalesforceActivity {
-
+    //Variable declaration and initialization
     public EditText quizName;
     public Button OKButton;
     public String quizNameValue,userID;
     private RestClient client;
-    public String questionID, quizID="";
-    public int questionNumberValue = 1;
+    public String quizID="";
+    //Method that is called after the activity resumes once we have a RestClient.
     @Override
     public void onResume(RestClient client) {
+        // Keeping reference to rest client
         this.client = client;
     }
     @Override
@@ -38,6 +39,7 @@ public class ProfessorAddingQuizName extends SalesforceActivity {
         userID = getIntent().getExtras().getString("userID");
         quizName = (EditText) findViewById(R.id.quizNameValue);
         OKButton = (Button) findViewById(R.id.addQuizName);
+        //OK button click listener
         OKButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,14 +50,14 @@ public class ProfessorAddingQuizName extends SalesforceActivity {
                     quizRecord.put("Name", quizNameValue);
                     quizRecord.put("Quiz_Owner__c", userID);
                     quizRecord.put("Topic__c", quizNameValue);
-                    addQuiz(quizRecord);
-
-
+                    //Calling addQuiz() with quiz name as parameter
+                    addQuizName(quizRecord);
                 }
             }
         });
     }
-    private void addQuiz(Map<String, Object> quizRecord) {
+    //Adding quiz name in database
+    private void addQuizName(Map<String, Object> quizRecord) {
         RestRequest restRequest;
         try {
             restRequest = RestRequest.getRequestForCreate(getString(R.string.api_version), "Quiz__c", quizRecord);
@@ -72,9 +74,8 @@ public class ProfessorAddingQuizName extends SalesforceActivity {
                     public void run() {
                         if (result.isSuccess()) {
                             try {
-                                //quizNameAdded = true;
                                 quizID = result.toString().substring(7, 25);
-                                System.out.println("*********************QuizID:"+quizID);
+                                //Redirecting to creating quiz page with quizname and id as parameters
                                 Intent intent = new Intent(ProfessorAddingQuizName.this, ProfessorCreatingQuiz.class);
                                 intent.putExtra("userID",userID);
                                 intent.putExtra("quizID",quizID);
@@ -94,6 +95,7 @@ public class ProfessorAddingQuizName extends SalesforceActivity {
             }
         });
     }
+    //Validating if quiz name is entered or not
     private boolean validateData() {
         if (quizNameValue.equals("") || quizNameValue.equals("Enter name for the quiz")) {
             Toast.makeText(getApplicationContext(), "Please input quiz name.", Toast.LENGTH_SHORT).show();

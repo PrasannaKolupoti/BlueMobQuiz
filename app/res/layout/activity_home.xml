@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     tools:context="com.mc.grp6.bluemobquiz.Home">
-    <!-- Image Source: http://www.intrawallpaper.com/static/images/recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg-->
+    <!-- Image Source: http://www.photos-public-domain.com/wp-content/uploads/2012/05/light-blue-paper-texture.jpg-->
     <TextView
         android:id="@+id/homeHeading"
         android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
                 android:layout_column="0"
                 android:layout_gravity="center"
                 android:text="Login"
-                android:background="#1F5E60"
+                android:background="#204AAB"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"/>
             <Button
@@ -97,7 +97,7 @@
                 android:layout_column="1"
                 android:layout_gravity="center"
                 android:text="   Register   "
-                android:background="#1F5E60"
+                android:background="#204AAB"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"/>
         </TableRow>

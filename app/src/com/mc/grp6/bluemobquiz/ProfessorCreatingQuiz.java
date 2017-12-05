@@ -21,6 +21,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ProfessorCreatingQuiz extends SalesforceActivity {
+    //Variable declaration and initialization
     public EditText question, option1, option2, option3, option4;
     public TextView questionNumber, quizName;
     public Spinner profAnswerSelection, profDifficultySelection;
@@ -30,11 +31,12 @@ public class ProfessorCreatingQuiz extends SalesforceActivity {
     private RestClient client;
     public String questionID, quizID="";
     public int questionNumberValue = 1;
+    //Method that is called after the activity resumes once we have a RestClient.
     @Override
     public void onResume(RestClient client) {
+        // Keeping reference to rest client
         this.client = client;
     }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,8 +44,6 @@ public class ProfessorCreatingQuiz extends SalesforceActivity {
         userID = getIntent().getExtras().getString("userID");
         quizID = getIntent().getExtras().getString("quizID");
         quizNameValue = getIntent().getExtras().getString("quizName");
-        System.out.println("*********************PUserID:"+userID);
-        System.out.println("*********************PQuizID:"+quizID);
         questionNumber = (TextView) findViewById(R.id.questionNumber);
         quizName = (TextView) findViewById(R.id.quizName);
         quizName.setText(quizNameValue);
@@ -56,6 +56,7 @@ public class ProfessorCreatingQuiz extends SalesforceActivity {
         profDifficultySelection = (Spinner) findViewById(R.id.difficultySpinner);
         nextButton = (Button) findViewById(R.id.profNext);
         submitButton = (Button) findViewById(R.id.profSubmit);
+        //spinner selection listener
         profAnswerSelection.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
@@ -65,6 +66,7 @@ public class ProfessorCreatingQuiz extends SalesforceActivity {
             public void onNothingSelected(AdapterView<?> parent) {
             }
         });
+        //spinner selection listener
         profDifficultySelection.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -74,17 +76,20 @@ public class ProfessorCreatingQuiz extends SalesforceActivity {
             public void onNothingSelected(AdapterView<?> parent) {
             }
         });
+        //Next button click listener
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("*********************SelectedAns:"+selectedAnswer);
+                //setting the quiz name
                 quizName.setText(quizNameValue);
+                //getting values from the page
                 questionValue = question.getText().toString();
                 option1Value = option1.getText().toString();
                 option2Value = option2.getText().toString();
                 option3Value = option3.getText().toString();
                 option4Value = option4.getText().toString();
                 boolean successValidation = validateData();
+                //if successful validation
                 if (successValidation) {
                     Map<String, Object> questionRecord = new HashMap<String, Object>();
                     questionRecord.put("Question__c", questionValue);
@@ -94,16 +99,19 @@ public class ProfessorCreatingQuiz extends SalesforceActivity {
                     questionRecord.put("Choice4__c", option4Value);
                     questionRecord.put("Quiz__c", quizID);
                     questionRecord.put("Difficulty_Level__c", selectedDifficulty);
+                    //Calling addQuestion() with question questionRecord and answer as parameter
                     addQuestion(questionRecord,selectedAnswer);
                     clearPage();
                 }
             }
         });
+        // submit button click listener
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                //setting the quiz name
                 quizName.setText(quizNameValue);
+                //getting values from the page
                 questionValue = question.getText().toString();
                 option1Value = option1.getText().toString();
                 option2Value = option2.getText().toString();
@@ -111,6 +119,7 @@ public class ProfessorCreatingQuiz extends SalesforceActivity {
                 option4Value = option4.getText().toString();
                 userID = getIntent().getExtras().getString("userID");
                 boolean successValidation = validateData();
+                //on successful validation
                 if (successValidation) {
                     Map<String, Object> questionRecord = new HashMap<String, Object>();
                     questionRecord.put("Question__c", questionValue);
@@ -120,17 +129,19 @@ public class ProfessorCreatingQuiz extends SalesforceActivity {
                     questionRecord.put("Choice4__c", option4Value);
                     questionRecord.put("Quiz__c", quizID);
                     questionRecord.put("Difficulty_Level__c", selectedDifficulty);
+                    //Calling addQuestion() with question questionRecord and answer as parameter
                     addQuestion(questionRecord,selectedAnswer);
 
                 }
                 Toast.makeText(getApplicationContext(), "Quiz created", Toast.LENGTH_SHORT).show();
+                //Redirecting to ProfessorHome page once quiz is submitted
                 Intent intent = new Intent(ProfessorCreatingQuiz.this, ProfessorHome.class);
                 intent.putExtra("userID",userID);
                 startActivity(intent);
             }
         });
     }
-
+    // Setting the page to empty values
     private void clearPage() {
         questionNumberValue++;
         quizName.setText(quizNameValue);
@@ -144,7 +155,7 @@ public class ProfessorCreatingQuiz extends SalesforceActivity {
         profDifficultySelection.setSelection(0);
 
     }
-
+    // Adding answer of a particular question in database
     private void addAnswer(Map<String, Object> answerRecord) {
         RestRequest restRequest;
         try {
@@ -156,23 +167,19 @@ public class ProfessorCreatingQuiz extends SalesforceActivity {
         client.sendAsync(restRequest, new RestClient.AsyncRequestCallback() {
             @Override
             public void onSuccess(RestRequest request, RestResponse result) {
-                System.out.println("************answer"+result.toString());
                 if (result.isSuccess()) {
                     try {
-
                     } catch (Exception e) {
-                        // You might want to log the error
-                        // or show it to the user
                     }
                 }
             }
-
             @Override
             public void onError(Exception e) {
                 Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }
+    //Adding question to database
     private void addQuestion(Map<String, Object> questionRecord,String selectedAnswer) {
         RestRequest restRequest;
         try {
@@ -191,16 +198,12 @@ public class ProfessorCreatingQuiz extends SalesforceActivity {
                     public void run() {
                         if (result.isSuccess()) {
                             try {
-                                //questionAdded = true;
                                 questionID = result.toString().substring(7, 25);
-                                System.out.println("*********************PQuestionID:"+questionID);
-                                System.out.println("*********************PQuizID:"+quizID);
-                                System.out.println("*********************PAnswer:"+selectedAnswer);
-                                System.out.println("************"+questionNumberValue);
                                 Map<String, Object> answerRecord = new HashMap<String, Object>();
                                 answerRecord.put("Quiz__c",quizID);
                                 answerRecord.put("Question__c", questionID);
                                 answerRecord.put("Answer__c", selectedAnswer);
+                                //Calling addAnswer() with questionID and selected answer
                                 addAnswer(answerRecord);
                             } catch (Exception e) {
                             }
@@ -214,6 +217,7 @@ public class ProfessorCreatingQuiz extends SalesforceActivity {
             }
         });
     }
+    //Validating quiz data
     private boolean validateData() {
         if (questionValue.equals("") || questionValue.equals("Enter the questionField")) {
             Toast.makeText(getApplicationContext(), "Please input the questionField.", Toast.LENGTH_SHORT).show();

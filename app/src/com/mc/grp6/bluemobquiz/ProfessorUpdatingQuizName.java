@@ -20,18 +20,21 @@ import java.util.Map;
  */
 
 public class ProfessorUpdatingQuizName extends SalesforceActivity {
-
+    //Variable declaration and initialization
     public EditText quizName;
     public Button OKButton;
     public String quizNameValue, updatedQuizNameValue, userID;
     private RestClient client;
     public String quizID="";
+    //Method that is called after the activity resumes once we have a RestClient.
     @Override
     public void onResume(RestClient client) {
+        // Keeping reference to rest client
         this.client = client;
         userID = getIntent().getExtras().getString("userID");
         quizID = getIntent().getExtras().getString("quizID");
         quizNameValue = getIntent().getExtras().getString("quizName");
+        //Calling setQuizName() with quiz name as parameter
         setQuizName(quizNameValue);
     }
     @Override
@@ -43,6 +46,7 @@ public class ProfessorUpdatingQuizName extends SalesforceActivity {
         quizNameValue = getIntent().getExtras().getString("quizName");
         quizName = (EditText) findViewById(R.id.quizNameValue);
         OKButton = (Button) findViewById(R.id.addQuizName);
+        //OK button click listener
         OKButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,12 +56,8 @@ public class ProfessorUpdatingQuizName extends SalesforceActivity {
                     Map<String, Object> quizRecord = new HashMap<String, Object>();
                     quizRecord.put("Name", updatedQuizNameValue);
                     quizRecord.put("Topic__c", updatedQuizNameValue);
+                    //Calling updateQuizName() with quiz ID and name as parameter
                     updateQuizName(quizID,quizRecord);
-                    Intent intent = new Intent(ProfessorUpdatingQuizName.this, ProfessorUpdatingQuiz.class);
-                    intent.putExtra("userID",userID);
-                    intent.putExtra("quizID",quizID);
-                    intent.putExtra("quizName",updatedQuizNameValue);
-                    startActivity(intent);
                 }
             }
         });
@@ -80,11 +80,17 @@ public class ProfessorUpdatingQuizName extends SalesforceActivity {
                         if (result.isSuccess()) {
                             try {
                                 quizNameValue = getIntent().getExtras().getString("quizName");
+                                //checking if name is changed or not
                                 if(!quizNameValue.equalsIgnoreCase(updatedQuizNameValue)) {
                                     Toast.makeText(getApplicationContext(), "Quiz name updated", Toast.LENGTH_SHORT).show();
                                 }
+                                //Redirecting to updating quiz page with quizname and id as parameters
+                                Intent intent = new Intent(ProfessorUpdatingQuizName.this, ProfessorUpdatingQuiz.class);
+                                intent.putExtra("userID",userID);
+                                intent.putExtra("quizID",quizID);
+                                intent.putExtra("quizName",updatedQuizNameValue);
+                                startActivity(intent);
                             } catch (Exception e) {
-                                System.out.println("*****exception"+e.getMessage());
                             }
                         }
                     }
@@ -97,6 +103,7 @@ public class ProfessorUpdatingQuizName extends SalesforceActivity {
             }
         });
     }
+    //Validating if quiz name is entered or not
     private boolean validateData() {
         if (quizNameValue.equals("") || quizNameValue.equals("Enter name for the quiz")) {
             Toast.makeText(getApplicationContext(), "Please input quiz name.", Toast.LENGTH_SHORT).show();
@@ -105,6 +112,7 @@ public class ProfessorUpdatingQuizName extends SalesforceActivity {
             return true;
         }
     }
+    //setting quiz name in the page
     private void setQuizName(String quizNameValue) {
         quizName.setText(quizNameValue);
     }

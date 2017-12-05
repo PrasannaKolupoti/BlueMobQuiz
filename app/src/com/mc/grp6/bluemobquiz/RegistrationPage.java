@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.PatternMatcher;
 import android.provider.Settings;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,6 +20,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class RegistrationPage extends SalesforceActivity {
+    //Variable declaration and initialization
     private RestClient client;
     public String name, userName, password, confirmPassword, deviceID;
     public boolean successRegistration = false;
@@ -28,12 +28,12 @@ public class RegistrationPage extends SalesforceActivity {
 
     @Override
     public void onResume() {
-
         super.onResume();
     }
-
+    //Method that is called after the activity resumes once we have a RestClient.
     @Override
     public void onResume(RestClient client) {
+        // Keeping reference to rest client
         this.client = client;
     }
 
@@ -41,14 +41,13 @@ public class RegistrationPage extends SalesforceActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration_page);
-
         Button register = (Button) findViewById(R.id.registerButton);
         final EditText nameValue, userNameValue, passwordValue, confirmPasswordValue;
         nameValue = (EditText) findViewById(R.id.nameValue);
         userNameValue = (EditText) findViewById(R.id.userNameValue);
         passwordValue = (EditText) findViewById(R.id.passwordValue);
         confirmPasswordValue = (EditText) findViewById(R.id.confirmPasswordValue);
-
+        //Register Button click listener
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,17 +56,19 @@ public class RegistrationPage extends SalesforceActivity {
                 password = passwordValue.getText().toString();
                 confirmPassword = confirmPasswordValue.getText().toString();
                 boolean successValidation = validateData();
+                //if successful validation
                 if (successValidation) {
                     Map<String, Object> userRecord = new HashMap<String, Object>();
                     userRecord.put("Name", name);
                     userRecord.put("Username__c", userName);
                     userRecord.put("Password__c", password);
+                    //Calling registerUser() with user details
                     registerUser(userRecord);
-
                 }
             }
         });
     }
+    //Adding device ID of a particular user to database
     private void registerDevice(Map<String, Object> deviceRecord) {
         RestRequest restRequest;
         try {
@@ -86,24 +87,22 @@ public class RegistrationPage extends SalesforceActivity {
                         if (result.isSuccess()) {
                             try {
                                 Toast.makeText(getApplicationContext(), "Successfully Registered", Toast.LENGTH_SHORT).show();
+                                //Redirect to login page on successful registration
                                 Intent intent = new Intent(RegistrationPage.this, LoginPage.class);
                                 startActivity(intent);
                             } catch (Exception e) {
-                                // You might want to log the error
-                                // or show it to the user
                             }
                         }
                     }
                 });
             }
-
             @Override
             public void onError(Exception e) {
                 Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }
-
+    //Adding user to database
     private void registerUser(Map<String, Object> userRecord) {
         RestRequest restRequest;
         try {
@@ -123,11 +122,13 @@ public class RegistrationPage extends SalesforceActivity {
                         if (result.isSuccess()) {
                             try {
                                 userID = result.toString().substring(7, 25);
+                                //Calling getDeviceID() to get the device ID of the device that is used for registration
                                 deviceID = getDeviceID();
                                 System.out.println("**********deviceID"+deviceID);
                                 Map<String, Object> deviceRecord = new HashMap<String, Object>();
                                 deviceRecord.put("Users__c", userID);
                                 deviceRecord.put("DeviceID__c", deviceID);
+                                //Calling registerDevice() with user ID and deviceID
                                 registerDevice(deviceRecord);
 
                             } catch (Exception e) {
@@ -142,10 +143,11 @@ public class RegistrationPage extends SalesforceActivity {
             }
         });
     }
+    //getting the device ID of the current device
     private String getDeviceID(){
         return android.provider.Settings.Secure.getString(getApplicationContext().getContentResolver(), "bluetooth_address");
     }
-
+    //Checking if only alphabets in name
     private boolean isAlphabet(String name) {
         for (int i = 0; i < name.length(); i++) {
             if ((!(Character.isAlphabetic(name.charAt(i)))&& !(name.charAt(i)==' '))||((name.charAt(name.length()-1)==' '))) {
@@ -153,9 +155,7 @@ public class RegistrationPage extends SalesforceActivity {
             }
         }
         return true;
-
     }
-
     private boolean isPasswordRulePassed(String name){
         Pattern regex = Pattern.compile("^(?=.*[a-z])(?=.*[A-Z])(?=.*\'d')(?=.*[$@$!%*?&])[A-Za-z\'d'$@$!%*?&]{8,}");
         Matcher matcher = regex.matcher(name);
@@ -165,13 +165,15 @@ public class RegistrationPage extends SalesforceActivity {
         return false;
 
     }
-
+    //Checking for consequent 2 spaces for name
     private  boolean getTotalSpaces(String name){
         return !name.contains("  ");
     }
-    private  boolean verifySpace(String name){
-        return !name.contains(" ");
+    //Checking for spaces in username
+    private  boolean verifySpace(String usrName){
+        return !usrName.contains(" ");
     }
+    //Validating the fields
     private boolean validateData() {
         //name validations
         String tempName = name, tempUserName = userName , tempPassword = password;

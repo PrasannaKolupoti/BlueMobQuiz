@@ -3,8 +3,9 @@ package com.mc.grp6.bluemobquiz;
 /**
  * Created by prasa on 2017-11-21.
  */
-
+//setters and getters for student name,marks,rank
 public class DisplayAttendance {
+    //Variable declaration and initialization
     private String studentName = "";
     private int marks = 0;
     private int rank = 0;

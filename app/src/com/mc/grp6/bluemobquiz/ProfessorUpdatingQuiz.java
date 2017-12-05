@@ -31,6 +31,7 @@ import java.util.Map;
  */
 
 public class ProfessorUpdatingQuiz extends SalesforceActivity {
+    //Variable declaration and initialization
     public EditText questionField, option1Field, option2Field, option3Field, option4Field;
     public TextView questionNumber,quizNameField;
     public Spinner profAnswerSelection, profDifficultySelection;
@@ -51,11 +52,14 @@ public class ProfessorUpdatingQuiz extends SalesforceActivity {
     public void onResume() {
         super.onResume();
     }
+    //Method that is called after the activity resumes once we have a RestClient.
     @Override
     public void onResume(RestClient client) {
+        // Keeping reference to rest client
         this.client = client;
         quizID = getIntent().getExtras().getString("quizID");
         try {
+            //Calling setQuestion() with query to get the questions in quiz as parameter
             setQuestion("SELECT id, Question__c, Quiz__c, Quiz__r.Name,  Question__r.Question__c, Question__r.Choice1__c, Question__r.Choice2__c, Question__r.Choice3__c, Question__r.Choice4__c, Question__r.Difficulty_Level__c, Answer__c from Quiz_Answers__c where Quiz__c =\'" + quizID + "\'");
         }catch (UnsupportedEncodingException e){
             e.printStackTrace();
@@ -81,16 +85,17 @@ public class ProfessorUpdatingQuiz extends SalesforceActivity {
         profDifficultySelection = (Spinner) findViewById(R.id.difficultySpinner);
         nextButton = (Button) findViewById(R.id.profNext);
         submitButton = (Button) findViewById(R.id.profSubmit);
+        //spinner selection listener
         profAnswerSelection.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
                 selectedAnswer = String.valueOf(profAnswerSelection.getSelectedItem());
             }
-
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
             }
         });
+        //spinner selection listener
         profDifficultySelection.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -104,6 +109,7 @@ public class ProfessorUpdatingQuiz extends SalesforceActivity {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //getting values from the page
                 quizNameValue = quizNameField.getText().toString();
                 questionValue = questionField.getText().toString();
                 option1Value = option1Field.getText().toString();
@@ -113,7 +119,7 @@ public class ProfessorUpdatingQuiz extends SalesforceActivity {
                 selectedDifficulty = String.valueOf(profDifficultySelection.getSelectedItem());
                 selectedAnswer = String.valueOf(profAnswerSelection.getSelectedItem());
                 boolean successValidation = validateData();
-
+                //if successful validation
                 if (successValidation) {
                     Map<String, Object> questionRecord = new HashMap<String, Object>();
                     questionRecord.put("Question__c", questionValue);
@@ -121,16 +127,16 @@ public class ProfessorUpdatingQuiz extends SalesforceActivity {
                     questionRecord.put("Choice2__c", option2Value);
                     questionRecord.put("Choice3__c", option3Value);
                     questionRecord.put("Choice4__c", option4Value);
-                    //questionRecord.put("Quiz__c", quizID);
                     questionRecord.put("Difficulty_Level__c", selectedDifficulty);
+                    //Calling updateQuestion() with question questionRecord and answer as parameter
                     updateQuestion(questionRecord,selectedAnswer);
-                    //setPage();
                 }
             }
         });
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //getting values from the page
                 quizNameValue = quizNameField.getText().toString();
                 questionValue = questionField.getText().toString();
                 option1Value = option1Field.getText().toString();
@@ -141,6 +147,7 @@ public class ProfessorUpdatingQuiz extends SalesforceActivity {
                 selectedDifficulty = String.valueOf(profDifficultySelection.getSelectedItem());
                 selectedAnswer = String.valueOf(profAnswerSelection.getSelectedItem());
                 boolean successValidation = validateData();
+                //if successful validation
                 if (successValidation) {
                     Map<String, Object> questionRecord = new HashMap<String, Object>();
                     questionRecord.put("Question__c", questionValue);
@@ -149,16 +156,18 @@ public class ProfessorUpdatingQuiz extends SalesforceActivity {
                     questionRecord.put("Choice3__c", option3Value);
                     questionRecord.put("Choice4__c", option4Value);
                     questionRecord.put("Difficulty_Level__c", selectedDifficulty);
+                    //Calling updateQuestion() with question questionRecord and answer as parameter
                     updateQuestion(questionRecord,selectedAnswer);
                 }
                 Toast.makeText(getApplicationContext(), "Quiz updated", Toast.LENGTH_SHORT).show();
+                //Redirecting to ProfessorHome page once quiz is updated
                 Intent intent = new Intent(ProfessorUpdatingQuiz.this, ProfessorHome.class);
                 intent.putExtra("userID",userID);
                 startActivity(intent);
             }
         });
     }
-
+    // Retrieving the questions of quiz from database
     private void setQuestion(String soql) throws UnsupportedEncodingException {
        RestRequest restRequest = RestRequest.getRequestForQuery(ApiVersionStrings.getVersionNumber(this), soql);
         client.sendAsync(restRequest, new RestClient.AsyncRequestCallback() {
@@ -172,6 +181,7 @@ public class ProfessorUpdatingQuiz extends SalesforceActivity {
                             try {
                                 JSONArray answerTable = result.asJSONObject().getJSONArray("records");
                                 for (int i = 0; i < answerTable.length(); i++) {
+                                    //adding the question details in lists
                                     answerIDList.add(answerTable.getJSONObject(i).getString("Id"));
                                     questionIDList.add(answerTable.getJSONObject(i).getString("Question__c"));
                                     answerList.add(answerTable.getJSONObject(i).getString("Answer__c"));
@@ -184,9 +194,9 @@ public class ProfessorUpdatingQuiz extends SalesforceActivity {
                                     difficultyLevelList.add(questionsTable.getString("Difficulty_Level__c"));
                                 }
                                 questionNumberValue = 1;
+                                //calling setPage() to set the values of fields
                                 setPage();
                             } catch (Exception e) {
-                                System.out.println(e.getMessage());
                             }
 
                         }
@@ -207,7 +217,7 @@ public class ProfessorUpdatingQuiz extends SalesforceActivity {
             }
         });
     }
-
+    //Setting the values of page
     private void setPage() {
         int positionD = 0,positionA = 0;
         questionNumber.setText(Integer.toString(questionNumberValue));
@@ -234,7 +244,7 @@ public class ProfessorUpdatingQuiz extends SalesforceActivity {
         profAnswerSelection.setSelection(positionA);
         profDifficultySelection.setSelection(positionD);
     }
-
+    //updating the answer for a particular question in database
     private void updateAnswer(Map<String, Object> answerRecord) {
         RestRequest restRequest;
         try {
@@ -246,7 +256,6 @@ public class ProfessorUpdatingQuiz extends SalesforceActivity {
         client.sendAsync(restRequest, new RestClient.AsyncRequestCallback() {
             @Override
             public void onSuccess(RestRequest request, RestResponse result) {
-                System.out.println("************answer"+result.toString());
                 result.consumeQuietly(); // consume before going back to main thread
                 runOnUiThread(new Runnable() {
                     @Override
@@ -256,23 +265,24 @@ public class ProfessorUpdatingQuiz extends SalesforceActivity {
                             setPage();
 
                         } catch(Exception e){
-                            System.out.println(e.getMessage());
                         }
                     }
                 });
             }
-
             @Override
             public void onError(Exception e) {
                 Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }
+    //updating question to database
     private void updateQuestion(Map<String, Object> questionRecord,String selectedAnswer) {
         RestRequest restRequest;
         try {
             restRequest = RestRequest.getRequestForUpdate(getString(R.string.api_version), "Quiz_Questions__c",(questionIDList.get(questionNumberValue-1)), questionRecord);
+            //Checking if this is last question in the quiz
             if(questionNumberValue>=questionIDList.size()){
+                //if last question then redirect to ProfessorHome page after updating
                 Toast.makeText(getApplicationContext(), "Quiz updated", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(ProfessorUpdatingQuiz.this, ProfessorHome.class);
                 intent.putExtra("userID",userID);
@@ -280,24 +290,19 @@ public class ProfessorUpdatingQuiz extends SalesforceActivity {
             }
 
         } catch (Exception e) {
-
-            Toast.makeText(getApplicationContext(), "catch" + e.getMessage(), Toast.LENGTH_SHORT).show();
             return;
         }
         client.sendAsync(restRequest, new RestClient.AsyncRequestCallback() {
             @Override
             public void onSuccess(RestRequest request,final RestResponse result)  {
-                System.out.println("***********"+result.toString());
                 result.consumeQuietly(); // consume before going back to main thread
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
                             try {
-                                //questionAdded = true;
-
-                                System.out.println("************"+questionNumberValue);
                                 Map<String, Object> answerRecord = new HashMap<String, Object>();
                                 answerRecord.put("Answer__c", selectedAnswer);
+                                //Calling updateAnswer() with questionID and updated answer
                                 updateAnswer(answerRecord);
                             } catch (Exception e) {
                             }
@@ -310,6 +315,7 @@ public class ProfessorUpdatingQuiz extends SalesforceActivity {
             }
         });
     }
+    //Validating the fields in the page
     private boolean validateData() {
         if (quizNameValue.equals("") || quizNameValue.equals("Enter name for the quiz")) {
             Toast.makeText(getApplicationContext(), "Please input quiz name.", Toast.LENGTH_SHORT).show();

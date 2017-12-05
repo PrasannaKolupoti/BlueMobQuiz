@@ -5,7 +5,7 @@
     android:background="@drawable/background"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.mc.grp6.bluemobquiz.StudentAttemptingQuiz">
-    <!-- Image Source: http://www.intrawallpaper.com/static/images/recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg-->
+    <!-- Image Source: http://www.photos-public-domain.com/wp-content/uploads/2012/05/light-blue-paper-texture.jpg-->
     <include layout="@layout/header" />
     <TableLayout
         android:id="@+id/quizNameAndTimer"
@@ -179,7 +179,7 @@
                 android:popupBackground="@drawable/spinner"
                 android:entries="@array/studentAnswerChoice"
                 android:prompt="@string/studentAnswerPrompt" />
-            <!--Image source: https://pixabay.com/en/background-tree-wood-texture-2132910/-->
+            <!--Image source: https://vignette.wikia.nocookie.net/animal-jam-clans-1/images/5/54/Light_blue-250x250.png/revision/latest?cb=20170717061757-->
         </TableRow>
     </TableLayout>
     <TableLayout
@@ -204,7 +204,7 @@
                 android:layout_column="0"
                 android:layout_gravity="center"
                 android:text="Next"
-                android:background="#1F5E60"
+                android:background="#204AAB"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"/>
             <Button
@@ -215,7 +215,7 @@
                 android:layout_below="@id/registrationForm"
                 android:layout_gravity="center"
                 android:text="  Submit  "
-                android:background="#1F5E60"
+                android:background="#204AAB"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"/>
         </TableRow>

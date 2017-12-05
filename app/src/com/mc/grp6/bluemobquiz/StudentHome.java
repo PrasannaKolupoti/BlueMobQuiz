@@ -8,9 +8,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -29,8 +27,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
 public class StudentHome extends SalesforceActivity {
-
-    private static final String TAG = "StudentHome";
+    //Variable declaration and initialization
     private RestClient client;
     public String quizID,quizName, userID;
     public int score, rank;
@@ -38,11 +35,14 @@ public class StudentHome extends SalesforceActivity {
     public Button searchQuiz;
     BluetoothAdapter mBluetoothAdapter;
     ArrayList<DisplayResults>  finalResult;
+    //Method that is called after the activity resumes once we have a RestClient.
     @Override
     public void onResume(RestClient client) {
+        // Keeping reference to rest client
         this.client = client;
         try {
             userID = getIntent().getExtras().getString("userID");
+            //calling displayAttemptedQuizzes() with query to get the quiz name,score, rank as parameter
             displayAttemptedQuizzes("SELECT Quiz__c, Quiz__r.Name, Score__c, Rank__c FROM User_Results__c where User__c = \'"+userID+"\'");
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
@@ -57,11 +57,14 @@ public class StudentHome extends SalesforceActivity {
         searchQuiz = (Button) findViewById(R.id.searchQuizButton);
         findViewById(R.id.loadingProgressBar).setVisibility(View.GONE);
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+        //calling enableDisableBT() to enable bluetooth
         enableDisableBT();
+        //Search button click listener
         searchQuiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 findViewById(R.id.loadingProgressBar).setVisibility(View.VISIBLE);
+                //calling deviceDiscover() with view as parameter to scan nearby devices
                 deviceDiscover(v);
             }
         });
@@ -77,7 +80,7 @@ public class StudentHome extends SalesforceActivity {
         registerReceiver(mBroadcastReceiver3, discoverDevicesIntent);
         mBluetoothAdapter.startDiscovery();
     }
-    // This method is required for all devices running API23+. Android must programmatically check the permissions for bluetooth. Putting the proper permissions in the manifest is not enough.
+    //Checking the permissions for bluetooth.
     private void checkBTPermissions() {
         if(Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP){
             int permissionCheck = this.checkSelfPermission("Manifest.permission.ACCESS_FINE_LOCATION");
@@ -93,14 +96,11 @@ public class StudentHome extends SalesforceActivity {
         @Override
         public void onReceive(Context context, Intent intent) {
             String action = intent.getAction();
-            Log.d(TAG, "Action Discovery: "+action);
             BluetoothDevice device = null;
+
             if(mBluetoothAdapter.ACTION_DISCOVERY_STARTED.equals(action)) {
             } else if(mBluetoothAdapter.ACTION_DISCOVERY_FINISHED.equals(action)) {
                 findViewById(R.id.loadingProgressBar).setVisibility(View.GONE);
-                for (String address : deviceAddressList) {
-                    Log.d("address", address);
-                }
                 Intent i = new Intent(StudentHome.this, StudentAvailableQuiz.class);
                 i.putExtra("userID",userID);
                 i.putStringArrayListExtra("scannedDevicesList", deviceAddressList);
@@ -109,11 +109,11 @@ public class StudentHome extends SalesforceActivity {
                 device = intent.getParcelableExtra (BluetoothDevice.EXTRA_DEVICE);
                 if(!deviceAddressList.contains(device.getAddress())) {
                     deviceAddressList.add(device.getAddress());
-                    Log.d(TAG, "onReceive: " + device.getName() + ": " + device.getAddress());
                 }
             }
         }
     };
+    //Destroying the broadcast receivers
     public void onDestroy(){
         super.onDestroy();
         unregisterReceiver(mBroadcastReceiver1);
@@ -139,6 +139,7 @@ public class StudentHome extends SalesforceActivity {
             }
         }
     };
+    //Switching on bluetooth
     public void enableDisableBT(){
         if(mBluetoothAdapter == null){
         }
@@ -149,6 +150,7 @@ public class StudentHome extends SalesforceActivity {
             registerReceiver(mBroadcastReceiver1, BTIntent);
         }
     }
+    //Retrieving the list of quiz name,score, rank from database
     private void displayAttemptedQuizzes(String soql) throws UnsupportedEncodingException {
         RestRequest restRequest = RestRequest.getRequestForQuery(ApiVersionStrings.getVersionNumber(this), soql);
         client.sendAsync(restRequest, new RestClient.AsyncRequestCallback() {
@@ -159,6 +161,7 @@ public class StudentHome extends SalesforceActivity {
                     @Override
                     public void run() {
                         try {
+                            //initializing an arraylist of type DisplayResults(has the setters and getters for student name,score,rank)
                             finalResult = new ArrayList<DisplayResults>();
                             DisplayResults displayResults;
                             JSONArray resultTable = result.asJSONObject().getJSONArray("records");
@@ -169,16 +172,13 @@ public class StudentHome extends SalesforceActivity {
                                 rank = resultTable.getJSONObject(i).getInt("Rank__c");
                                 JSONObject quizTable = resultTable .getJSONObject(i).getJSONObject("Quiz__r");
                                 quizName = quizTable.getString("Name");
-                                System.out.println("*************quizID:"+quizID);
-                                System.out.println("*************score:"+score);
-                                System.out.println("*************quizName:"+quizName);
                                 displayResults.setQuizName(quizName);
                                 displayResults.setMarks(score);
                                 displayResults.setRank(rank);
                                 finalResult.add(displayResults);
                             }
-
                             final ListView lv = (ListView) findViewById(R.id.attemptedQuizListView);
+                            //calling StudentCustomBaseAdapter class constructor with the context and result to set multiple textviews in listview
                             lv.setAdapter(new StudentCustomBaseAdapter(getApplicationContext(), finalResult));
                         } catch (Exception e) {
                             onError(e);
@@ -186,7 +186,6 @@ public class StudentHome extends SalesforceActivity {
                     }
                 });
             }
-
             @Override
             public void onError(final Exception exception) {
                 runOnUiThread(new Runnable() {
@@ -201,3 +200,5 @@ public class StudentHome extends SalesforceActivity {
         });
     }
 }
+// Referenced Android developer to understand bluetooth enabling/discovering functionality
+// https://developer.android.com/guide/topics/connectivity/bluetooth.html

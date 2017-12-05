@@ -61,6 +61,7 @@ public class MainActivity extends SalesforceActivity {
         // Setup viewx
         setContentView(R.layout.main);
     }
+
     @Override
     public void onResume() {
         // Hide everything until we are logged in
@@ -74,7 +75,7 @@ public class MainActivity extends SalesforceActivity {
 
         super.onResume();
     }
-
+    //Method that is called after the activity resumes once we have a RestClient.
     @Override
     public void onResume(RestClient client) {
         // Keeping reference to rest client

@@ -23,17 +23,21 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
 public class ProfessorQuizAttendance extends SalesforceActivity {
+    //Variable declaration and initialization
     private RestClient client;
     public String quizID,userName, userID, quizName;
     private GestureDetectorCompat gestureObject;
     public int score, rank;
     ArrayList<DisplayAttendance> attendanceList;
     public TextView quizNameHeading;
+    //Method that is called after the activity resumes once we have a RestClient.
     @Override
     public void onResume(RestClient client) {
+        // Keeping reference to rest client
         this.client = client;
         quizID = getIntent().getExtras().getString("quizID");
         try {
+            //Calling displayAttendance() with a query to display name,score,marks of students who attepted a particular quiz as parameter
             displayAttendance("SELECT Score__c, Rank__c, User__r.Name FROM User_Results__c where Quiz__c = \'"+quizID+"\'");
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
@@ -49,11 +53,14 @@ public class ProfessorQuizAttendance extends SalesforceActivity {
         quizNameHeading.setText(quizName);
         gestureObject = new GestureDetectorCompat(this, new CustomGesture());
     }
+    //Gestures
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         this.gestureObject.onTouchEvent(event);
         return super.onTouchEvent(event);
     }
+    //Gestures
+    //https://developer.android.com/reference/android/view/GestureDetector.OnGestureListener.html#onFling(android.view.MotionEvent, android.view.MotionEvent, float, float)
     class CustomGesture extends GestureDetector.SimpleOnGestureListener{
         @Override
         public boolean onFling(MotionEvent event1, MotionEvent event2, float velocityX, float velocityY) {
@@ -65,6 +72,7 @@ public class ProfessorQuizAttendance extends SalesforceActivity {
                     if (Math.abs(diffX) > 1 && Math.abs(velocityX) > 1) {
                         if (diffX > 0) {
                             // Swipe Right
+                            //Redirecting to ProfessorAttendance page
                             Intent intent = new Intent(ProfessorQuizAttendance.this, ProfessorAttendance.class);
                             intent.putExtra("userID",userID);
                             startActivity(intent);
@@ -89,17 +97,18 @@ public class ProfessorQuizAttendance extends SalesforceActivity {
             return result;
         }
     }
+    //Retrieving the list of student name,score, rank from database
     private void displayAttendance(String soql) throws UnsupportedEncodingException {
         RestRequest restRequest = RestRequest.getRequestForQuery(ApiVersionStrings.getVersionNumber(this), soql);
         client.sendAsync(restRequest, new RestClient.AsyncRequestCallback() {
             @Override
             public void onSuccess(RestRequest request, final RestResponse result) {
-                System.out.println("**************Result:"+result.toString());
                 result.consumeQuietly(); // consume before going back to main thread
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
                         try {
+                            //initializing an arraylist of type DisplayAttendance(has the setters and getters for student name,score,rank)
                             attendanceList = new ArrayList<DisplayAttendance>();
                             DisplayAttendance displayAttendance;
                             JSONArray resultTable = result.asJSONObject().getJSONArray("records");
@@ -109,14 +118,13 @@ public class ProfessorQuizAttendance extends SalesforceActivity {
                                 rank = resultTable.getJSONObject(i).getInt("Rank__c");
                                 JSONObject quizTable = resultTable .getJSONObject(i).getJSONObject("User__r");
                                 userName = quizTable.getString("Name");
-                                System.out.println("*************score:"+score);
-                                System.out.println("*************userName:"+userName);
                                 displayAttendance.setStudentName(userName);
                                 displayAttendance.setMarks(score);
                                 displayAttendance.setRank(rank);
                                 attendanceList.add(displayAttendance);
                             }
                             final ListView lv = (ListView) findViewById(R.id.studentList);
+                            //calling ProfessorCustomBaseAdapter class constructor with the context and attendanceList to set mutiple textviews in listview
                             lv.setAdapter(new ProfessorCustomBaseAdapter(getApplicationContext(), attendanceList));
                         } catch (Exception e) {
                             onError(e);
